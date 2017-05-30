@@ -8,7 +8,9 @@
   font-family: 'FontAwesome';
   src: url(../fonts/fontawesome-webfont.otf) format("webfont"); }
 body {
-  background-image: url(../img/bg.png); }
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .logo-full {
   display: block;
