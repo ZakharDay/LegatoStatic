@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Basis Light';
+  src: url(../fonts/basis-light.otf) format("opentype"); }
+@font-face {
+  font-family: 'Basis Medium';
+  src: url(../fonts/basis-medium.otf) format("opentype"); }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(../fonts/fontawesome-webfont.otf) format("webfont"); }
+body {
+  background-image: url(../img/bg.png); }
+
+.logo-full {
+  display: block;
+  position: absolute;
+  width: 232px;
+  height: 53px;
+  background-image: url(../img/logo-full.svg);
+  background-size: cover;
+  left: 50px;
+  top: 38px; }
+
+.phrase {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 538px;
+  height: 107px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 572px;
+  margin: auto;
+  margin-left: 330px;
+  padding-top: 40px; }
+  .phrase p {
+    font-family: 'Basis Light';
+    font-size: 85px;
+    color: white; }
+  .phrase .logo-phrase {
+    display: block;
+    width: 250px;
+    height: 99px;
+    background-image: url(../img/logo.svg); }
+
+.fig {
+  display: block;
+  position: absolute;
+  background-size: cover;
+  bottom: 0;
+  right: 0; }
+
+.i1 {
+  width: 29px;
+  height: 15px;
+  background-image: url(../img/fig1.svg);
+  top: 62px;
+  margin-right: 81px; }
+
+.i2 {
+  width: 52px;
+  height: 47px;
+  background-image: url(../img/fig2.svg);
+  margin-bottom: 145px;
+  right: 183px; }
+
+.i3 {
+  width: 28px;
+  height: 36px;
+  background-image: url(../img/fig3.svg);
+  margin-bottom: 89px;
+  left: 70px; }
+
+.soc {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 259px;
+  height: 16px;
+  font-family: 'Basis Medium';
+  font-size: 12px;
+  color: white;
+  left: 0;
+  bottom: 0;
+  margin-left: 330px;
+  margin-bottom: 40px; }
+  .soc a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer; }
+    .soc a :visited {
+      color: white;
+      text-decoration: none; }
+  .soc ::before {
+    display: inline-block;
+    text-align: left;
+    line-height: 16px;
+    font-family: FontAwesome;
+    font-size: 12px;
+    padding-right: 5px; }
+  .soc .instagram::before {
+    content: '\f16d'; }
+  .soc .share::before {
+    content: '\f064'; }
+  .soc .email::before {
+    content: '\f003'; }
+
+/*# sourceMappingURL=teaser.css.map */
