@@ -270,3 +270,5 @@ video {
     left: 19px; } }
 .social-likes__widget {
   padding-left: 18px; }
+  .social-likes__widget:hover .social-likes__button {
+    text-decoration: underline; }

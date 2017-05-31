@@ -365,4 +365,8 @@ video {
 
 .social-likes__widget {
   padding-left: 18px;
+
+  &:hover .social-likes__button {
+    text-decoration: underline;
+  }
 }
