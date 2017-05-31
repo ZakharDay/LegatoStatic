@@ -107,7 +107,7 @@ body {
   display: flex;
   position: absolute;
   justify-content: space-between;
-  width: 259px;
+  // width: 259px;
   height: 16px;
 
   font-family: 'Basis Medium';
@@ -121,11 +121,12 @@ body {
   margin-bottom: 40px;
 
   a {
+    margin-right: 20px;
     color: white;
     text-decoration: none;
     cursor: pointer;
 
-    :visited {
+    &:visited {
       color: white;
       text-decoration: none;
     }
@@ -142,6 +143,10 @@ body {
 
   .instagram::before {
     content: '\f16d';
+  }
+
+  .facebook::before {
+    content: '\f082';
   }
 
   .share::before {
