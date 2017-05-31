@@ -36,10 +36,10 @@ video {
   display: block;
   position: absolute;
 
-  width: 232px;
+  width: 132px;
   height: 53px;
 
-  background-image: url(../img/logo-full.svg);
+  background-image: url(../img/logo_white.svg);
   background-size: cover;
   left: 50px;
   top: 38px;
@@ -74,7 +74,7 @@ video {
     width: 263px;
     height: 104px;
     margin-right: 227px;
-    background-image: url(../img/logo.svg);
+    background-image: url(../img/logo_white.svg);
     background-size: cover;
   }
 }
@@ -185,11 +185,26 @@ video {
 
     .logo-phrase {
       width: 210px;
-      height: 82px;
+      height: 84px;
       margin-right: 208px;
     }
   }
+
+  .phrase,
+  .soc {
+    margin-left: 130px;
+  }
+
+  .i2 {
+    margin-bottom: 85px;
+    right: 93px;
+  }
+
+  .i3 {
+    margin-bottom: 139px;
+  }
 }
+
 @media only screen and (max-device-width: 1366px) and (orientation:landscape) {
 
   body {
@@ -214,32 +229,12 @@ video {
 }
 
 
-
-@media (max-width: 769px) {
-
-  .phrase,
-  .soc {
-    margin-left: 130px;
-  }
-
-  .i2 {
-    margin-bottom: 85px;
-    right: 93px;
-  }
-
-  .i3 {
-    margin-bottom: 139px;
-  }
-}
-
 @media (max-width: 321px) {
-
-
 
   .logo-full {
     left: 15px;
     top: 15px;
-    width: 202px;
+    width: 115px;
     height: 46px;
   }
   .phrase,
@@ -256,7 +251,7 @@ video {
 
     .logo-phrase {
       width: 97px;
-      height: 38px;
+      height: 39px;
       margin-right: 186px;
       }
   }
