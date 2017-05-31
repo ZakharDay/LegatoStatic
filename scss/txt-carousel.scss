@@ -1,0 +1,109 @@
+@-webkit-keyframes slideshow {
+  0%   	{ margin-top: 0;     }
+  7% 	  { margin-top: -110px;}
+  14% 	{ margin-top: -220px;}
+  21% 	{ margin-top: -330px;}
+  28% 	{ margin-top: -440px;}
+  35% 	{ margin-top: -550px;}
+  42% 	{ margin-top: -660px;}
+  49% 	{ margin-top: -770px;}
+  56% 	{ margin-top: -660px;}
+  63% 	{ margin-top: -550px;}
+  70% 	{ margin-top: -440px;}
+  77% 	{ margin-top: -330px;}
+  84% 	{ margin-top: -220px;}
+  91% 	{ margin-top: -110px;}
+}
+
+@-moz-keyframes slideshow {
+  0%   	{ margin-top: 0;     }
+  7% 	  { margin-top: -110px;}
+  14% 	{ margin-top: -220px;}
+  21% 	{ margin-top: -330px;}
+  28% 	{ margin-top: -440px;}
+  35% 	{ margin-top: -550px;}
+  42% 	{ margin-top: -660px;}
+  49% 	{ margin-top: -770px;}
+  56% 	{ margin-top: -660px;}
+  63% 	{ margin-top: -550px;}
+  70% 	{ margin-top: -440px;}
+  77% 	{ margin-top: -330px;}
+  84% 	{ margin-top: -220px;}
+  91% 	{ margin-top: -110px;}
+}
+
+@-o-keyframes slideshow {
+  0%   	{ margin-top: 0;     }
+  7%  	{ margin-top: -110px;}
+  14% 	{ margin-top: -220px;}
+  21% 	{ margin-top: -330px;}
+  28% 	{ margin-top: -440px;}
+  35% 	{ margin-top: -550px;}
+  42% 	{ margin-top: -660px;}
+  49% 	{ margin-top: -770px;}
+  56% 	{ margin-top: -660px;}
+  63% 	{ margin-top: -550px;}
+  70% 	{ margin-top: -440px;}
+  77% 	{ margin-top: -330px;}
+  84% 	{ margin-top: -220px;}
+  91% 	{ margin-top: -110px;}
+}
+
+@keyframes slideshow {
+  0%   	{ margin-top: 0;     }
+  7% 	  { margin-top: -110px;}
+  14% 	{ margin-top: -220px;}
+  21% 	{ margin-top: -330px;}
+  28% 	{ margin-top: -440px;}
+  35% 	{ margin-top: -550px;}
+  42% 	{ margin-top: -660px;}
+  49% 	{ margin-top: -770px;}
+  56% 	{ margin-top: -660px;}
+  63% 	{ margin-top: -550px;}
+  70% 	{ margin-top: -440px;}
+  77% 	{ margin-top: -330px;}
+  84% 	{ margin-top: -220px;}
+  91% 	{ margin-top: -110px;}
+ }
+
+
+
+
+// REAL ONE
+
+.phrases-wrapper {
+  width:778px;
+  height: 104px;
+  overflow:hidden;
+  position: absolute;
+
+  -webkit-transition: all 3s;
+   -moz-transition: all 3s;
+   -o-transition: all 3s;
+   transition: all 3s;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-left: 330px;
+
+  .phrases-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+    width: 778px;
+    height: 880px;
+    -webkit-animation: slideshow 63s infinite ease-in-out;
+    -moz-animation: slideshow 63s infinite ease-in-out;
+    -o-animation: slideshow 63s infinite ease-in-out;
+    animation: slideshow 63s steps(14, end) infinite ease-in-out;
+    animation-delay: 1s;
+
+  }
+
+}
