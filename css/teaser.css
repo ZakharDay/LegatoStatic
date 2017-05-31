@@ -21,16 +21,23 @@ html, body, section {
 video {
   width: 100vw;
   height: 100vh;
+  -o-object-fit: cover;
   object-fit: cover; }
 
 .header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 230px;
   height: 53px;
   margin-left: 50px;
   margin-top: 38px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
   .header-logo .logo-full {
     display: block;
@@ -49,8 +56,12 @@ video {
     font-family: 'Basis Medium'; }
 
 .phrase {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 778px;
   height: 110px;
@@ -96,10 +107,16 @@ video {
   left: 70px; }
 
 .soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 80px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   font-family: 'Basis Medium';
   font-size: 12px;
@@ -110,15 +127,27 @@ video {
   margin-bottom: 40px;
   z-index: 2; }
   .soc .share-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     cursor: pointer; }
     .soc .share-menu .share:hover {
       text-decoration: underline; }
     .soc .share-menu .social-likes {
       display: none;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       height: 50px; }
       .soc .share-menu .social-likes .vkShare:hover,
@@ -217,6 +246,7 @@ video {
       margin-right: 574px !important; }
 
   .soc {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 20px;
     font-size: 10px; }
@@ -240,5 +270,3 @@ video {
     left: 19px; } }
 .social-likes__widget.social-likes__widget_twitterShare {
   padding-left: 18px; }
-
-/*# sourceMappingURL=teaser.css.map */

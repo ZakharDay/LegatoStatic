@@ -1,45 +1,119 @@
-@keyframes slideshow {
+@-webkit-keyframes slideshow {
   0% {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px); }
   8% {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px); }
   12% {
+    -webkit-transform: translateY(-110px);
     transform: translateY(-110px); }
   20% {
+    -webkit-transform: translateY(-110px);
     transform: translateY(-110px); }
   24% {
+    -webkit-transform: translateY(-220px);
     transform: translateY(-220px); }
   32% {
+    -webkit-transform: translateY(-220px);
     transform: translateY(-220px); }
   36% {
+    -webkit-transform: translateY(-330px);
     transform: translateY(-330px); }
   44% {
+    -webkit-transform: translateY(-330px);
     transform: translateY(-330px); }
   48% {
+    -webkit-transform: translateY(-440px);
     transform: translateY(-440px); }
   56% {
+    -webkit-transform: translateY(-440px);
     transform: translateY(-440px); }
   60% {
+    -webkit-transform: translateY(-550px);
     transform: translateY(-550px); }
   68% {
+    -webkit-transform: translateY(-550px);
     transform: translateY(-550px); }
   72% {
+    -webkit-transform: translateY(-660px);
     transform: translateY(-660px); }
   80% {
+    -webkit-transform: translateY(-660px);
     transform: translateY(-660px); }
   84% {
+    -webkit-transform: translateY(-770px);
     transform: translateY(-770px); }
   92% {
+    -webkit-transform: translateY(-770px);
     transform: translateY(-770px); }
   96% {
+    -webkit-transform: translateY(-770px);
     transform: translateY(-770px); }
   100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes slideshow {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  8% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  12% {
+    -webkit-transform: translateY(-110px);
+    transform: translateY(-110px); }
+  20% {
+    -webkit-transform: translateY(-110px);
+    transform: translateY(-110px); }
+  24% {
+    -webkit-transform: translateY(-220px);
+    transform: translateY(-220px); }
+  32% {
+    -webkit-transform: translateY(-220px);
+    transform: translateY(-220px); }
+  36% {
+    -webkit-transform: translateY(-330px);
+    transform: translateY(-330px); }
+  44% {
+    -webkit-transform: translateY(-330px);
+    transform: translateY(-330px); }
+  48% {
+    -webkit-transform: translateY(-440px);
+    transform: translateY(-440px); }
+  56% {
+    -webkit-transform: translateY(-440px);
+    transform: translateY(-440px); }
+  60% {
+    -webkit-transform: translateY(-550px);
+    transform: translateY(-550px); }
+  68% {
+    -webkit-transform: translateY(-550px);
+    transform: translateY(-550px); }
+  72% {
+    -webkit-transform: translateY(-660px);
+    transform: translateY(-660px); }
+  80% {
+    -webkit-transform: translateY(-660px);
+    transform: translateY(-660px); }
+  84% {
+    -webkit-transform: translateY(-770px);
+    transform: translateY(-770px); }
+  92% {
+    -webkit-transform: translateY(-770px);
+    transform: translateY(-770px); }
+  96% {
+    -webkit-transform: translateY(-770px);
+    transform: translateY(-770px); }
+  100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0); } }
 .phrases-wrapper {
   width: 778px;
   height: 104px;
   overflow: hidden;
   position: absolute;
+  -webkit-transition: all 3s ease-in-out;
   transition: all 3s ease-in-out;
   top: 0;
   bottom: 0;
@@ -48,16 +122,25 @@
   margin: auto;
   margin-left: 330px; }
   .phrases-wrapper .phrases-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     width: 778px;
     height: 880px;
+    -webkit-animation: slideshow 36s infinite ease-in-out;
     animation: slideshow 36s infinite ease-in-out;
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
+    -webkit-transition: all 3s ease-in-out;
     transition: all 3s ease-in-out; }
-
-/*# sourceMappingURL=txt-carousel.css.map */
