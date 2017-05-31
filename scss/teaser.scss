@@ -13,12 +13,24 @@
   src: url(../fonts/fontawesome-webfont.otf) format("webfont");
 }
 
-
-body {
-  background-image: url(../img/bg.png);
+* {
+  overflow: hidden;
+}
+html, body, section {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-size: 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 
 .logo-full {
   display: block;
@@ -38,7 +50,7 @@ body {
   position: absolute;
   justify-content: space-between;
 
-  width: 538px;
+  width: 778px;
   height: 107px;
 
   top: 0;
@@ -49,6 +61,7 @@ body {
   margin-left: 330px;
 
   padding-top: 40px;
+  z-index: 2;
 
   p {
     font-family: 'Basis Light';
@@ -58,10 +71,11 @@ body {
 
   .logo-phrase {
     display: block;
-    width: 250px;
-    height: 99px;
-
+    width: 263px;
+    height: 104px;
+    margin-right: 227px;
     background-image: url(../img/logo.svg);
+    background-size: cover;
   }
 }
 
@@ -119,6 +133,7 @@ body {
   bottom: 0;
   margin-left: 330px;
   margin-bottom: 40px;
+  z-index: 2;
 
   a {
     margin-right: 20px;
@@ -155,5 +170,121 @@ body {
 
   .email::before {
     content: '\f003';
+  }
+}
+
+
+
+@media (max-width: 1025px) {
+  .phrase {
+    width: 648px;
+
+    p {
+      font-size: 65px;
+    }
+
+    .logo-phrase {
+      width: 210px;
+      height: 82px;
+      margin-right: 208px;
+    }
+  }
+}
+@media only screen and (max-device-width: 1366px) and (orientation:landscape) {
+
+  body {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  video {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation:portrait) {
+  body {
+    background-image: url(../img/bg.png);
+  }
+
+  video {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 769px) {
+
+  .phrase,
+  .soc {
+    margin-left: 130px;
+  }
+
+  .i2 {
+    margin-bottom: 85px;
+    right: 93px;
+  }
+
+  .i3 {
+    margin-bottom: 139px;
+  }
+}
+
+@media (max-width: 321px) {
+
+
+
+  .logo-full {
+    left: 15px;
+    top: 15px;
+    width: 202px;
+    height: 46px;
+  }
+  .phrase,
+  .soc {
+    margin-left: 25px;
+    }
+
+  .phrase {
+    width: 387px;
+
+    p {
+      font-size: 30px;
+    }
+
+    .logo-phrase {
+      width: 97px;
+      height: 38px;
+      margin-right: 186px;
+      }
+  }
+
+  .soc {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
+
+  .i1 {
+    width: 20px;
+    height: 10px;
+    top: 62px;
+    margin-right: 21px;
+  }
+
+  .i2 {
+    width: 32px;
+    height: 29px;
+    margin-bottom: 85px;
+    right: 24px;
+  }
+
+  .i3 {
+    width: 20px;
+    height: 27px;
+    margin-bottom: 119px;
+    left: 19px;
   }
 }
