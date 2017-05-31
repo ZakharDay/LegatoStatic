@@ -1,26 +1,30 @@
 @keyframes slideshow {
-  0%   { transform: translateY(0);      }
+  0%   { transform: translateY(0px);    }
+  8%   { transform: translateY(0px);    }
 
-  5% 	 { transform: translateY(-110px); }
-  15%  { transform: translateY(-110px); }
+  12%  { transform: translateY(-110px); }
+  20%  { transform: translateY(-110px); }
 
-  20%  { transform: translateY(-220px); }
-  30%  { transform: translateY(-220px); }
+  24%  { transform: translateY(-220px); }
+  32%  { transform: translateY(-220px); }
 
-  35%  { transform: translateY(-330px); }
-  45%  { transform: translateY(-330px); }
+  36%  { transform: translateY(-330px); }
+  44%  { transform: translateY(-330px); }
 
-  50%  { transform: translateY(-440px); }
-  60%  { transform: translateY(-440px); }
+  48%  { transform: translateY(-440px); }
+  56%  { transform: translateY(-440px); }
 
-  65%  { transform: translateY(-550px); }
-  75%  { transform: translateY(-550px); }
+  60%  { transform: translateY(-550px); }
+  64%  { transform: translateY(-550px); }
 
-  80%  { transform: translateY(-660px); }
-  90%  { transform: translateY(-660px); }
+  68%  { transform: translateY(-660px); }
+  76%  { transform: translateY(-660px); }
 
-  95%  { transform: translateY(-770px); }
-  100% { transform: translateY(-770px); }
+  80%  { transform: translateY(-770px); }
+  88%  { transform: translateY(-770px); }
+
+  92%  { transform: translateY(-770px); }
+  100% { transform: translateY(0); }
 }
 
 .phrases-wrapper {
@@ -48,6 +52,7 @@
     height: 880px;
     animation: slideshow 26s infinite ease-in-out;
     animation-delay: 1s;
+    transition: all 3s ease-in-out;
   }
 
 }
