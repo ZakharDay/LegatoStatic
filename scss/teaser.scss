@@ -153,11 +153,25 @@ video {
     flex-direction: column;
     cursor: pointer;
 
+    .share {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     .social-likes {
       display: none;
       justify-content: space-between;
       flex-direction: column;
       height: 50px;
+
+      .vkShare,
+      .facebookShare,
+      .twitterShare {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -166,6 +180,10 @@ video {
     color: white;
     text-decoration: none;
     cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &:visited {
       color: white;
