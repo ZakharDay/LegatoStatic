@@ -27,32 +27,35 @@
   100% { transform: translateY(0); }
 }
 
-.phrases-wrapper {
-  width: 778px;
-  height: 104px;
-  overflow: hidden;
+.phrases-centerizer {
   position: absolute;
-  transition: all 3s ease-in-out;
-
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  margin: auto;
-  margin-left: 330px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-  .phrases-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin:0;
-    padding:0;
+  .phrases-wrapper {
     width: 778px;
-    height: 880px;
-    animation: slideshow 36s infinite ease-in-out;
-    animation-delay: 3s;
-    transition: all 3s ease-in-out;
-  }
+    height: 104px;
+    overflow: hidden;
+    margin-top: -80px;
+    margin-left: 330px;
 
+    .phrases-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin:0;
+      padding:0;
+      width: 778px;
+      height: 880px;
+      animation: slideshow 36s infinite ease-in-out;
+      animation-delay: 3s;
+      transition: all 3s ease-in-out;
+    }
+  }
 }
