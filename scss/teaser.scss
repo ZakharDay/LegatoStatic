@@ -56,7 +56,9 @@ video {
   p {
     display: block;
     position: relative;
+    margin-top: -3px;
     font-size: 12px;
+    line-height: 14px;
     color: white;
     font-family: 'Basis Medium';
   }
@@ -339,4 +341,10 @@ video {
     margin-bottom: 79px;
     left: 19px;
   }
+}
+
+
+
+.social-likes__widget.social-likes__widget_twitterShare {
+  padding-left: 18px;
 }
