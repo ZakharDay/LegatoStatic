@@ -121,8 +121,7 @@
     width: 800px;
     height: 120px;
     margin-top: -80px;
-    overflow: hidden;
-    background: rgba(255, 0, 0, 0.5); }
+    overflow: hidden; }
     .phrases-centerizer .phrases-wrapper .phrases-container {
       display: -webkit-box;
       display: -ms-flexbox;

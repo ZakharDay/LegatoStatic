@@ -97,7 +97,6 @@ video {
     display: flex;
     width: 800px;
     margin: 0 auto;
-    background: rgba(255, 0, 0, 0.5);
     font-family: 'Basis Medium';
     font-size: 12px;
     color: white; }
