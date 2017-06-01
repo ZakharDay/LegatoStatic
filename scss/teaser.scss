@@ -19,7 +19,7 @@
 }
 
 * {
-  overflow: hidden;
+  // overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -99,7 +99,7 @@ video {
 
 .socialWrapper {
   position: absolute;
-  overflow: visible;
+  // overflow: visible;
   bottom: 40px;
   left: 0;
   z-index: 2;

@@ -1,33 +1,43 @@
 @import 'vars';
 
-@keyframes slideshow {
-  0%   { transform: translateY(0);    }
-  8%   { transform: translateY(0);    }
+// @keyframes slideshow {
+//   0%   { transform: translateY(0);    }
+//   8%   { transform: translateY(0);    }
+//
+//   12%  { transform: translateY(-100%); }
+//   20%  { transform: translateY(-100%); }
+//
+//   24%  { transform: translateY(-200%); }
+//   32%  { transform: translateY(-200%); }
+//
+//   36%  { transform: translateY(-300%); }
+//   44%  { transform: translateY(-300%); }
+//
+//   48%  { transform: translateY(-400%); }
+//   56%  { transform: translateY(-400%); }
+//
+//   60%  { transform: translateY(-500%); }
+//   68%  { transform: translateY(-500%); }
+//
+//   72%  { transform: translateY(-600%); }
+//   80%  { transform: translateY(-600%); }
+//
+//   84%  { transform: translateY(-700%); }
+//   // 92%  { transform: translateY(-700%); }
+//   96%  { transform: translateY(-700%); }
+//
+//   100% { transform: translateY(0); }
+// }
 
-  12%  { transform: translateY(-100%); }
-  20%  { transform: translateY(-100%); }
-
-  24%  { transform: translateY(-200%); }
-  32%  { transform: translateY(-200%); }
-
-  36%  { transform: translateY(-300%); }
-  44%  { transform: translateY(-300%); }
-
-  48%  { transform: translateY(-400%); }
-  56%  { transform: translateY(-400%); }
-
-  60%  { transform: translateY(-500%); }
-  68%  { transform: translateY(-500%); }
-
-  72%  { transform: translateY(-600%); }
-  80%  { transform: translateY(-600%); }
-
-  84%  { transform: translateY(-700%); }
-  // 92%  { transform: translateY(-700%); }
-  96%  { transform: translateY(-700%); }
-
-  100% { transform: translateY(0); }
-}
+.phrase.step0 { transform: translateY(0); transition: all 3s ease-in-out !important; }
+.phrase.step1 { transform: translateY(-100%); }
+.phrase.step2 { transform: translateY(-200%); }
+.phrase.step3 { transform: translateY(-300%); }
+.phrase.step4 { transform: translateY(-400%); }
+.phrase.step5 { transform: translateY(-500%); }
+.phrase.step6 { transform: translateY(-600%); }
+.phrase.step7 { transform: translateY(-700%); }
+.phrase.step8 { transform: translateY(0); transition: all 3s ease-in-out !important; }
 
 .phrases-centerizer {
   position: absolute;
@@ -40,31 +50,37 @@
   align-items: center;
 
   .phrases-wrapper {
+    position: relative;
     width: $largeContainerWidth;
     height: $largeContainerHeight;
     margin-top: -80px;
     overflow: hidden;
+    z-index: 1;
 
     .phrases-container {
-      display: flex;
-      flex-direction: column;
+      // position: absolute;
+      // display: flex;
+      // flex-direction: column;
 
       .phrase {
+        position: relative;
+        // z-index: 1;
         display: flex;
-        animation: slideshow 36s infinite ease-in-out;
-        animation-delay: 3s;
-        transition: all 3s ease-in-out;
+        // transform: translateZ(0);
+        // animation: slideshow 36s infinite ease-in-out;
+        // animation-delay: 3s;
+        transition: all .3s ease-in-out;
 
-        p {
-          height: $largeContainerHeight;
-          line-height: 100px;
-          font-family: 'Basis Light';
-          font-size: 85px;
-          color: white;
-        }
+        height: $largeContainerHeight;
+        line-height: 100px;
+        font-family: 'Basis Light';
+        font-size: 85px;
+        color: white;
+        white-space: nowrap;
 
         .logo-phrase {
           position: relative;
+          // display: none;
           top: 5px;
           width: 263px;
           height: 106px;
@@ -77,16 +93,35 @@
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   .phrases-centerizer {
     .phrases-wrapper {
       width: $smallContainerWidth;
 
       .phrases-container {
         .phrase {
-          p {
-            font-size: 65px;
+          font-size: 65px;
+
+          .logo-phrase {
+            top: 14px;
+            width: 210px;
+            height: 84px;
+            margin-left: 20px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .phrases-centerizer {
+    .phrases-wrapper {
+      width: $smallContainerWidth;
+
+      .phrases-container {
+        .phrase {
+          font-size: 65px;
 
           .logo-phrase {
             top: 14px;
@@ -108,11 +143,9 @@
 
       .phrases-container {
         .phrase {
-          p {
-            height: $phoneContainerHeight;
-            font-size: 26px;
-            line-height: 60px;
-          }
+          height: $phoneContainerHeight;
+          font-size: 26px;
+          line-height: 60px;
 
           .logo-phrase {
             top: 12px;
@@ -134,11 +167,9 @@
 
       .phrases-container {
         .phrase {
-          p {
-            height: $phoneContainerHeight;
-            font-size: 26px;
-            line-height: 60px;
-          }
+          height: $phoneContainerHeight;
+          font-size: 26px;
+          line-height: 60px;
 
           .logo-phrase {
             top: 12px;
