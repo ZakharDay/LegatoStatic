@@ -1,0 +1,140 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 366px;
+  width: 100%;
+  margin-top: 150px;
+
+  a, #phone {
+    font-family: 'Basis Off White';
+    font-size: 19px;
+    text-decoration: underline;
+    color: black;
+
+    &:visited {
+      color: black;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  #phone {
+    text-decoration: none;
+  }
+
+  .row-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 75px;
+
+    .copy-soc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 53px;
+
+      .copyright {
+        font-family: 'Basis Bold';
+        font-size: 19px;
+        color: #666666;
+      }
+      .soc {
+        display: flex;
+        justify-content: space-between;
+        width: 187px;
+      }
+    }
+
+    .footer-figure {
+      display: block;
+      width: 122px;
+      height: 55px;
+
+      background-size: cover;
+      background-image: url(../img/footer_figure.svg);
+    }
+  }
+
+  .row-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 140px;
+
+    .contacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      width: 400px;
+      height: 66px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #footer-process {
+    margin-top: 3621px;
+  }
+
+  #footer-comp {
+    margin-top: 3690px;
+  }
+}
+
+@media only screen and (max-width: 324px) {
+  #footer-process,
+  #footer-comp {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .footer {
+    margin-top: 50px;
+
+    a, #phone {
+      font-size: 15px;
+    }
+
+    .row-1 {
+      display: auto;
+      width: 295px;
+      height: 162px;
+      padding: 0 12px;
+
+      .copy-soc {
+        height: 43px;
+        margin-top: 120px;
+
+        .copyright {
+          font-size: 13px;
+          line-height: 17px;
+        }
+        .soc {
+          width: 151px;
+        }
+      }
+
+      .footer-figure {
+        position: absolute;
+        right: 12px;
+      }
+    }
+
+    .row-2 {
+      margin-top: 50px;
+
+      .contacts {
+        flex-direction: column;
+        width: 100%;
+        padding-right: 12px;
+      }
+    }
+  }
+}

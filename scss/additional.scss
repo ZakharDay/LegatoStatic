@@ -1,0 +1,580 @@
+* {
+  transition: all 0.15s ease-in-out;
+}
+
+.content-wrapper {
+  height: 100%;
+  width: 1266px;
+
+  margin-top: 190px;
+
+  .title {
+    font-family: 'Basis Off White';
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .description {
+    font-family: 'Proxima Nova Light';
+    font-size: 19px;
+    line-height: 26px;
+    padding-top: 30px;
+  }
+
+  .intro-text {
+    width: 544px;
+    height: 100%;
+    padding-left: 172px;
+    display: inline-block;
+
+    .rubric {
+      font-family: 'Basis Off White';
+      font-size: 19px;
+      line-height: 26px;
+      color: #666666;
+      padding-bottom: 10px;
+    }
+  }
+
+  .navigation {
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 145px;
+    margin-left: 150px;
+
+    a {
+      font-family: 'Proxima Nova Light';
+      font-size: 19px;
+      line-height: 23px;
+      padding-top: 10px;
+      color: black;
+      text-decoration: none;
+
+      &:visited {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  #nav-proc {top: 552px;}
+
+  #nav-comp {top: 405px;}
+
+  .head-pic {
+    margin-top: 70px;
+    display: block;
+    width: 1266px;
+    height: 725px;
+
+    background-size: cover;
+  }
+
+  .head-container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .head-video {
+      width: 1091px;
+      height: 710px;
+
+      background-size: cover;
+    }
+  }
+
+  #people {background-image: url(../img/people/head-pic.png);}
+
+  #process {background-image: url(../img/process/head-video-preview.png);}
+
+  #competitions {background-image: url(../img/competitions/head-pic.png);}
+
+  .workers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 1092px;
+    height: 1784px;
+
+    padding-left: 172px;
+    margin-top: 100px;
+
+    &:after {
+      content: "";
+      flex: auto;
+    }
+
+    .worker {
+      display: block;
+
+      .photo {
+        height: 254px;
+        width: 203px;
+
+        background-size: cover;
+      }
+
+      .name {
+        font-family: 'Basis Regular';
+        font-size: 15px;
+        line-height: 21px;
+        padding-top: 10px;
+      }
+
+      .occupation {
+        font-family: 'Proxima Nova Light';
+        font-size: 15px;
+        line-height: 21px;
+        padding-top: 3px;
+      }
+    }
+  }
+
+  #previously {height: 1027px;}
+
+  #previously-txt {margin-top: 100px;}
+
+}
+
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1091px;
+  flex-wrap: wrap;
+  padding-left: 172px;
+}
+
+.cards-container {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+
+
+  #community {margin-top: 521px;}
+
+  #works {margin-top: 574px;}
+
+
+  #philosophy,
+  #project {margin-top: 100px;}
+
+
+
+  .card {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 514px;
+    margin-top: 150px;
+
+
+    .card-picture {
+      border: 1px solid lightgrey;
+      background-size: cover;
+      width: 514px;
+      margin-top: 30px;
+    }
+
+    #philosophy-picture {height: 810px;}
+
+    #community-picture {height: 273px;}
+
+    #environment-picture {height: 643px;}
+
+    #harmony-picture {height: 306px;}
+
+    #project-picture {height: 350px;}
+
+    #sertificate-picture {height: 273px;}
+
+    #culture-picture {height: 425px;}
+
+    #works-picture {height: 773px;}
+  }
+}
+
+// MEDIA QUERIES BELOW
+
+@media only screen and (max-width: 1280px) {
+  .content-wrapper {
+    width: 1170px;
+
+    .intro-text {
+      padding-left: 78px;
+    }
+
+    .head-pic {
+      width: 1170px;
+      height: 710px;
+    }
+
+    .head-container {
+
+      .head-video {
+        width: 1044px;
+        height: 710px;
+        padding-left: 47px;
+      }
+    }
+
+    .workers {
+      padding-left: 78px;
+    }
+  }
+
+  .cards-wrapper {
+    width: 1091px;
+    padding-left: 74px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .content-wrapper {
+    width: 994px;
+
+    .intro-text {
+      padding-left: 55px;
+    }
+
+    .navigation {
+      height: 115px;
+      margin-left: 100px;
+
+      a {
+        font-size: 15px;
+        line-height: 17px;
+      }
+    }
+
+    #nav-proc {top: 670px;}
+
+    #nav-comp {top: 487px;}
+
+    .head-pic {
+      width: 930px;
+      height: 695px;
+    }
+
+    .head-container {
+
+      .head-video {
+        width: 835px;
+        height: 613px;
+        padding-left: 104px;
+      }
+    }
+
+    .workers {
+      width: 875px;
+      height: 2142px;
+
+      padding-left: 55px;
+    }
+
+    #previously {height: 1418px;}
+
+    #resizeable {width: 455px;}
+  }
+
+  .cards-wrapper {
+    width: 836px;
+  }
+
+  .cards-container {
+
+    .card {
+      width: 390px;
+
+      .card-picture {
+        width: 390px;
+      }
+
+      #philosophy-picture {height: 614.59px;}
+
+      #community-picture {height: 207.14px;}
+
+      #environment-picture {height: 232.18px;}
+
+      #harmony-picture {height: 487.88px;}
+
+      #project-picture {height: 265.56px;}
+
+      #sertificate-picture {height: 207.14px;}
+
+      #culture-picture {height: 586.52px;}
+
+      #works-picture {height: 322.47;}
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .content-wrapper {
+    width: 714px;
+
+    .intro-text {
+      padding-left: 78px;
+    }
+
+    .navigation {
+      height: 122px;
+      margin-left: 100px;
+
+      a {
+        font-size: 15px;
+        line-height: 17px;
+      }
+    }
+
+
+    #nav-proc {top: 904px;}
+    #nav-comp {top: 644px;}
+
+
+    .head-pic {
+      width: 714px;
+      height: 493px;
+    }
+
+    .head-container {
+
+      .head-video {
+        width: 624px;
+        height: 424px;
+        padding-left: 104px;
+      }
+    }
+
+    .workers {
+      width: 636px;
+      height: 1522px;
+
+      padding-left: 78px;
+
+      .worker {
+
+        .photo {
+          height: 189px;
+          width: 151px;
+        }
+
+        .name {
+          font-size: 13px;
+          line-height: 13px;
+        }
+
+        .occupation {
+          font-size: 13px;
+          line-height: 19px;
+        }
+      }
+    }
+
+    #previously {height: 1008px;}
+    #resizeable {width: 320px;}
+  }
+
+  .cards-wrapper {
+    width: 564px;
+  }
+
+  .cards-container {
+
+    #community {margin-top: 1173px;}
+
+    #works {margin-top: 852px;}
+
+    #philosophy,
+    #project {margin-top: 100px;}
+
+    #sertificate {margin-top: 1372px;}
+
+    #culture {
+      margin-top: 100px;
+      right: -129px;
+      position: relative;
+    }
+
+    .card {
+      margin-top: 0;
+    }
+  }
+
+  .col-1 {
+    position: absolute;
+    height: 2464px;
+    left: 102px;
+  }
+
+  .col-2 {
+    position: absolute;
+    height: 3488px;
+    right: 102px;
+  }
+
+  #col-1-comp {
+    height: 3575px;
+    width: 564px;
+  }
+}
+
+@media only screen and (max-width: 324px) {
+
+  .content-wrapper {
+    width: 295px;
+
+    margin-top: 135px;
+
+    .title {
+      font-size: 23px;
+      line-height: 26px;
+    }
+
+    .description {
+      font-size: 15px;
+      line-height: 21px;
+      padding-top: 20px;
+    }
+
+    .intro-text {
+      width: 260px;
+      padding-left: 18px;
+
+      .rubric {
+        font-size: 15px;
+        line-height: 19px;
+        padding-bottom: 10px;
+      }
+    }
+
+    .navigation {
+      display: none;
+    }
+
+    .head-pic {
+      width: 291px;
+      height: 201px;
+      margin-top: 40px;
+    }
+
+    .head-container {
+      margin-top: 40px;
+
+      .head-video {
+        width: 290px;
+        height: 201px;
+        margin-left: 18px;
+      }
+    }
+
+    .workers {
+      width: 248px;
+      height: 2257px;
+      margin-top: 50px;
+
+      padding-left: 47px;
+
+      .worker {
+
+        .photo {
+          width: 114px;
+          height: 143px;
+        }
+
+        .name {
+          font-size: 10px;
+          line-height: 10px;
+          padding-top: 5px;
+        }
+
+        .occupation {
+          font-size: 10px;
+          line-height: 13px;
+        }
+      }
+    }
+
+    #previously {height: 1429px;}
+
+    #previously-txt {
+      padding-left: 47px;
+      margin-top: 50px;
+    }
+
+    #resizeable {width: 290px;}
+  }
+
+  .cards-wrapper {
+    width: 290px;
+    padding-left: 18px;
+  }
+
+  .cards-container {
+
+    #community {margin-top: 30px;}
+
+    #works {margin-top: 30px;}
+
+    #philosophy,
+    #project {margin-top: 50px;}
+
+    #sertificate {margin-top: 30px;}
+
+    #culture {
+      margin-top: 30px;
+      right: 0;
+    }
+
+    .card {
+      width: 290px;
+      margin-top: 30px;
+
+      .card-picture {
+        width: 290px;
+        margin-top: 20px;
+      }
+
+      #philosophy-picture {height: 457px;}
+
+      #community-picture {height: 154.03px;}
+
+      #environment-picture {height: 172.65px;}
+
+      #harmony-picture {height: 362.78px;}
+
+      #project-picture {height: 197.47px;}
+
+      #sertificate-picture {height: 433.9px;}
+
+      #culture-picture {height: 153.63px;}
+
+      #works-picture {height: 239.17px;}
+    }
+  }
+
+  .col-1 {
+    position: relative;
+    height: auto;
+    left: 0;
+  }
+
+  .col-2 {
+    position: relative;
+    height: auto;
+    right: 0;
+    margin-top: 0;
+  }
+
+  #col-1-comp {
+    height: auto;
+    width: 290px;
+  }
+}

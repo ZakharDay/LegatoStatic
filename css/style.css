@@ -1,3 +1,7 @@
 @import 'reset.css';
-@import 'teaser.css';
-@import 'txt-carousel.css';
+
+@import 'index.css';
+@import 'main.css';
+@import 'additional.css';
+@import 'menubar.css';
+@import 'footer.css';

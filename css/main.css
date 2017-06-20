@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Basis Regular';
+  src: url(../fonts/basis-regular.otf) format("opentype"); }
+@font-face {
+  font-family: 'Basis Off White';
+  src: url(../fonts/basis-offwhite.otf) format("opentype"); }
+@font-face {
+  font-family: 'Basis Bold';
+  src: url(../fonts/basis-bold.otf) format("opentype"); }
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url(../fonts/proxima-light.otf) format("opentype"); }
+
+/*# sourceMappingURL=main.css.map */
