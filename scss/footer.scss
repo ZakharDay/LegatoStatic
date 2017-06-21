@@ -77,7 +77,7 @@
   }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 768px) {
   #footer-process {
     margin-top: 3890px;
   }
@@ -87,14 +87,12 @@
   }
 }
 
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 400px) {
   #footer-process,
   #footer-comp {
     margin-top: 50px;
   }
 }
-
-@media only screen and (max-width: 715px) {
   .footer {
     margin-top: 50px;
 
@@ -137,4 +135,3 @@
       }
     }
   }
-}

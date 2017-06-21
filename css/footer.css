@@ -54,42 +54,41 @@
       width: 400px;
       height: 66px; }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 768px) {
   #footer-process {
     margin-top: 3890px; }
 
   #footer-comp {
     margin-top: 3727px; } }
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 400px) {
   #footer-process,
   #footer-comp {
     margin-top: 50px; } }
-@media only screen and (max-width: 715px) {
-  .footer {
+.footer {
+  margin-top: 50px; }
+  .footer a, .footer #phone {
+    font-size: 15px; }
+  .footer .row-1 {
+    display: auto;
+    width: 295px;
+    height: 162px;
+    padding: 0 12px; }
+    .footer .row-1 .copy-soc {
+      height: 43px;
+      margin-top: 120px; }
+      .footer .row-1 .copy-soc .copyright {
+        font-size: 13px;
+        line-height: 17px; }
+      .footer .row-1 .copy-soc .soc {
+        width: 151px; }
+    .footer .row-1 .footer-figure {
+      position: absolute;
+      right: 12px; }
+  .footer .row-2 {
     margin-top: 50px; }
-    .footer a, .footer #phone {
-      font-size: 15px; }
-    .footer .row-1 {
-      display: auto;
-      width: 295px;
-      height: 162px;
-      padding: 0 12px; }
-      .footer .row-1 .copy-soc {
-        height: 43px;
-        margin-top: 120px; }
-        .footer .row-1 .copy-soc .copyright {
-          font-size: 13px;
-          line-height: 17px; }
-        .footer .row-1 .copy-soc .soc {
-          width: 151px; }
-      .footer .row-1 .footer-figure {
-        position: absolute;
-        right: 12px; }
-    .footer .row-2 {
-      margin-top: 50px; }
-      .footer .row-2 .contacts {
-        flex-direction: column;
-        width: 100%;
-        padding-right: 12px; } }
+    .footer .row-2 .contacts {
+      flex-direction: column;
+      width: 100%;
+      padding-right: 12px; }
 
 /*# sourceMappingURL=footer.css.map */

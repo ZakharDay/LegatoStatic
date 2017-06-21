@@ -226,7 +226,7 @@
       height: 586.52px; }
     .cards-container .card #works-picture {
       height: 322.47; } }
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 768px) {
   .content-wrapper {
     width: 714px; }
     .content-wrapper .intro-text {
@@ -298,7 +298,7 @@
   #col-1-comp {
     height: 3575px;
     width: 564px; } }
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 400px) {
   .content-wrapper {
     width: 295px;
     margin-top: 135px; }
