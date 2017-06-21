@@ -1,7 +1,8 @@
 .entries {
-  margin-top: 250px;
+  // padding-top: 1056px;
   display: block;
-  height: 7043px;
+  height: 7403px;
+  position: relative;
 
   .entry {
     display: inline-block;
@@ -20,6 +21,7 @@
       height: 50px;
       width: 430px;
       opacity: .25;
+      filter: grayscale(100%);
     }
 
     .entry_txt {
@@ -59,6 +61,7 @@
   #image_1 {
     width: 430px;
     height: 721px;
+    background-image: url(../img/main/pic-1.png);
   }
 }
 
@@ -69,6 +72,7 @@
   #image_2 {
     width: 546px;
     height: 387px;
+    background-image: url(../img/main/pic-2.png);
   }
 }
 
@@ -79,6 +83,7 @@
   #image_3 {
     width: 549px;
     height: 389px;
+    background-image: url(../img/main/pic-3.png);
   }
 }
 
@@ -89,6 +94,7 @@
   #image_4 {
     width: 300px;
     height: 504px;
+    background-image: url(../img/main/pic-4.png);
   }
 }
 
@@ -99,6 +105,7 @@
   #image_5 {
     width: 348px;
     height: 668px;
+    background-image: url(../img/main/pic-5.png);
   }
 }
 
@@ -108,6 +115,7 @@
   #image_6 {
     width: 522px;
     height: 370px;
+    background-image: url(../img/main/pic-6.png);
   }
 
   .entry_txt {
@@ -126,6 +134,7 @@
   #image_7 {
     width: 431px;
     height: 694px;
+    background-image: url(../img/main/pic-7.png);
   }
 }
 
@@ -136,6 +145,7 @@
   #image_8 {
     width: 491px;
     height: 348px;
+    background-image: url(../img/main/pic-8.png);
   }
 }
 
@@ -146,6 +156,7 @@
   #image_9 {
     width: 469px;
     height: 333px;
+    background-image: url(../img/main/pic-9.png);
   }
 }
 
@@ -156,6 +167,7 @@
   #image_10 {
     width: 301px;
     height: 507px;
+    background-image: url(../img/main/pic-10.png);
   }
 }
 
@@ -166,6 +178,7 @@
   #image_11 {
     width: 339px;
     height: 568px;
+    background-image: url(../img/main/pic-11.png);
   }
 }
 
@@ -176,6 +189,7 @@
   #image_12 {
     width: 594px;
     height: 483px;
+    background-image: url(../img/main/pic-12.png);
   }
 }
 
@@ -186,13 +200,14 @@
   #image_13 {
     width: 729px;
     height: 600px;
+    background-image: url(../img/main/pic-13.png);
   }
 }
 
 @media only screen and (max-width: 1140px) {
 
 .entries {
-  height: 4925px;
+  height: 5175px;
 
   .entry {
 
@@ -344,7 +359,7 @@
 @media only screen and (max-width: 768px) {
 
   .entries {
-    height: 9073px;
+    height: 9373px;
 
     .entry {
 
@@ -495,10 +510,10 @@
 
 }
 
-@media only screen and (max-width: 324px) {
+@media only screen and (max-width: 521px) {
 
   .entries {
-    height: 5816px;
+    height: 6004px;
 
     .entry {
 

@@ -34,8 +34,8 @@
     margin-left: 150px; }
     .content-wrapper .navigation a {
       font-family: 'Proxima Nova Light';
-      font-size: 19px;
-      line-height: 23px;
+      font-size: 17px;
+      line-height: 19px;
       padding-top: 10px;
       color: black;
       text-decoration: none; }
@@ -77,7 +77,7 @@
     margin-top: 100px; }
     .content-wrapper .workers:after {
       content: "";
-      flex: auto; }
+      width: 425px; }
     .content-wrapper .workers .worker {
       display: block; }
       .content-wrapper .workers .worker .photo {
@@ -125,26 +125,34 @@
     width: 514px;
     margin-top: 150px; }
     .cards-container .card .card-picture {
-      border: 1px solid lightgrey;
       background-size: cover;
       width: 514px;
-      margin-top: 30px; }
+      margin-top: 30px;
+      filter: grayscale(100%); }
     .cards-container .card #philosophy-picture {
-      height: 810px; }
+      height: 810px;
+      background-image: url(../img/main/pic-1.png); }
     .cards-container .card #community-picture {
-      height: 273px; }
+      height: 273px;
+      background-image: url(../img/main/pic-9.png); }
     .cards-container .card #environment-picture {
-      height: 643px; }
+      height: 643px;
+      background-image: url(../img/main/pic-11.png); }
     .cards-container .card #harmony-picture {
-      height: 306px; }
+      height: 306px;
+      background-image: url(../img/main/pic-12.png); }
     .cards-container .card #project-picture {
-      height: 350px; }
+      height: 350px;
+      background-image: url(../img/main/pic-2.png); }
     .cards-container .card #sertificate-picture {
-      height: 273px; }
+      height: 273px;
+      background-image: url(../img/main/pic-8.png); }
     .cards-container .card #culture-picture {
-      height: 425px; }
+      height: 425px;
+      background-image: url(../img/main/pic-14.png); }
     .cards-container .card #works-picture {
-      height: 773px; }
+      height: 773px;
+      background-image: url(../img/main/pic-4.png); }
 
 @media only screen and (max-width: 1280px) {
   .content-wrapper {
@@ -164,7 +172,7 @@
   .cards-wrapper {
     width: 1091px;
     padding-left: 74px; } }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .content-wrapper {
     width: 994px; }
     .content-wrapper .intro-text {
@@ -207,7 +215,7 @@
     .cards-container .card #community-picture {
       height: 207.14px; }
     .cards-container .card #environment-picture {
-      height: 232.18px; }
+      height: 487.88px; }
     .cards-container .card #harmony-picture {
       height: 487.88px; }
     .cards-container .card #project-picture {
@@ -218,7 +226,7 @@
       height: 586.52px; }
     .cards-container .card #works-picture {
       height: 322.47; } }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
   .content-wrapper {
     width: 714px; }
     .content-wrapper .intro-text {
@@ -253,10 +261,10 @@
       .content-wrapper .workers .worker .occupation {
         font-size: 13px;
         line-height: 19px; }
+    .content-wrapper .navigation {
+      display: none; }
     .content-wrapper #previously {
       height: 1008px; }
-    .content-wrapper #resizeable {
-      width: 320px; }
 
   .cards-wrapper {
     width: 564px; }
@@ -279,18 +287,18 @@
 
   .col-1 {
     position: absolute;
-    height: 2464px;
+    height: 2716px;
     left: 102px; }
 
   .col-2 {
     position: absolute;
-    height: 3488px;
+    height: 3738px;
     right: 102px; }
 
   #col-1-comp {
     height: 3575px;
     width: 564px; } }
-@media only screen and (max-width: 324px) {
+@media only screen and (max-width: 715px) {
   .content-wrapper {
     width: 295px;
     margin-top: 135px; }
@@ -380,7 +388,7 @@
     .cards-container .card #culture-picture {
       height: 153.63px; }
     .cards-container .card #works-picture {
-      height: 239.17px; }
+      height: 436.13px; }
 
   .col-1 {
     position: relative;

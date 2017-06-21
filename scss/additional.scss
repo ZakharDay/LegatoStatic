@@ -46,8 +46,8 @@
 
     a {
       font-family: 'Proxima Nova Light';
-      font-size: 19px;
-      line-height: 23px;
+      font-size: 17px;
+      line-height: 19px;
       padding-top: 10px;
       color: black;
       text-decoration: none;
@@ -105,7 +105,7 @@
 
     &:after {
       content: "";
-      flex: auto;
+      width: 425px;
     }
 
     .worker {
@@ -175,27 +175,53 @@
 
 
     .card-picture {
-      border: 1px solid lightgrey;
+      // border: 1px solid lightgrey;
       background-size: cover;
       width: 514px;
       margin-top: 30px;
+      filter: grayscale(100%);
     }
 
-    #philosophy-picture {height: 810px;}
+    #philosophy-picture {
+      height: 810px;
+      background-image: url(../img/main/pic-1.png);
+  }
 
-    #community-picture {height: 273px;}
 
-    #environment-picture {height: 643px;}
+    #community-picture {
+      height: 273px;
+      background-image: url(../img/main/pic-9.png);
+    }
 
-    #harmony-picture {height: 306px;}
+    #environment-picture {
+      height: 643px;
+      background-image: url(../img/main/pic-11.png);
+    }
 
-    #project-picture {height: 350px;}
+    #harmony-picture {
+      height: 306px;
+      background-image: url(../img/main/pic-12.png);
+    }
 
-    #sertificate-picture {height: 273px;}
+    #project-picture {
+      height: 350px;
+      background-image: url(../img/main/pic-2.png);
+    }
 
-    #culture-picture {height: 425px;}
+    #sertificate-picture {
+      height: 273px;
+      background-image: url(../img/main/pic-8.png);
+    }
 
-    #works-picture {height: 773px;}
+    #culture-picture {
+      height: 425px;
+      background-image: url(../img/main/pic-14.png);
+    }
+
+    #works-picture {
+      height: 773px;
+      background-image: url(../img/main/pic-4.png);
+    }
   }
 }
 
@@ -234,7 +260,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
 
   .content-wrapper {
     width: 994px;
@@ -300,7 +326,7 @@
 
       #community-picture {height: 207.14px;}
 
-      #environment-picture {height: 232.18px;}
+      #environment-picture {height: 487.88px;}
 
       #harmony-picture {height: 487.88px;}
 
@@ -315,7 +341,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
 
   .content-wrapper {
     width: 714px;
@@ -378,8 +404,12 @@
       }
     }
 
+    .navigation {
+      display: none;
+    }
+
     #previously {height: 1008px;}
-    #resizeable {width: 320px;}
+    // #resizeable {width: 320px;}
   }
 
   .cards-wrapper {
@@ -410,13 +440,13 @@
 
   .col-1 {
     position: absolute;
-    height: 2464px;
+    height: 2716px;
     left: 102px;
   }
 
   .col-2 {
     position: absolute;
-    height: 3488px;
+    height: 3738px;
     right: 102px;
   }
 
@@ -426,7 +456,7 @@
   }
 }
 
-@media only screen and (max-width: 324px) {
+@media only screen and (max-width: 715px) {
 
   .content-wrapper {
     width: 295px;
@@ -556,7 +586,7 @@
 
       #culture-picture {height: 153.63px;}
 
-      #works-picture {height: 239.17px;}
+      #works-picture {height: 436.13px;}
     }
   }
 

@@ -1,7 +1,7 @@
 .entries {
-  margin-top: 250px;
   display: block;
-  height: 7043px; }
+  height: 7403px;
+  position: relative; }
   .entries .entry {
     display: inline-block;
     position: absolute; }
@@ -13,7 +13,8 @@
       background-color: black;
       height: 50px;
       width: 430px;
-      opacity: .25; }
+      opacity: .25;
+      filter: grayscale(100%); }
     .entries .entry .entry_txt {
       font-family: 'Proxima Nova Light';
       font-size: 15px;
@@ -40,41 +41,47 @@
   right: 30px; }
   #block_1 #image_1 {
     width: 430px;
-    height: 721px; }
+    height: 721px;
+    background-image: url(../img/main/pic-1.png); }
 
 #block_2 {
   top: 586px;
   left: 30px; }
   #block_2 #image_2 {
     width: 546px;
-    height: 387px; }
+    height: 387px;
+    background-image: url(../img/main/pic-2.png); }
 
 #block_3 {
   top: 1290px;
   left: 408px; }
   #block_3 #image_3 {
     width: 549px;
-    height: 389px; }
+    height: 389px;
+    background-image: url(../img/main/pic-3.png); }
 
 #block_4 {
   top: 1619px;
   left: 168px; }
   #block_4 #image_4 {
     width: 300px;
-    height: 504px; }
+    height: 504px;
+    background-image: url(../img/main/pic-4.png); }
 
 #block_5 {
   top: 2028px;
   right: 180px; }
   #block_5 #image_5 {
     width: 348px;
-    height: 668px; }
+    height: 668px;
+    background-image: url(../img/main/pic-5.png); }
 
 #block_6 {
   top: 2744px; }
   #block_6 #image_6 {
     width: 522px;
-    height: 370px; }
+    height: 370px;
+    background-image: url(../img/main/pic-6.png); }
   #block_6 .entry_txt {
     margin-left: 30px; }
   #block_6 .entry_link {
@@ -85,53 +92,60 @@
   right: 150px; }
   #block_7 #image_7 {
     width: 431px;
-    height: 694px; }
+    height: 694px;
+    background-image: url(../img/main/pic-7.png); }
 
 #block_8 {
   top: 3730px;
   right: 521px; }
   #block_8 #image_8 {
     width: 491px;
-    height: 348px; }
+    height: 348px;
+    background-image: url(../img/main/pic-8.png); }
 
 #block_9 {
   top: 4357px;
   right: 76px; }
   #block_9 #image_9 {
     width: 469px;
-    height: 333px; }
+    height: 333px;
+    background-image: url(../img/main/pic-9.png); }
 
 #block_10 {
   top: 4722px;
   left: 54px; }
   #block_10 #image_10 {
     width: 301px;
-    height: 507px; }
+    height: 507px;
+    background-image: url(../img/main/pic-10.png); }
 
 #block_11 {
   top: 5182px;
   left: 303px; }
   #block_11 #image_11 {
     width: 339px;
-    height: 568px; }
+    height: 568px;
+    background-image: url(../img/main/pic-11.png); }
 
 #block_12 {
   top: 5880px;
   right: 30px; }
   #block_12 #image_12 {
     width: 594px;
-    height: 483px; }
+    height: 483px;
+    background-image: url(../img/main/pic-12.png); }
 
 #block_13 {
   top: 6614px;
   left: 153px; }
   #block_13 #image_13 {
     width: 729px;
-    height: 600px; }
+    height: 600px;
+    background-image: url(../img/main/pic-13.png); }
 
 @media only screen and (max-width: 1140px) {
   .entries {
-    height: 4925px; }
+    height: 5175px; }
     .entries .entry .entry_txt {
       font-size: 13px;
       line-height: 17px;
@@ -231,7 +245,7 @@
       height: 344px; } }
 @media only screen and (max-width: 768px) {
   .entries {
-    height: 9073px; }
+    height: 9373px; }
     .entries .entry figure,
     .entries .entry .entry_txt,
     .entries .entry .entry_link {
@@ -332,9 +346,9 @@
     #block_13 #image_13 {
       width: 655px;
       height: 465px; } }
-@media only screen and (max-width: 324px) {
+@media only screen and (max-width: 521px) {
   .entries {
-    height: 5816px; }
+    height: 6004px; }
     .entries .entry .entry_txt {
       font-size: 13px;
       line-height: 17px;

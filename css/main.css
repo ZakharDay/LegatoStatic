@@ -5,6 +5,9 @@
   font-family: 'Basis Off White';
   src: url(../fonts/basis-offwhite.otf) format("opentype"); }
 @font-face {
+  font-family: 'Basis Medium';
+  src: url(../fonts/basis-medium.otf) format("opentype"); }
+@font-face {
   font-family: 'Basis Bold';
   src: url(../fonts/basis-bold.otf) format("opentype"); }
 @font-face {
