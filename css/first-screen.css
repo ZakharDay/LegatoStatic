@@ -136,38 +136,38 @@ video {
   display: block; }
 
 @media (max-width: 1140px) {
+  .phrases-centerizer .phrases-wrapper {
+    width: 797px;
+    left: 53px;
+    margin-top: -190px; }
+
   .socialWrapper .socialContainer {
-    width: 800px; }
-
-  .i2 {
-    margin-bottom: 155px;
-    right: 93px; }
-
-  .i3 {
-    margin-bottom: 60px; } }
-@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .socialWrapper {
-    bottom: 80px; } }
-@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .socialWrapper {
-    bottom: 90px; }
-    .socialWrapper .socialContainer {
-      width: 570px; } }
-@media (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .socialWrapper {
-    bottom: 90px; }
-    .socialWrapper .socialContainer {
-      width: 280px; }
-      .socialWrapper .socialContainer a {
-        margin-right: 10px; } }
-@media (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .socialWrapper {
-    bottom: 90px; }
-    .socialWrapper .socialContainer {
-      width: 280px; }
-      .socialWrapper .socialContainer a {
-        margin-right: 10px; } }
+    color: white;
+    margin-left: 53px;
+    width: 570px;
+    margin-bottom: 90px; }
+    .socialWrapper .socialContainer .additional-info {
+      margin-left: 0;
+      margin-top: 20px; }
+    .socialWrapper .socialContainer a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Basis Medium';
+      font-size: 12px; } }
 @media (max-width: 660px) {
+  .socialWrapper .socialContainer {
+    margin-left: 34px;
+    width: 490px;
+    font-size: 10px; }
+    .socialWrapper .socialContainer .additional-info {
+      width: 227px;
+      flex-wrap: wrap; }
+      .socialWrapper .socialContainer .additional-info #pres {
+        padding-left: 0;
+        top: 20px; }
+    .socialWrapper .socialContainer a {
+      font-size: 10px; }
+
   .header-logo {
     width: 174px;
     height: 46px;
@@ -187,20 +187,20 @@ video {
 
   .i1 {
     width: 20px;
-    height: 10px;
-    top: 62px;
-    margin-right: 21px; }
+    height: 20px;
+    top: 92px;
+    margin-right: 101px; }
 
   .i2 {
-    width: 32px;
+    width: 42px;
     height: 29px;
     margin-bottom: 155px;
     right: 24px; }
 
   .i3 {
     width: 20px;
-    height: 27px;
-    margin-bottom: 50px;
+    height: 37px;
+    margin-bottom: 180px;
     left: 19px; } }
 
 /*# sourceMappingURL=first-screen.css.map */
