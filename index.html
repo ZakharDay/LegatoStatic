@@ -12,6 +12,7 @@
     <script src="js/social-likes.min.js" charset="utf-8"></script>
     <script src="js/menubar.js" charset="utf-8"></script>
     <script src="js/anchor.js" charset="utf-8"></script>
+    <script src="js/first-page.js" charset="utf-8"></script>
 
     <script type="text/javascript">
       $(function() {
@@ -61,10 +62,6 @@
   </head>
   <body>
     <div class="first-page-wrapper">
-      <!-- <div class="header-logo">
-        <div class="logo-full"></div>
-        <p>SPORTS <br> ARCHITECTURE</p>
-      </div> -->
 
       <div class="phrases-centerizer">
         <div class="phrases-wrapper">
@@ -83,7 +80,7 @@
           </div>
         </div>
 
-        <div class="socialWrapper">
+        <div class="socialWrapper" id="faded">
           <div class="socialContainer">
             <a class="instagram" href="http://instagram.com/legatomoscow" target="_blank">Instagram</a>
             <a class="facebook" href="https://www.facebook.com/legatomoscow" target="_blank">Facebook</a>
@@ -93,6 +90,12 @@
               <div class="facebookShare" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
               <div class="vkShare" title="Поделиться ссылкой во Вконтакте">Vkontakte</div>
               <div class="twitterShare" title="Поделиться ссылкой в Твиттере">Twitter</div>
+            </div>
+
+            <div class="additional-info">
+              <p>hi@legatomoscow.com</p>
+              <p>+7 (999) 123-45-67</p>
+              <a href="assets/presentation.pdf">Скачать презентацию</a>
             </div>
           </div>
         </div>
@@ -104,26 +107,28 @@
 
       <section>
         <video autoplay playsinline muted loop poster="img/video.jpg">
-          <source src="http://zakharday.github.io/legato/videos/video.m4v"  type="video/mp4">
+          <source src="videos/video.m4v"  type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </section>
     </div>
 
     <div class="menubar menu-main">
-      <a href="index.html"> <div class="logo"></div></a>
-      <div class="main-options">
-        <a href="people.html">Люди</a>
-        <a href="competitions.html">Компетенции</a>
-        <a href="process.html">Процесс</a>
-      </div>
-      <div class="contact">
-        <a href="#footer">Контакты</a>
-      </div>
-        <figure class="mobile-nav">
-          <nav class="hamburger"><div></div></nav>
-          <nav class="close"></nav>
-        </figure>
+      <div class="background-wrapper">
+        <a href="index.html" id="logo"> <div class="logo"></div></a>
+        <div class="main-options">
+          <a href="people.html">Люди</a>
+          <a href="competitions.html">Компетенции</a>
+          <a href="process.html">Процесс</a>
+        </div>
+        <div class="contact">
+          <a href="#footer">Контакты</a>
+        </div>
+          <figure class="mobile-nav">
+            <nav class="hamburger"><div></div></nav>
+            <nav class="close"></nav>
+          </figure>
+        </div>
       </div>
 
     <div class="fade" id="main"></div>
@@ -218,25 +223,50 @@
     </div>
 
     <div class="footer" id="footer">
-      <div class="row-1">
-        <div class="copy-soc">
-          <p class="copyright">Legato © No limit to experimentation</p>
-          <div class="soc">
-            <a href="http://facebook.com/legatomoscow">Facebook</a>
-            <a href="http://instagram.com/legatomoscow">Instagram</a>
+
+      <div class="phrases-centerizer">
+        <div class="phrases-wrapper">
+          <div class="phrases-container">
+            <div class="phrase">
+              We are <div class="logo-phrase"></div>
+            </div>
+
+            <div class="phrase">We are professionals</div>
+            <div class="phrase">We build things</div>
+            <div class="phrase">We build future</div>
+            <div class="phrase">Follow us</div>
+            <div class="phrase">Stay tuned</div>
+            <div class="phrase">June 2017</div>
+            <div class="phrase">Coming soon</div>
           </div>
         </div>
 
-        <figure class="footer-figure"></figure>
+        <div class="socialWrapper">
+          <div class="socialContainer">
+            <a class="instagram" href="http://instagram.com/legatomoscow" target="_blank">Instagram</a>
+            <a class="facebook" href="https://www.facebook.com/legatomoscow" target="_blank">Facebook</a>
+            <a class="email" href="mailto:legatomoscow@gmail.com">Contact</a>
+
+            <div class="social-likes social-likes_single" data-counters="no" data-single-title="Share" data-url="http://legatomoscow.ru">
+              <div class="facebookShare" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+              <div class="vkShare" title="Поделиться ссылкой во Вконтакте">Vkontakte</div>
+              <div class="twitterShare" title="Поделиться ссылкой в Твиттере">Twitter</div>
+            </div>
+
+            <div class="additional-info">
+              <p>hi@legatomoscow.com</p>
+              <p>+7 (999) 123-45-67</p>
+              <a href="assets/presentation.pdf" id="pres">Скачать презентацию</a>
+            </div>
+          </div>
+        </div>
+        <figure class="fig i1"></figure>
+        <figure class="fig i2"></figure>
+        <figure class="fig i3"></figure>
+
       </div>
 
-      <div class="row-2">
-        <div class="contacts">
-          <a href="mailto:hello@legatomoscow.com">hello@legatomoscow.com</a>
-          <p id="phone">+7 (999) 111-22-33</p>
-          <a href="assets/presentation.pdf">Скачать презентацию</a>
-        </div>
-      </div>
+    </div>
 
   </body>
 </html>

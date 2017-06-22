@@ -9,6 +9,11 @@
   top: 0;
   z-index: 400;
 
+  #logo {
+    height: 35px;
+    margin-top: 10px;
+  }
+
   .logo {
     display: block;
     margin-left: 40px;
@@ -56,13 +61,17 @@
   .contact {
     position: absolute;
     right: 40px;
+    /* margin-top: 17px; */
+    height: 50px;
+    align-items: center;
+    display: flex;
   }
 }
 
 .hamburger {
   display: none;
   width: 16px;
-  top: 13px;
+  top: 25px;
   position: absolute;
   // cursor: pointer;
 }
@@ -87,7 +96,7 @@
 .close {
   display: none;
   position: absolute;
-  top: 3px;
+  top:18px;
   right: 8px;
   width: 16px;
   height: 15px;
@@ -123,38 +132,60 @@
 
 .mobile-nav {
   position: absolute;
-  height: 20px;
+  height: 50px;
   width: 16px;
-  // top: 50px;
   right: 40px;
   cursor: pointer;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+
+.background-wrapper {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0);
+  margin-top: 10px;
+
+  &:hover {
+    background: rgba(255, 255, 255, .8);
+  }
 }
 
 .menu-main {
   background-color: transparent;
-  position: absolute;
+  // position: absolute;
 
-  .logo {
-    background-image: url(../img/logo_white.svg);
-  }
+  .background-wrapper {
+    background: rgba(255, 255, 255, 0);
 
-  a {
-    color: white;
-
-    &:visited {
-      color: white;
+    &:hover {
+      background: rgba(255, 255, 255, 0);
     }
-  }
 
-  .hamburger div,
-  .hamburger div:before,
-  .hamburger div:after {
-    background: white;
-  }
+    .logo {
+      background-image: url(../img/logo_white.svg);
+    }
 
-  .close:after,
-  .close:before {
-    background: white;
+    a {
+      color: white;
+
+      &:visited {
+        color: white;
+      }
+    }
+
+    .hamburger div,
+    .hamburger div:before,
+    .hamburger div:after {
+      background: white;
+    }
+
+    .close:after,
+    .close:before {
+      background: white;
+    }
   }
 }
 
@@ -187,7 +218,7 @@
       right: 12px;
       padding-right: 0px;
       width: 92px;
-      margin-top: 160px;
+      margin-top: 200px;
       margin-left: 550px;
 
       a {

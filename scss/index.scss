@@ -12,6 +12,11 @@
     &:hover > .entry_link,
     &:hover > figure {
       opacity: 1;
+      transition: all 0.6s ease-in-out;
+
+    }
+
+    &:hover {
       z-index: 20;
     }
 
@@ -510,7 +515,7 @@
 
 }
 
-@media only screen and (max-width: 521px) {
+@media only screen and (max-width: 660px) {
 
   .entries {
     height: 6004px;
@@ -656,7 +661,7 @@
 
   #block_13 {
     top: 5754px;
-    left: 5px;
+    left: 34px;
 
     #image_13 {
       width: 263px;

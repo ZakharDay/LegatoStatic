@@ -6,6 +6,13 @@ video {
   object-fit: cover;
 }
 
+.additional-info {
+  display: inline-flex;
+  width: 425px;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
 .header-logo {
   display: flex;
   position: absolute;
@@ -40,13 +47,14 @@ video {
   position: absolute;
   bottom: 0;
   right: 0;
+  background-repeat: no-repeat;
 }
 
 .i1 {
-  top: 62px;
+  top: 132px;
   width: 29px;
   height: 15px;
-  margin-right: 81px;
+  margin-right: 120px;
   background-image: url(../img/fig1.svg);
 }
 
@@ -76,6 +84,7 @@ video {
 
   .socialContainer {
     display: flex;
+    flex-wrap: wrap;
     width: $largeContainerWidth;
     margin: 0 auto;
     font-family: 'Basis Medium';
@@ -165,7 +174,7 @@ video {
 
 
 
-@media (max-width: 1025px) {
+@media (max-width: 1140px) {
   .socialWrapper {
     .socialContainer {
       width: $smallContainerWidth;
@@ -189,11 +198,13 @@ video {
 }
 
 @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+
   .socialWrapper {
     bottom: 90px;
 
     .socialContainer {
-      width: $largeContainerWidth - 360px;
+      width: $largeContainerWidth - 230px;
     }
   }
 }
@@ -226,7 +237,7 @@ video {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 660px) {
   .header-logo {
     width: 174px;
     height: 46px;

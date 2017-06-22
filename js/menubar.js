@@ -35,21 +35,6 @@ $(function() {
 
 
 
-	$(document).on('scroll', function() {
-    var el = document.getElementsByClassName('first-page-wrapper')[0]
-		var elTop = el.getBoundingClientRect().top
-    var documentHeight = document.documentElement.clientHeight
-    if ((-elTop) > documentHeight) {
-      $('.menubar').removeClass('menu-main')
-      console.log ('go white')
-    }
 
-    if ((-elTop) < documentHeight) {
-      $('.menubar').addClass('menu-main')
-      console.log('go transparent')
-    }
-
-    // console.log('Scroll', elTop, documentHeight)
-	})
 
   })

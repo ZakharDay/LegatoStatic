@@ -64,7 +64,7 @@
 
 @media (max-width: 1024px) {
   .phrases-centerizer .phrases-wrapper {
-    width: 650px; }
+    width: 800px; }
     .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
       font-size: 65px; }
       .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {
@@ -74,7 +74,7 @@
         margin-left: 20px; } }
 @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .phrases-centerizer .phrases-wrapper {
-    width: 650px; }
+    width: 800px; }
     .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
       font-size: 65px; }
       .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {

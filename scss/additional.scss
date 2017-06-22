@@ -1,5 +1,5 @@
 * {
-  transition: all 0.15s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .content-wrapper {
@@ -341,7 +341,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
 
   .content-wrapper {
     width: 714px;
@@ -456,7 +456,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 660px) {
 
   .content-wrapper {
     width: 295px;

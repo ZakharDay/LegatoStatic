@@ -7,6 +7,9 @@
   background-color: transparent;
   top: 0;
   z-index: 400; }
+  .menubar #logo {
+    height: 35px;
+    margin-top: 10px; }
   .menubar .logo {
     display: block;
     margin-left: 40px;
@@ -35,12 +38,16 @@
     padding-left: 45px; }
   .menubar .contact {
     position: absolute;
-    right: 40px; }
+    right: 40px;
+    /* margin-top: 17px; */
+    height: 50px;
+    align-items: center;
+    display: flex; }
 
 .hamburger {
   display: none;
   width: 16px;
-  top: 13px;
+  top: 25px;
   position: absolute; }
 
 .hamburger div,
@@ -63,7 +70,7 @@
 .close {
   display: none;
   position: absolute;
-  top: 3px;
+  top: 18px;
   right: 8px;
   width: 16px;
   height: 15px; }
@@ -95,27 +102,42 @@
 
 .mobile-nav {
   position: absolute;
-  height: 20px;
+  height: 50px;
   width: 16px;
   right: 40px;
-  cursor: pointer; }
+  cursor: pointer;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-content: center; */ }
+
+.background-wrapper {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0);
+  margin-top: 10px; }
+  .background-wrapper:hover {
+    background: rgba(255, 255, 255, 0.8); }
 
 .menu-main {
-  background-color: transparent;
-  position: absolute; }
-  .menu-main .logo {
-    background-image: url(../img/logo_white.svg); }
-  .menu-main a {
-    color: white; }
-    .menu-main a:visited {
+  background-color: transparent; }
+  .menu-main .background-wrapper {
+    background: rgba(255, 255, 255, 0); }
+    .menu-main .background-wrapper:hover {
+      background: rgba(255, 255, 255, 0); }
+    .menu-main .background-wrapper .logo {
+      background-image: url(../img/logo_white.svg); }
+    .menu-main .background-wrapper a {
       color: white; }
-  .menu-main .hamburger div,
-  .menu-main .hamburger div:before,
-  .menu-main .hamburger div:after {
-    background: white; }
-  .menu-main .close:after,
-  .menu-main .close:before {
-    background: white; }
+      .menu-main .background-wrapper a:visited {
+        color: white; }
+    .menu-main .background-wrapper .hamburger div,
+    .menu-main .background-wrapper .hamburger div:before,
+    .menu-main .background-wrapper .hamburger div:after {
+      background: white; }
+    .menu-main .background-wrapper .close:after,
+    .menu-main .background-wrapper .close:before {
+      background: white; }
 
 @media only screen and (max-width: 608px) {
   .hamburger {
@@ -139,7 +161,7 @@
     right: 12px;
     padding-right: 0px;
     width: 92px;
-    margin-top: 160px;
+    margin-top: 200px;
     margin-left: 550px; }
     .menubar .contact a {
       width: 100%;
