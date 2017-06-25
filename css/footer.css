@@ -1,16 +1,16 @@
 .footer {
-  height: 477px;
-  width: 100%;
-  margin-top: 0; }
+  height: 100vh;
+  width: 100vw;
+  margin-top: -200px; }
   .footer .phrases-centerizer {
-    position: relative;
-    width: inherit;
-    height: inherit;
-    justify-content: flex-start; }
+    position: relative; }
     .footer .phrases-centerizer .phrases-wrapper {
-      width: 797px;
-      left: 153px;
-      margin-top: -190px; }
+      position: relative;
+      width: 800px;
+      height: 120px;
+      margin-top: -80px;
+      overflow: hidden;
+      z-index: 1; }
       .footer .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
         color: black; }
         .footer .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {
@@ -41,8 +41,7 @@
     height: 36px;
     margin-bottom: 89px; }
   .footer .socialWrapper .socialContainer {
-    color: black;
-    margin-left: 153px; }
+    color: black; }
     .footer .socialWrapper .socialContainer a {
       color: black;
       text-decoration: none;
@@ -53,10 +52,7 @@
 
 @media only screen and (max-width: 1140px) {
   .footer .phrases-centerizer {
-    position: relative;
-    width: inherit;
-    height: inherit;
-    justify-content: flex-start; }
+    position: relative; }
     .footer .phrases-centerizer .phrases-wrapper {
       width: 797px;
       left: 53px;
@@ -72,13 +68,10 @@
     left: 20px;
     width: 28px;
     height: 36px;
-    margin-bottom: 69px; }
-  .footer .socialWrapper .socialContainer {
-    margin-left: 53px; } }
+    margin-bottom: 69px; } }
 @media only screen and (max-width: 850px) {
   .footer .phrases-centerizer .phrases-wrapper {
-    width: 797px;
-    left: 53px;
+    width: 660px;
     margin-top: -190px; }
     .footer .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
       color: black; }
@@ -108,7 +101,6 @@
     margin-bottom: 89px; }
   .footer .socialWrapper .socialContainer {
     color: black;
-    margin-left: 53px;
     width: 570px; }
     .footer .socialWrapper .socialContainer .additional-info {
       margin-left: 0;
@@ -129,10 +121,9 @@
       position: relative;
       width: inherit;
       height: inherit;
-      justify-content: flex-start; }
+      justify-content: center; }
       .footer .phrases-centerizer .phrases-wrapper {
-        width: 797px;
-        left: 34px;
+        width: 320px;
         margin-top: -190px; }
         .footer .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
           color: black;
@@ -171,7 +162,7 @@
       margin-bottom: 145px; }
     .footer .socialWrapper .socialContainer {
       color: black;
-      margin-left: 34px;
+      margin-left: 163px;
       width: 490px;
       font-size: 10px; }
       .footer .socialWrapper .socialContainer .additional-info {

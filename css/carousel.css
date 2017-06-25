@@ -64,7 +64,7 @@
 
 @media (max-width: 1024px) {
   .phrases-centerizer .phrases-wrapper {
-    width: 800px; }
+    width: 660px; }
     .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
       font-size: 65px; }
       .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {
@@ -72,46 +72,6 @@
         width: 210px;
         height: 84px;
         margin-left: 20px; } }
-@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .phrases-centerizer .phrases-wrapper {
-    width: 800px; }
-    .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
-      font-size: 65px; }
-      .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {
-        top: 14px;
-        width: 210px;
-        height: 84px;
-        margin-left: 20px; } }
-@media (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .phrases-centerizer .phrases-wrapper {
-    width: 240px;
-    height: 60px; }
-    .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
-      height: 60px;
-      font-size: 26px;
-      line-height: 60px; }
-      .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {
-        top: 12px;
-        width: 97px;
-        height: 39px;
-        margin-left: 10px;
-        top: 20px; } }
-@media (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .phrases-centerizer .phrases-wrapper {
-    width: 240px;
-    height: 60px; }
-    .phrases-centerizer .phrases-wrapper .phrases-container {
-      left: 34px; }
-      .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
-        height: 60px;
-        font-size: 26px;
-        line-height: 60px; }
-        .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {
-          top: 12px;
-          width: 97px;
-          height: 39px;
-          margin-left: 10px;
-          top: 20px; } }
 @media screen and (max-width: 660px) {
   .phrases-centerizer {
     justify-content: flex-start; }
@@ -133,7 +93,7 @@
     .phrases-centerizer .phrases-wrapper {
       width: 797px;
       left: 34px;
-      margin-top: -190px; }
+      margin-top: -70px; }
       .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
         color: white;
         font-size: 25px; }
@@ -142,5 +102,38 @@
           height: 28px;
           margin-left: 10px;
           top: 40px; } }
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .phrases-centerizer .phrases-wrapper {
+    width: 800px; }
+    .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
+      font-size: 65px; }
+      .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {
+        top: 14px;
+        width: 210px;
+        height: 84px; } }
+@media (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
+    font-size: 26px;
+    line-height: 60px; }
+    .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {
+      top: 12px;
+      width: 97px;
+      height: 39px;
+      margin-left: 10px; } }
+@media (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .phrases-centerizer .phrases-wrapper {
+    width: 240px;
+    height: 60px; }
+    .phrases-centerizer .phrases-wrapper .phrases-container {
+      left: 34px; }
+      .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
+        height: 60px;
+        font-size: 26px;
+        line-height: 60px; }
+        .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {
+          top: 12px;
+          width: 97px;
+          height: 39px;
+          margin-left: 10px; } }
 
 /*# sourceMappingURL=carousel.css.map */
