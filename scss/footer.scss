@@ -54,27 +54,6 @@
     filter: invert(1);
   }
 
-  // .i1 {
-  //   top: 0;
-  //   width: 29px;
-  //   height: 15px;
-  //   margin-right: 120px;
-  // }
-  //
-  // .i2 {
-  //   right: 183px;
-  //   width: 52px;
-  //   height: 47px;
-  //   margin-bottom: 145px;
-  // }
-  //
-  // .i3 {
-  //   left: 70px;
-  //   width: 28px;
-  //   height: 36px;
-  //   margin-bottom: 89px;
-  // }
-
   .socialWrapper {
 
     .socialContainer {
@@ -97,6 +76,7 @@
 
 @media only screen and (max-width: 1140px) {
   .footer {
+    margin-top: -60px;
 
     .phrases-centerizer {
       position: relative;
@@ -111,28 +91,10 @@
       }
     }
 
-    // .i1 {
-    //   margin-right: 60px;
-    // }
-    //
-    // .i2 {
-    //   right: 183px;
-    //   width: 52px;
-    //   height: 47px;
-    //   margin-bottom: 145px;
-    // }
-    //
-    // .i3 {
-    //   left: 20px;
-    //   width: 28px;
-    //   height: 36px;
-    //   margin-bottom: 69px;
-    // }
-
     .socialWrapper {
 
       .socialContainer {
-        // margin-left: 53px;
+        width: 677px;
       }
     }
   }
@@ -144,8 +106,7 @@
     .phrases-centerizer {
 
       .phrases-wrapper {
-        width: 660px; //827px
-        // left: 53px;
+        width: 660px;
         margin-top: -190px;
 
         .phrases-container {
@@ -176,24 +137,6 @@
       position: absolute;
       filter: invert(1);
     }
-
-    // .i1 {
-    //   margin-right: 30px;
-    // }
-    //
-    // .i2 {
-    //   right: 183px;
-    //   width: 52px;
-    //   height: 47px;
-    //   margin-bottom: 145px;
-    // }
-    //
-    // .i3 {
-    //   left: 20px;
-    //   width: 28px;
-    //   height: 36px;
-    //   margin-bottom: 89px;
-    // }
 
     .socialWrapper {
 
@@ -232,7 +175,7 @@
       position: relative;
       width: inherit;
       height: inherit;
-      justify-content: center;
+      justify-content: flex-start;
 
       .phrases-wrapper {
         left: 14px;
@@ -245,6 +188,7 @@
             color: black;
             font-size: 25px;
             line-height: 35px;
+            left: 28px;
 
             .logo-phrase {
               background-image: url(../img/logo_black.svg);
@@ -275,36 +219,17 @@
       filter: invert(1);
     }
 
-    // .i1 {
-    //   top: 0;
-    //   width: 29px;
-    //   height: 15px;
-    //   margin-right: 120px;
-    // }
-    //
-    // .i2 {
-    //   right: 183px;
-    //   width: 52px;
-    //   height: 47px;
-    //   margin-bottom: 145px;
-    // }
-    //
-    // .i3 {
-    //   left: 20px;
-    //   width: 28px;
-    //   height: 36px;
-    //   margin-bottom: 145px;
-    // }
-
     .socialWrapper {
       bottom: 0;
 
       .socialContainer {
         color: black;
-        width: 265px;
-        font-size: 10px;
+
+        margin-left: 34px;
+        width: 280px;
         line-height: 20px;
-        margin-bottom: 50px;
+        font-size: 10px;
+        // margin-bottom: 40px;
 
         .additional-info {
           width: 224px;

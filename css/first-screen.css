@@ -143,7 +143,7 @@ video {
 
   .socialWrapper .socialContainer {
     color: white;
-    width: 670px; }
+    width: 552px; }
     .socialWrapper .socialContainer .additional-info {
       margin-left: 0;
       margin-top: 20px; }
@@ -155,7 +155,7 @@ video {
 @media (max-width: 660px) {
   .socialWrapper .socialContainer {
     margin-left: 34px;
-    width: 265px;
+    width: 280px;
     line-height: 20px;
     font-size: 10px;
     margin-bottom: 40px; }
