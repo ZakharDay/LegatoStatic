@@ -58,7 +58,6 @@
 
     .socialContainer {
       color: black;
-      // margin-left: 153px;
 
       a {
         color: black;
@@ -79,10 +78,6 @@
     margin-top: -60px;
 
     .phrases-centerizer {
-      position: relative;
-      // width: inherit;
-      // height: inherit;
-      // justify-content: center;
 
       .phrases-wrapper {
         width: 797px;
@@ -100,64 +95,31 @@
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1024px) {
   .footer {
 
     .phrases-centerizer {
 
       .phrases-wrapper {
         width: 660px;
-        margin-top: -190px;
-
-        .phrases-container {
-
-          .phrase {
-            color: black;
-
-            .logo-phrase {
-              background-image: url(../img/logo_black.svg);
-            }
-          }
-        }
       }
     }
+  }
+}
 
-    .logo-full {
-      width: 132px;
-      height: 53px;
-      background-image: url(../img/logo_black.svg);
-    }
 
-    p {
-      color: black;
-      font-family: 'Basis Medium';
-    }
+@media only screen and (max-width: 850px) {
+  .footer {
 
-    .fig {
-      position: absolute;
-      filter: invert(1);
-    }
+    .phrases-centerizer {
 
-    .socialWrapper {
+      .socialWrapper {
 
-      .socialContainer {
-        color: black;
-        // margin-left: 53px;
-        width: 570px;
+        .socialContainer {
 
-        .additional-info {
-          margin-left: 0;
-          margin-top: 20px;
-        }
-
-        a {
-          color: black;
-          text-decoration: none;
-          font-family: 'Basis Medium';
-          font-size: 12px;
-
-          &:visited {
-            color: black;
+          .additional-info {
+            margin-left: 0;
+            margin-top: 20px;
           }
         }
       }
@@ -185,13 +147,11 @@
         .phrases-container {
 
           .phrase-static {
-            color: black;
             font-size: 25px;
             line-height: 35px;
             left: 28px;
 
             .logo-phrase {
-              background-image: url(../img/logo_black.svg);
               width: 71px;
               height: 28px;
               margin-left: 10px;
@@ -200,59 +160,34 @@
           }
         }
       }
-    }
 
-    .logo-full {
-      width: 132px;
-      height: 53px;
-      background-image: url(../img/logo_black.svg);
-    }
+      .socialWrapper {
+        bottom: 0;
 
-    p {
-      color: black;
-      font-size: 10px;
-      font-family: 'Basis Medium';
-    }
-
-    .fig {
-      position: absolute;
-      filter: invert(1);
-    }
-
-    .socialWrapper {
-      bottom: 0;
-
-      .socialContainer {
-        color: black;
-
-        margin-left: 34px;
-        width: 280px;
-        line-height: 20px;
-        font-size: 10px;
-        // margin-bottom: 40px;
-
-        .additional-info {
-          width: 224px;
-          flex-wrap: wrap;
-          margin-top: 10px;
-
-          #pres {
-            padding-left: 0;
-            top: 10px;
-          }
-        }
-
-        a {
+        .socialContainer {
+          margin-left: 34px;
+          width: 280px;
+          line-height: 20px;
           font-size: 10px;
 
-          &:visited {
-            color: black;
+          .additional-info {
+            width: 224px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+
+            #pres {
+              padding-left: 0;
+              top: 10px;
+            }
+          }
+
+          a {
+            font-size: 10px;
           }
         }
       }
     }
   }
-
 }
 
 

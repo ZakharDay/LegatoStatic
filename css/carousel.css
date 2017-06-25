@@ -71,7 +71,9 @@
         top: 14px;
         width: 210px;
         height: 84px;
-        margin-left: 20px; } }
+        margin-left: 20px; }
+  .phrases-centerizer .socialWrapper .socialContainer {
+    width: 552px; } }
 @media screen and (max-width: 660px) {
   .phrases-centerizer {
     justify-content: flex-start; }

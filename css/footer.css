@@ -44,45 +44,19 @@
 @media only screen and (max-width: 1140px) {
   .footer {
     margin-top: -60px; }
-    .footer .phrases-centerizer {
-      position: relative; }
-      .footer .phrases-centerizer .phrases-wrapper {
-        width: 797px;
-        left: 53px;
-        margin-top: -190px; }
+    .footer .phrases-centerizer .phrases-wrapper {
+      width: 797px;
+      left: 53px;
+      margin-top: -190px; }
     .footer .socialWrapper .socialContainer {
       width: 677px; } }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1024px) {
   .footer .phrases-centerizer .phrases-wrapper {
-    width: 660px;
-    margin-top: -190px; }
-    .footer .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
-      color: black; }
-      .footer .phrases-centerizer .phrases-wrapper .phrases-container .phrase .logo-phrase {
-        background-image: url(../img/logo_black.svg); }
-  .footer .logo-full {
-    width: 132px;
-    height: 53px;
-    background-image: url(../img/logo_black.svg); }
-  .footer p {
-    color: black;
-    font-family: 'Basis Medium'; }
-  .footer .fig {
-    position: absolute;
-    filter: invert(1); }
-  .footer .socialWrapper .socialContainer {
-    color: black;
-    width: 570px; }
-    .footer .socialWrapper .socialContainer .additional-info {
-      margin-left: 0;
-      margin-top: 20px; }
-    .footer .socialWrapper .socialContainer a {
-      color: black;
-      text-decoration: none;
-      font-family: 'Basis Medium';
-      font-size: 12px; }
-      .footer .socialWrapper .socialContainer a:visited {
-        color: black; } }
+    width: 660px; } }
+@media only screen and (max-width: 850px) {
+  .footer .phrases-centerizer .socialWrapper .socialContainer .additional-info {
+    margin-left: 0;
+    margin-top: 20px; } }
 @media only screen and (max-width: 660px) {
   .footer {
     height: 477px;
@@ -98,46 +72,30 @@
         margin-top: 0px;
         width: 280px; }
         .footer .phrases-centerizer .phrases-wrapper .phrases-container .phrase-static {
-          color: black;
           font-size: 25px;
           line-height: 35px;
           left: 28px; }
           .footer .phrases-centerizer .phrases-wrapper .phrases-container .phrase-static .logo-phrase {
-            background-image: url(../img/logo_black.svg);
             width: 71px;
             height: 28px;
             margin-left: 10px;
             top: 40px; }
-    .footer .logo-full {
-      width: 132px;
-      height: 53px;
-      background-image: url(../img/logo_black.svg); }
-    .footer p {
-      color: black;
-      font-size: 10px;
-      font-family: 'Basis Medium'; }
-    .footer .fig {
-      position: absolute;
-      filter: invert(1); }
-    .footer .socialWrapper {
-      bottom: 0; }
-      .footer .socialWrapper .socialContainer {
-        color: black;
-        margin-left: 34px;
-        width: 280px;
-        line-height: 20px;
-        font-size: 10px; }
-        .footer .socialWrapper .socialContainer .additional-info {
-          width: 224px;
-          flex-wrap: wrap;
-          margin-top: 10px; }
-          .footer .socialWrapper .socialContainer .additional-info #pres {
-            padding-left: 0;
-            top: 10px; }
-        .footer .socialWrapper .socialContainer a {
+      .footer .phrases-centerizer .socialWrapper {
+        bottom: 0; }
+        .footer .phrases-centerizer .socialWrapper .socialContainer {
+          margin-left: 34px;
+          width: 280px;
+          line-height: 20px;
           font-size: 10px; }
-          .footer .socialWrapper .socialContainer a:visited {
-            color: black; } }
+          .footer .phrases-centerizer .socialWrapper .socialContainer .additional-info {
+            width: 224px;
+            flex-wrap: wrap;
+            margin-top: 10px; }
+            .footer .phrases-centerizer .socialWrapper .socialContainer .additional-info #pres {
+              padding-left: 0;
+              top: 10px; }
+          .footer .phrases-centerizer .socialWrapper .socialContainer a {
+            font-size: 10px; } }
 @media only screen and (max-width: 990px) {
   #footer-process {
     margin-top: 3890px; }
