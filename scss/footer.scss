@@ -11,14 +11,22 @@
     .phrases-wrapper {
       position: relative;
       width: 800px;
-      height: 120px;
+      height: 200px;
       margin-top: -80px;
       overflow: hidden;
       z-index: 1;
 
       .phrases-container {
 
-        .phrase {
+        .phrase-static {
+          position: relative;
+
+          display: flex;
+
+          line-height: 100px;
+          font-family: 'Basis Off White';
+          font-size: 85px;
+          white-space: nowrap;
           color: black;
 
           .logo-phrase {
@@ -28,6 +36,7 @@
       }
     }
   }
+
 
   .logo-full {
     width: 132px;
@@ -45,26 +54,26 @@
     filter: invert(1);
   }
 
-  .i1 {
-    top: 0;
-    width: 29px;
-    height: 15px;
-    margin-right: 120px;
-  }
-
-  .i2 {
-    right: 183px;
-    width: 52px;
-    height: 47px;
-    margin-bottom: 145px;
-  }
-
-  .i3 {
-    left: 70px;
-    width: 28px;
-    height: 36px;
-    margin-bottom: 89px;
-  }
+  // .i1 {
+  //   top: 0;
+  //   width: 29px;
+  //   height: 15px;
+  //   margin-right: 120px;
+  // }
+  //
+  // .i2 {
+  //   right: 183px;
+  //   width: 52px;
+  //   height: 47px;
+  //   margin-bottom: 145px;
+  // }
+  //
+  // .i3 {
+  //   left: 70px;
+  //   width: 28px;
+  //   height: 36px;
+  //   margin-bottom: 89px;
+  // }
 
   .socialWrapper {
 
@@ -102,23 +111,23 @@
       }
     }
 
-    .i1 {
-      margin-right: 60px;
-    }
-
-    .i2 {
-      right: 183px;
-      width: 52px;
-      height: 47px;
-      margin-bottom: 145px;
-    }
-
-    .i3 {
-      left: 20px;
-      width: 28px;
-      height: 36px;
-      margin-bottom: 69px;
-    }
+    // .i1 {
+    //   margin-right: 60px;
+    // }
+    //
+    // .i2 {
+    //   right: 183px;
+    //   width: 52px;
+    //   height: 47px;
+    //   margin-bottom: 145px;
+    // }
+    //
+    // .i3 {
+    //   left: 20px;
+    //   width: 28px;
+    //   height: 36px;
+    //   margin-bottom: 69px;
+    // }
 
     .socialWrapper {
 
@@ -168,23 +177,23 @@
       filter: invert(1);
     }
 
-    .i1 {
-      margin-right: 30px;
-    }
-
-    .i2 {
-      right: 183px;
-      width: 52px;
-      height: 47px;
-      margin-bottom: 145px;
-    }
-
-    .i3 {
-      left: 20px;
-      width: 28px;
-      height: 36px;
-      margin-bottom: 89px;
-    }
+    // .i1 {
+    //   margin-right: 30px;
+    // }
+    //
+    // .i2 {
+    //   right: 183px;
+    //   width: 52px;
+    //   height: 47px;
+    //   margin-bottom: 145px;
+    // }
+    //
+    // .i3 {
+    //   left: 20px;
+    //   width: 28px;
+    //   height: 36px;
+    //   margin-bottom: 89px;
+    // }
 
     .socialWrapper {
 
@@ -226,15 +235,16 @@
       justify-content: center;
 
       .phrases-wrapper {
-        width: 320px; //827px
-        // left: 34px;
-        margin-top: -190px;
+        left: 14px;
+        margin-top: 0px;
+        width: 280px;
 
         .phrases-container {
 
-          .phrase {
+          .phrase-static {
             color: black;
             font-size: 25px;
+            line-height: 35px;
 
             .logo-phrase {
               background-image: url(../img/logo_black.svg);
@@ -265,42 +275,45 @@
       filter: invert(1);
     }
 
-    .i1 {
-      top: 0;
-      width: 29px;
-      height: 15px;
-      margin-right: 120px;
-    }
-
-    .i2 {
-      right: 183px;
-      width: 52px;
-      height: 47px;
-      margin-bottom: 145px;
-    }
-
-    .i3 {
-      left: 20px;
-      width: 28px;
-      height: 36px;
-      margin-bottom: 145px;
-    }
+    // .i1 {
+    //   top: 0;
+    //   width: 29px;
+    //   height: 15px;
+    //   margin-right: 120px;
+    // }
+    //
+    // .i2 {
+    //   right: 183px;
+    //   width: 52px;
+    //   height: 47px;
+    //   margin-bottom: 145px;
+    // }
+    //
+    // .i3 {
+    //   left: 20px;
+    //   width: 28px;
+    //   height: 36px;
+    //   margin-bottom: 145px;
+    // }
 
     .socialWrapper {
+      bottom: 0;
 
       .socialContainer {
         color: black;
-        margin-left: 163px;
-        width: 490px;
+        width: 265px;
         font-size: 10px;
+        line-height: 20px;
+        margin-bottom: 50px;
 
         .additional-info {
-          width: 227px;
+          width: 224px;
           flex-wrap: wrap;
+          margin-top: 10px;
 
           #pres {
             padding-left: 0;
-            top: 20px;
+            top: 10px;
           }
         }
 

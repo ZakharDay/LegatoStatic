@@ -155,8 +155,10 @@ video {
 @media (max-width: 660px) {
   .socialWrapper .socialContainer {
     margin-left: 34px;
-    width: 490px;
-    font-size: 10px; }
+    width: 265px;
+    line-height: 20px;
+    font-size: 10px;
+    margin-bottom: 40px; }
     .socialWrapper .socialContainer .additional-info {
       width: 227px;
       flex-wrap: wrap; }
