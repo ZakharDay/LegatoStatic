@@ -78,7 +78,7 @@
   .phrases-centerizer {
     justify-content: flex-start; }
     .phrases-centerizer .phrases-wrapper {
-      width: 797px;
+      width: 450px;
       left: 34px;
       margin-top: -190px; }
       .phrases-centerizer .phrases-wrapper .phrases-container .phrase {
@@ -88,7 +88,9 @@
           width: 71px;
           height: 28px;
           margin-left: 10px;
-          top: 40px; } }
+          top: 40px; }
+    .phrases-centerizer .socialWrapper .socialContainer {
+      width: 450px; } }
 @media screen and (max-width: 480px) {
   .phrases-centerizer {
     justify-content: flex-start; }
@@ -103,7 +105,9 @@
           width: 71px;
           height: 28px;
           margin-left: 10px;
-          top: 40px; } }
+          top: 40px; }
+    .phrases-centerizer .socialWrapper .socialContainer {
+      width: 280px; } }
 @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .phrases-centerizer .phrases-wrapper {
     width: 800px; }

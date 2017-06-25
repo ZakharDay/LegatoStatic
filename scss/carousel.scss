@@ -97,7 +97,7 @@
     justify-content: flex-start;
 
     .phrases-wrapper {
-      width: 797px; //827px
+      width: 450px;
       left: 34px;
       margin-top: -190px;
 
@@ -114,6 +114,12 @@
             top: 40px;
           }
         }
+      }
+    }
+
+    .socialWrapper {
+      .socialContainer {
+        width: 450px;
       }
     }
   }
@@ -142,6 +148,12 @@
             top: 40px;
           }
         }
+      }
+    }
+
+    .socialWrapper {
+      .socialContainer {
+        width: 280px;
       }
     }
   }

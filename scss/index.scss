@@ -1,3 +1,7 @@
+* {
+  // overflow-x: hidden;
+}
+
 .entries {
   // padding-top: 1056px;
   display: block;
@@ -362,6 +366,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+  .transparent {
+    opacity: .25;
+  }
 
   .entries {
     height: 9373px;

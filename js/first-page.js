@@ -1,36 +1,35 @@
 
 $(function() {
+  // $(window).on('scroll', function() {
+  //   console.log('gogogo')
+  //
+  //   $('#faded').css('opacity','0');
+  //   $('.first-page-wrapper').toggleClass('transparent');
+  //   $('.menubar').toggleClass('menu-main');
+  // })
 
+  var firstScreen = $('.first-page-wrapper');
+  var range = 200;
 
-  $(document).on('scroll', function() {
+  $(window).on('scroll', function () {
 
-    $('#faded').css('opacity','0')
-    // $('#faded').css('display','none')
+    console.log('im being scrolled')
 
-    var el = document.getElementsByClassName('first-page-wrapper')[0]
-    var elTop = el.getBoundingClientRect().top
-    var documentHeight = document.documentElement.clientHeight
+    $('#faded').css('opacity','0');
 
-    if ((-elTop) > documentHeight) {
-      $('.menubar').removeClass('menu-main')
-      $('.first-page-wrapper').css('opacity','.25')
-      console.log ('go white')
+    var scrollTop = $(this).scrollTop(),
+        height = firstScreen.outerHeight(),
+        offset = height / 2,
+        calc = 1 - (scrollTop - offset + range) / range;
+
+    firstScreen.css({ 'opacity': calc });
+
+    if (calc > '1') {
+      firstScreen.css({ 'opacity': 1 });
+      $('.menubar').addClass('menu-main');
+    } else if ( calc < '0' ) {
+      firstScreen.css({ 'opacity': .25 });
+      $('.menubar').removeClass('menu-main');
     }
-
-    if ((-elTop) < documentHeight) {
-      $('.first-page-wrapper').css('opacity','1')
-      $('.menubar').addClass('menu-main')
-      console.log('go transparent')
-    }
-
-    // var firstScreen = $(".first-page-wrapper");
-
-    // $(document).on("scroll", function() {
-    //   $('.first-page-wrapper').css('opacity','.25');
-    //   $('.menubar').removeClass('menu-main')
-    //   console.log('scroll happened')
-    // });
-
-    // console.log('Scroll', elTop, documentHeight)
-  })
+  });
 })

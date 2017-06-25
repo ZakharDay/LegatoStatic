@@ -246,6 +246,9 @@
       width: 468px;
       height: 344px; } }
 @media only screen and (max-width: 768px) {
+  .transparent {
+    opacity: .25; }
+
   .entries {
     height: 9373px; }
     .entries .entry figure,

@@ -6,7 +6,8 @@
   height: 100px;
   background-color: transparent;
   top: 0;
-  z-index: 400; }
+  z-index: 400;
+  transition: all 0s ease-in-out; }
   .menubar #logo {
     height: 35px;
     margin-top: 10px; }

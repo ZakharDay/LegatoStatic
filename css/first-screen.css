@@ -1,3 +1,6 @@
+.transparent {
+  opacity: .25; }
+
 video {
   width: 100vw;
   height: 100vh;
