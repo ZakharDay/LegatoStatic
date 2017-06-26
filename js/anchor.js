@@ -1,5 +1,5 @@
 $(function() {
-  $('.contact a').each(function() {
+  $('.contact a, .navigation a').each(function() {
     $(this).on('click', function(e) {
       e.preventDefault();
       var scrollTo = $(this).attr('href');
