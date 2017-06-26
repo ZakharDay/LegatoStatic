@@ -156,10 +156,11 @@
         margin-top: 10px; }
 
   #footer-ppl {
-    height: 65px; }
+    height: 25px; }
     #footer-ppl .phrases-centerizer .socialWrapper .socialContainer {
       width: 280px;
-      margin-left: 47px; }
+      margin-left: 47px;
+      margin-bottom: 0; }
       #footer-ppl .phrases-centerizer .socialWrapper .socialContainer .additional-info {
         margin-left: 0;
         margin-top: 10px; } }
