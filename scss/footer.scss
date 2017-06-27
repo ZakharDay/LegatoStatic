@@ -3,7 +3,7 @@
 .footer {
   height: 100vh;
   width: 100vw;
-  margin-top: -200px;
+  margin-top: -160px;
 
   .phrases-centerizer {
     position: relative;
@@ -85,7 +85,7 @@
 
       .socialContainer {
         width: auto;
-        margin-left: 172px;
+        // margin-left: 172px;
       }
     }
   }
@@ -121,6 +121,7 @@
 
 @media only screen and (max-width: 1024px) {
   .footer {
+    margin-top: 0;
 
     .phrases-centerizer {
 
@@ -372,15 +373,15 @@
 }
 
 
-@media only screen and (max-width: 990px) {
-  #footer-process {
-    margin-top: 3816px;
-  }
-
-  #footer-comp {
-    margin-top: 3653px;
-  }
-}
+// @media only screen and (max-width: 990px) {
+//   #footer-process {
+//     margin-top: 3816px;
+//   }
+//
+//   #footer-comp {
+//     margin-top: 3653px;
+//   }
+// }
 
 @media only screen and (max-width: 660px) {
   #footer-process,

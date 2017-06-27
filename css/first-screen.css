@@ -11,7 +11,7 @@ video {
   display: inline-flex;
   width: 425px;
   justify-content: space-between;
-  margin-left: 60px; }
+  margin-left: 20px; }
 
 .header-logo {
   display: flex;
@@ -67,15 +67,16 @@ video {
 
 .socialWrapper {
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
   left: 0;
   z-index: 2;
   width: 100%; }
   .socialWrapper .socialContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 40px;
     font-family: 'Basis Medium';
     font-size: 12px;
     color: white; }
@@ -99,6 +100,9 @@ video {
         font-family: FontAwesome;
         font-size: 12px;
         padding-right: 5px; }
+    .socialWrapper .socialContainer .social-likes_single-w {
+      position: absolute;
+      right: 40px; }
 
 .instagram::before {
   content: '\f16d'; }
@@ -147,7 +151,8 @@ video {
 
   .socialWrapper .socialContainer {
     color: white;
-    width: 682px; }
+    width: 682px;
+    padding: 0; }
     .socialWrapper .socialContainer .additional-info {
       margin-left: 0;
       margin-top: 20px; }
@@ -155,14 +160,17 @@ video {
       color: white;
       text-decoration: none;
       font-family: 'Basis Medium';
-      font-size: 12px; } }
+      font-size: 12px; }
+    .socialWrapper .socialContainer .social-likes_single-w {
+      position: static; } }
 @media (max-width: 660px) {
   .socialWrapper .socialContainer {
     margin-left: 34px;
     width: 280px;
     line-height: 20px;
     font-size: 10px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    padding: 0; }
     .socialWrapper .socialContainer .additional-info {
       width: 227px;
       flex-wrap: wrap; }
@@ -171,6 +179,8 @@ video {
         top: 20px; }
     .socialWrapper .socialContainer a {
       font-size: 10px; }
+    .socialWrapper .socialContainer .social-likes_single-w {
+      position: static; }
 
   .header-logo {
     width: 174px;

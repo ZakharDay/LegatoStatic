@@ -439,14 +439,18 @@
 
   .cards-container {
 
-    #community {margin-top: 1173px;}
+    &.col-2 {
+      padding-top: 0;
+    }
 
-    #works {margin-top: 852px;}
+    // #community {margin-top: 1173px;}
 
-    #philosophy,
-    #project {margin-top: 100px;}
+    // #works {margin-top: 852px;}
 
-    #sertificate {margin-top: 1372px;}
+    // #philosophy,
+    // #project {margin-top: 100px;}
+
+    // #sertificate {margin-top: 1372px;}
 
     #culture {
       margin-top: 100px;
@@ -460,14 +464,14 @@
   }
 
   .col-1 {
-    position: absolute;
-    height: 2716px;
+    // position: absolute;
+    // height: 2716px;
     left: 102px;
   }
 
   .col-2 {
-    position: absolute;
-    height: 3738px;
+    // position: absolute;
+    // height: 3738px;
     right: 102px;
   }
 
@@ -497,7 +501,7 @@
 
     .intro-text {
       width: 260px;
-      padding-left: 18px;
+      padding-left: 47px;
 
       .rubric {
         font-size: 15px;

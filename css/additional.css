@@ -268,15 +268,8 @@
   .cards-wrapper {
     width: 564px; }
 
-  .cards-container #community {
-    margin-top: 1173px; }
-  .cards-container #works {
-    margin-top: 852px; }
-  .cards-container #philosophy,
-  .cards-container #project {
-    margin-top: 100px; }
-  .cards-container #sertificate {
-    margin-top: 1372px; }
+  .cards-container.col-2 {
+    padding-top: 0; }
   .cards-container #culture {
     margin-top: 100px;
     right: -129px;
@@ -285,13 +278,9 @@
     margin-top: 0; }
 
   .col-1 {
-    position: absolute;
-    height: 2716px;
     left: 102px; }
 
   .col-2 {
-    position: absolute;
-    height: 3738px;
     right: 102px; }
 
   #col-1-comp {
@@ -310,7 +299,7 @@
       padding-top: 20px; }
     .content-wrapper .intro-text {
       width: 260px;
-      padding-left: 18px; }
+      padding-left: 47px; }
       .content-wrapper .intro-text .rubric {
         font-size: 15px;
         line-height: 19px;

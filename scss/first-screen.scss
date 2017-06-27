@@ -15,7 +15,7 @@ video {
   display: inline-flex;
   width: 425px;
   justify-content: space-between;
-  margin-left: 60px;
+  margin-left: 20px;
 }
 
 .header-logo {
@@ -82,7 +82,8 @@ video {
 .socialWrapper {
   position: absolute;
   // overflow: visible;
-  bottom: 40px;
+  // bottom: 40px;
+  bottom: 30px;
   left: 0;
   z-index: 2;
   width: 100%;
@@ -90,8 +91,10 @@ video {
   .socialContainer {
     display: flex;
     flex-wrap: wrap;
-    width: $largeContainerWidth;
+    // width: $largeContainerWidth;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 40px;
     font-family: 'Basis Medium';
     font-size: 12px;
     color: white;
@@ -122,6 +125,11 @@ video {
         font-size: 12px;
         padding-right: 5px;
       }
+    }
+
+    .social-likes_single-w {
+      position: absolute;
+      right: 40px;
     }
   }
 }
@@ -196,6 +204,7 @@ video {
         .socialContainer {
           color: white;
           width: 682px;
+          padding: 0;
 
           .additional-info {
             margin-left: 0;
@@ -207,6 +216,10 @@ video {
             text-decoration: none;
             font-family: 'Basis Medium';
             font-size: 12px;
+          }
+
+          .social-likes_single-w {
+            position: static;
           }
         }
       }
@@ -224,6 +237,7 @@ video {
       line-height: 20px;
       font-size: 10px;
       margin-bottom: 40px;
+      padding: 0;
 
       .additional-info {
         width: 227px;
@@ -240,6 +254,10 @@ video {
 
         &:visited {
         }
+      }
+
+      .social-likes_single-w {
+        position: static;
       }
     }
   }

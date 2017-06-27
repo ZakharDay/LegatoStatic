@@ -1,5 +1,11 @@
 @import 'vars';
 
+.transparent {
+  .phrases-centerizer {
+    opacity: 0;
+  }
+}
+
 .phrase.step0 { transform: translateY(0); transition: all 3s ease-in-out !important; }
 .phrase.step1 { transform: translateY(-100%); }
 .phrase.step2 { transform: translateY(-200%); }
