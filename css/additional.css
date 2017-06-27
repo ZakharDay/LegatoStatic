@@ -34,18 +34,20 @@
     margin-left: 150px; }
     .content-wrapper .navigation a {
       font-family: 'Proxima Nova Light';
-      font-size: 17px;
-      line-height: 19px;
-      padding-top: 10px;
+      font-size: 15px;
+      line-height: 17px;
+      padding-top: 6px;
       color: black;
       text-decoration: none; }
       .content-wrapper .navigation a:visited {
         color: black;
         text-decoration: none; }
   .content-wrapper #nav-proc {
-    top: 552px; }
+    top: 588px;
+    height: 115px; }
   .content-wrapper #nav-comp {
-    top: 405px; }
+    top: 443px;
+    height: 105px; }
   .content-wrapper .head-pic {
     margin-top: 70px;
     display: block;
@@ -111,19 +113,16 @@
   justify-content: space-between;
   flex-direction: column;
   height: 100%; }
-  .cards-container #community {
-    margin-top: 521px; }
-  .cards-container #works {
-    margin-top: 574px; }
-  .cards-container #philosophy,
-  .cards-container #project {
-    margin-top: 100px; }
+  .cards-container.col-2 {
+    padding-top: 371px; }
+  .cards-container .title {
+    padding-top: 150px; }
   .cards-container .card {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
     width: 514px;
-    margin-top: 150px; }
+    margin-top: 40px; }
     .cards-container .card .card-picture {
       background-size: cover;
       width: 514px;

@@ -3,9 +3,9 @@
 }
 
 .content-wrapper {
+  // position: relative;
   height: 100%;
   width: 1266px;
-
   margin-top: 190px;
 
   .title {
@@ -46,9 +46,9 @@
 
     a {
       font-family: 'Proxima Nova Light';
-      font-size: 17px;
-      line-height: 19px;
-      padding-top: 10px;
+      font-size: 15px;
+      line-height: 17px;
+      padding-top: 6px;
       color: black;
       text-decoration: none;
 
@@ -59,9 +59,15 @@
     }
   }
 
-  #nav-proc {top: 552px;}
+  #nav-proc {
+    top: 588px;
+    height: 115px;
+  }
 
-  #nav-comp {top: 405px;}
+  #nav-comp {
+    top: 443px;
+    height: 105px;
+  }
 
   .head-pic {
     margin-top: 70px;
@@ -155,15 +161,27 @@
   flex-direction: column;
   height: 100%;
 
+  &.col-2 {
+    padding-top: 371px;
+  }
 
-  #community {margin-top: 521px;}
 
-  #works {margin-top: 574px;}
+  // #community {
+  //   margin-top: 521px;
+  // }
+  //
+  // #works {
+  //   margin-top: 574px;
+  // }
+  //
+  //
+  // #philosophy .title,
+  // #project .title {
+  //   padding-top: 150px;
+  // }
 
-
-  #philosophy,
-  #project {
-    margin-top: 150px;
+  .title {
+    padding-top: 150px;
   }
 
 
@@ -173,7 +191,8 @@
     flex-direction: column;
     justify-content: space-between;
     width: 514px;
-    margin-top: 150px;
+    margin-top: 40px;
+    // margin-top: 150px;
 
 
     .card-picture {
