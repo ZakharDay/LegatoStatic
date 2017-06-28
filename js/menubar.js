@@ -1,7 +1,7 @@
 function open() {
   $('.hamburger').hide()
   $('.close').show()
-  $('.main-options').css('display','flex')
+  $('.main-options').css('display','block')
   $('.contact').show()
   // $('.fade').show()
   // $('body').css('overflow', 'hidden')

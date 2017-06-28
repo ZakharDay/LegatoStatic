@@ -188,22 +188,22 @@
   }
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 1140px) {
 
   .menubar {
     background: rgba(255, 255, 255, .8);
     height: 70px;
 
     .logo {
-      margin-left: 20px;
+      margin-left: 40px;
     }
 
     .main-options {
-      padding-left: 25px;
+      padding-left: 45px;
     }
 
     .contact {
-      right: 20px;
+      right: 40px;
     }
   }
 
@@ -219,6 +219,25 @@
       background: rgba(255, 255, 255, .0);
     }
   }
+}
+
+@media only screen and (max-width: 660px) {
+
+  .menubar {
+    height: 70px;
+
+    .logo {
+      margin-left: 20px;
+    }
+
+    .main-options {
+      padding-left: 25px;
+    }
+
+    .contact {
+      right: 20px;
+    }
+  }
 
   .mobile-nav {
     display: block;
@@ -231,10 +250,7 @@
   .menubar {
     .main-options {
       display: none;
-      justify-content: space-between;
-      flex-direction: column;
-      height: 77px;
-      margin-top: 57px;
+      margin-top: 43px;
       position: absolute;
       width: 92px;
       right: 20px;
@@ -244,6 +260,8 @@
         text-align: right;
         font-size: 13px;
         line-height: 17px;
+        padding-top: 10px;
+        display: block;
       }
     }
 
@@ -251,7 +269,7 @@
       display: none;
       position: absolute;
       right: 20px;
-      margin-top: 147px;
+      margin-top: 134px;
 
       a {
         width: 100%;

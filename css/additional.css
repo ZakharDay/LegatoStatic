@@ -27,27 +27,26 @@
       padding-bottom: 10px; }
   .content-wrapper .navigation {
     position: absolute;
-    display: inline-flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 145px;
+    display: inline-block;
+    width: 300px;
+    height: 100%;
     margin-left: 150px; }
     .content-wrapper .navigation a {
-      font-family: 'Proxima Nova Light';
-      font-size: 15px;
-      line-height: 17px;
-      padding-top: 6px;
+      font-family: 'Basis Off White';
+      font-size: 19px;
+      line-height: 27px;
+      padding-top: 10px;
       color: black;
+      display: block;
+      position: relative;
       text-decoration: none; }
       .content-wrapper .navigation a:visited {
         color: black;
         text-decoration: none; }
   .content-wrapper #nav-proc {
-    top: 588px;
-    height: 115px; }
+    top: 533px; }
   .content-wrapper #nav-comp {
-    top: 443px;
-    height: 105px; }
+    top: 403px; }
   .content-wrapper .head-pic {
     margin-top: 70px;
     display: block;
@@ -177,15 +176,11 @@
     .content-wrapper .intro-text {
       padding-left: 55px; }
     .content-wrapper .navigation {
-      height: 115px;
       margin-left: 100px; }
-      .content-wrapper .navigation a {
-        font-size: 15px;
-        line-height: 17px; }
     .content-wrapper #nav-proc {
-      top: 670px; }
+      top: 621px; }
     .content-wrapper #nav-comp {
-      top: 487px; }
+      top: 454px; }
     .content-wrapper .head-pic {
       width: 930px;
       height: 695px; }
