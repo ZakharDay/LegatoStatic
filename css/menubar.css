@@ -122,7 +122,8 @@
 
 @media only screen and (max-width: 660px) {
   .menubar {
-    background: rgba(255, 255, 255, 0.8); }
+    background: rgba(255, 255, 255, 0.8);
+    height: 70px; }
     .menubar .logo {
       margin-left: 20px; }
     .menubar .main-options {
