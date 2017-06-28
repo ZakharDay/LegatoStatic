@@ -82,7 +82,8 @@
     .footer .phrases-centerizer .phrases-wrapper {
       width: 660px; }
     .footer .phrases-centerizer .socialWrapper .socialContainer {
-      width: 522px; } }
+      width: 522px;
+      margin-left: auto; } }
 @media only screen and (max-width: 850px) {
   .footer .phrases-centerizer .socialWrapper .socialContainer .additional-info {
     margin-left: 0;
