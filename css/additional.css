@@ -266,26 +266,20 @@
       height: 1008px; }
 
   .cards-wrapper {
-    width: 564px; }
+    width: 564px;
+    padding: 0 102px; }
 
-  .cards-container.col-2 {
+  .cards-container .title {
+    padding-top: 100px; }
+  .cards-container .card:nth-of-type(2) {
+    align-self: flex-end; }
+  .cards-container.col-2, .cards-container.col-1 {
+    width: 100%;
     padding-top: 0; }
-  .cards-container #culture {
-    margin-top: 100px;
-    right: -129px;
-    position: relative; }
   .cards-container .card {
     margin-top: 0; }
-
-  .col-1 {
-    left: 102px; }
-
-  .col-2 {
-    right: 102px; }
-
-  #col-1-comp {
-    height: 3575px;
-    width: 564px; } }
+    .cards-container .card#works {
+      align-self: flex-end; } }
 @media only screen and (max-width: 660px) {
   .content-wrapper {
     width: 295px;

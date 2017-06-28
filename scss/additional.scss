@@ -435,49 +435,32 @@
 
   .cards-wrapper {
     width: 564px;
+    padding: 0 102px;
   }
 
   .cards-container {
 
-    &.col-2 {
-      padding-top: 0;
+    .title {
+      padding-top: 100px;
     }
 
-    // #community {margin-top: 1173px;}
+    .card:nth-of-type(2) {
+      align-self: flex-end;
+    }
 
-    // #works {margin-top: 852px;}
-
-    // #philosophy,
-    // #project {margin-top: 100px;}
-
-    // #sertificate {margin-top: 1372px;}
-
-    #culture {
-      margin-top: 100px;
-      right: -129px;
-      position: relative;
+    &.col-2,
+    &.col-1 {
+      width: 100%;
+      padding-top: 0;
     }
 
     .card {
       margin-top: 0;
+
+      &#works {
+        align-self: flex-end;
+      }
     }
-  }
-
-  .col-1 {
-    // position: absolute;
-    // height: 2716px;
-    left: 102px;
-  }
-
-  .col-2 {
-    // position: absolute;
-    // height: 3738px;
-    right: 102px;
-  }
-
-  #col-1-comp {
-    height: 3575px;
-    width: 564px;
   }
 }
 
