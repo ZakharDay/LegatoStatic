@@ -74,7 +74,8 @@
       left: 53px;
       margin-top: -190px; }
     .footer .socialWrapper .socialContainer {
-      width: 522px; } }
+      width: 522px;
+      margin-left: 188px; } }
 @media only screen and (max-width: 1024px) {
   .footer {
     margin-top: 0; }
