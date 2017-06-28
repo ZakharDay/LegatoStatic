@@ -87,7 +87,7 @@
   position: absolute;
   height: 50px;
   width: 16px;
-  right: 40px;
+  right: 20px;
   cursor: pointer;
   display: none; }
 
@@ -121,6 +121,24 @@
       background: white; }
 
 @media only screen and (max-width: 660px) {
+  .menubar {
+    background: rgba(255, 255, 255, 0.8); }
+    .menubar .logo {
+      margin-left: 20px; }
+    .menubar .main-options {
+      padding-left: 25px; }
+    .menubar .contact {
+      right: 20px; }
+
+  .menu-main {
+    background: transparent; }
+
+  .background-wrapper {
+    margin-top: 0;
+    background: rgba(255, 255, 255, 0); }
+    .background-wrapper:hover {
+      background: rgba(255, 255, 255, 0); }
+
   .mobile-nav {
     display: block; }
 
@@ -135,7 +153,7 @@
     margin-top: 57px;
     position: absolute;
     width: 92px;
-    right: 40px; }
+    right: 20px; }
     .menubar .main-options a {
       width: 100%;
       text-align: right;
@@ -144,11 +162,8 @@
   .menubar .contact {
     display: none;
     position: absolute;
-    right: 4px;
-    padding-right: 0px;
-    width: 92px;
-    margin-top: 147px;
-    margin-left: 550px; }
+    right: 20px;
+    margin-top: 147px; }
     .menubar .contact a {
       width: 100%;
       text-align: right;

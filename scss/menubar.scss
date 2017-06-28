@@ -135,7 +135,7 @@
   position: absolute;
   height: 50px;
   width: 16px;
-  right: 40px;
+  right: 20px;
   cursor: pointer;
   display: none;
 }
@@ -189,6 +189,36 @@
 }
 
 @media only screen and (max-width: 660px) {
+
+  .menubar {
+    background: rgba(255, 255, 255, .8);
+
+    .logo {
+      margin-left: 20px;
+    }
+
+    .main-options {
+      padding-left: 25px;
+    }
+
+    .contact {
+      right: 20px;
+    }
+  }
+
+  .menu-main {
+    background: transparent;
+  }
+
+  .background-wrapper {
+    margin-top: 0;
+    background: rgba(255, 255, 255, .0);
+
+    &:hover {
+      background: rgba(255, 255, 255, .0);
+    }
+  }
+
   .mobile-nav {
     display: block;
   }
@@ -206,7 +236,7 @@
       margin-top: 57px;
       position: absolute;
       width: 92px;
-      right: 40px;
+      right: 20px;
 
       a {
         width: 100%;
@@ -219,11 +249,8 @@
     .contact {
       display: none;
       position: absolute;
-      right: 4px;
-      padding-right: 0px;
-      width: 92px;
+      right: 20px;
       margin-top: 147px;
-      margin-left: 550px;
 
       a {
         width: 100%;

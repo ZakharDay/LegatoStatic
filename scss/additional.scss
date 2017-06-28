@@ -552,7 +552,7 @@
 
   .cards-wrapper {
     width: 290px;
-    padding-left: 18px;
+    padding: 0 18px;
   }
 
   .cards-container {
@@ -574,6 +574,10 @@
     .card {
       width: 290px;
       margin-top: 30px;
+
+      .title {
+        padding-top: 30px;
+      }
 
       .card-picture {
         width: 290px;

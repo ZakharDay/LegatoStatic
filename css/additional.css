@@ -335,7 +335,7 @@
 
   .cards-wrapper {
     width: 290px;
-    padding-left: 18px; }
+    padding: 0 18px; }
 
   .cards-container #community {
     margin-top: 30px; }
@@ -352,6 +352,8 @@
   .cards-container .card {
     width: 290px;
     margin-top: 30px; }
+    .cards-container .card .title {
+      padding-top: 30px; }
     .cards-container .card .card-picture {
       width: 290px;
       margin-top: 20px; }
