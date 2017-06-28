@@ -47,6 +47,7 @@
   p {
     color: black;
     font-family: 'Basis Medium';
+    font-size: 15px;
   }
 
   .fig {
@@ -59,14 +60,36 @@
     .socialContainer {
       color: black;
 
+      .additional-info {
+        width: 575px;
+      }
+
+      .social-likes_single-w {
+        font-size: 15px;
+
+        .social-likes__widget_single::before {
+          font-size: 15px;
+          padding-right: 8px;
+        }
+
+        .social-likes__single-container {
+          top: -74px;
+        }
+      }
+
       a {
         color: black;
         text-decoration: none;
         font-family: 'Basis Medium';
-        font-size: 12px;
+        font-size: 15px;
 
         &:visited {
           color: black;
+        }
+
+        &:before {
+          font-size: 15px;
+          left: -2px;
         }
       }
     }
@@ -264,7 +287,7 @@
       .socialWrapper {
 
         .socialContainer {
-          width: 430px;
+          width: 530px;
           margin-left: 74px;
 
           .additional-info {
@@ -371,17 +394,6 @@
     }
   }
 }
-
-
-// @media only screen and (max-width: 990px) {
-//   #footer-process {
-//     margin-top: 3816px;
-//   }
-//
-//   #footer-comp {
-//     margin-top: 3653px;
-//   }
-// }
 
 @media only screen and (max-width: 660px) {
   #footer-process,

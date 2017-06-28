@@ -27,19 +27,32 @@
     background-image: url(../img/logo_black.svg); }
   .footer p {
     color: black;
-    font-family: 'Basis Medium'; }
+    font-family: 'Basis Medium';
+    font-size: 15px; }
   .footer .fig {
     position: absolute;
     filter: invert(1); }
   .footer .socialWrapper .socialContainer {
     color: black; }
+    .footer .socialWrapper .socialContainer .additional-info {
+      width: 575px; }
+    .footer .socialWrapper .socialContainer .social-likes_single-w {
+      font-size: 15px; }
+      .footer .socialWrapper .socialContainer .social-likes_single-w .social-likes__widget_single::before {
+        font-size: 15px;
+        padding-right: 8px; }
+      .footer .socialWrapper .socialContainer .social-likes_single-w .social-likes__single-container {
+        top: -74px; }
     .footer .socialWrapper .socialContainer a {
       color: black;
       text-decoration: none;
       font-family: 'Basis Medium';
-      font-size: 12px; }
+      font-size: 15px; }
       .footer .socialWrapper .socialContainer a:visited {
         color: black; }
+      .footer .socialWrapper .socialContainer a:before {
+        font-size: 15px;
+        left: -2px; }
 
 .footer-additional {
   height: 103px;
@@ -125,7 +138,7 @@
   .footer-additional {
     margin-top: 82px; }
     .footer-additional .phrases-centerizer .socialWrapper .socialContainer {
-      width: 430px;
+      width: 530px;
       margin-left: 74px; }
       .footer-additional .phrases-centerizer .socialWrapper .socialContainer .additional-info {
         margin-left: 0;
