@@ -74,12 +74,14 @@
       left: 53px;
       margin-top: -190px; }
     .footer .socialWrapper .socialContainer {
-      width: 677px; } }
+      width: 522px; } }
 @media only screen and (max-width: 1024px) {
   .footer {
     margin-top: 0; }
     .footer .phrases-centerizer .phrases-wrapper {
-      width: 660px; } }
+      width: 660px; }
+    .footer .phrases-centerizer .socialWrapper .socialContainer {
+      width: 522px; } }
 @media only screen and (max-width: 850px) {
   .footer .phrases-centerizer .socialWrapper .socialContainer .additional-info {
     margin-left: 0;
@@ -116,10 +118,25 @@
           width: 280px;
           line-height: 20px;
           font-size: 10px; }
+          .footer .phrases-centerizer .socialWrapper .socialContainer .social-likes_single-w {
+            font-size: 10px; }
+            .footer .phrases-centerizer .socialWrapper .socialContainer .social-likes_single-w .social-likes__widget_single::before {
+              font-size: 10px;
+              padding-right: 5px; }
+            .footer .phrases-centerizer .socialWrapper .socialContainer .social-likes_single-w .social-likes__single-container {
+              top: -47px; }
+          .footer .phrases-centerizer .socialWrapper .socialContainer a {
+            font-size: 10px; }
+            .footer .phrases-centerizer .socialWrapper .socialContainer a:before {
+              font-size: 10px;
+              left: 0; }
           .footer .phrases-centerizer .socialWrapper .socialContainer .additional-info {
-            width: 224px;
+            width: 210px;
             flex-wrap: wrap;
-            margin-top: 10px; }
+            margin-top: 10px;
+            font-size: 10px; }
+            .footer .phrases-centerizer .socialWrapper .socialContainer .additional-info p {
+              font-size: 10px; }
             .footer .phrases-centerizer .socialWrapper .socialContainer .additional-info #pres {
               padding-left: 0;
               top: 10px; }
