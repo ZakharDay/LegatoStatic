@@ -46,7 +46,7 @@
 
   p {
     color: black;
-    font-family: 'Basis Medium';
+    font-family: 'Proxima Nova Light';
     font-size: 15px;
   }
 
@@ -58,14 +58,35 @@
   .socialWrapper {
 
     .socialContainer {
+      padding: 0 40px 0 40px;
       color: black;
+      justify-content: space-between;
+
+      .links {
+        display: inline-flex;
+
+        a:not:nth-of-type(3) {
+          margin-right: 30px;
+        }
+      }
 
       .additional-info {
-        width: 575px;
+        display: inline-flex;
+
+        p, a {
+          padding-right: 30px;
+          padding-left: 0;
+          margin-right: 0;
+        }
       }
 
       .social-likes_single-w {
         font-size: 15px;
+        font-family: 'Proxima Nova Light';
+        display: inline-flex;
+        position: relative;
+
+        right: 0;
 
         .social-likes__widget_single::before {
           font-size: 15px;
@@ -80,7 +101,7 @@
       a {
         color: black;
         text-decoration: none;
-        font-family: 'Basis Medium';
+        font-family: 'Proxima Nova Light';
         font-size: 15px;
 
         &:visited {
@@ -138,6 +159,12 @@
       .socialContainer {
         width: 522px;
         margin-left: 188px;
+
+        .social-likes_single-w {
+          font-size: 15px;
+          left: 290px;
+          top: -50px;
+        }
       }
     }
   }
@@ -238,6 +265,8 @@
 
           .social-likes_single-w {
             font-size: 10px;
+            left: 228px;
+            top: -72px;
 
             .social-likes__widget_single::before {
               font-size: 10px;
@@ -259,7 +288,7 @@
           }
 
           .additional-info {
-            width: 210px;
+            width: 280px;
             flex-wrap: wrap;
             margin-top: 10px;
             font-size: 10px;
@@ -291,6 +320,7 @@
       .socialWrapper {
 
         .socialContainer {
+          padding: 0 40px 0 0;
           margin-left: 74px;
         }
       }
@@ -325,8 +355,9 @@
       .socialWrapper {
 
         .socialContainer {
-          width: 530px;
+          width: 730px;
           margin-left: 74px;
+          padding-left: 0;
 
           .additional-info {
             margin-left: 0;

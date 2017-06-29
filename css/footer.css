@@ -27,17 +27,31 @@
     background-image: url(../img/logo_black.svg); }
   .footer p {
     color: black;
-    font-family: 'Basis Medium';
+    font-family: 'Proxima Nova Light';
     font-size: 15px; }
   .footer .fig {
     position: absolute;
     filter: invert(1); }
   .footer .socialWrapper .socialContainer {
-    color: black; }
+    padding: 0 40px 0 40px;
+    color: black;
+    justify-content: space-between; }
+    .footer .socialWrapper .socialContainer .links {
+      display: inline-flex; }
+      .footer .socialWrapper .socialContainer .links a:not:nth-of-type(3) {
+        margin-right: 30px; }
     .footer .socialWrapper .socialContainer .additional-info {
-      width: 575px; }
+      display: inline-flex; }
+      .footer .socialWrapper .socialContainer .additional-info p, .footer .socialWrapper .socialContainer .additional-info a {
+        padding-right: 30px;
+        padding-left: 0;
+        margin-right: 0; }
     .footer .socialWrapper .socialContainer .social-likes_single-w {
-      font-size: 15px; }
+      font-size: 15px;
+      font-family: 'Proxima Nova Light';
+      display: inline-flex;
+      position: relative;
+      right: 0; }
       .footer .socialWrapper .socialContainer .social-likes_single-w .social-likes__widget_single::before {
         font-size: 15px;
         padding-right: 8px; }
@@ -46,7 +60,7 @@
     .footer .socialWrapper .socialContainer a {
       color: black;
       text-decoration: none;
-      font-family: 'Basis Medium';
+      font-family: 'Proxima Nova Light';
       font-size: 15px; }
       .footer .socialWrapper .socialContainer a:visited {
         color: black; }
@@ -75,7 +89,11 @@
       margin-top: -190px; }
     .footer .socialWrapper .socialContainer {
       width: 522px;
-      margin-left: 188px; } }
+      margin-left: 188px; }
+      .footer .socialWrapper .socialContainer .social-likes_single-w {
+        font-size: 15px;
+        left: 290px;
+        top: -50px; } }
 @media only screen and (max-width: 1024px) {
   .footer {
     margin-top: 0; }
@@ -121,7 +139,9 @@
           line-height: 20px;
           font-size: 10px; }
           .footer .phrases-centerizer .socialWrapper .socialContainer .social-likes_single-w {
-            font-size: 10px; }
+            font-size: 10px;
+            left: 228px;
+            top: -72px; }
             .footer .phrases-centerizer .socialWrapper .socialContainer .social-likes_single-w .social-likes__widget_single::before {
               font-size: 10px;
               padding-right: 5px; }
@@ -133,7 +153,7 @@
               font-size: 10px;
               left: 0; }
           .footer .phrases-centerizer .socialWrapper .socialContainer .additional-info {
-            width: 210px;
+            width: 280px;
             flex-wrap: wrap;
             margin-top: 10px;
             font-size: 10px; }
@@ -146,6 +166,7 @@
             font-size: 10px; } }
 @media only screen and (max-width: 1280px) {
   .footer-additional .phrases-centerizer .socialWrapper .socialContainer {
+    padding: 0 40px 0 0;
     margin-left: 74px; }
 
   #footer-ppl {
@@ -157,8 +178,9 @@
   .footer-additional {
     margin-top: 82px; }
     .footer-additional .phrases-centerizer .socialWrapper .socialContainer {
-      width: 530px;
-      margin-left: 74px; }
+      width: 730px;
+      margin-left: 74px;
+      padding-left: 0; }
       .footer-additional .phrases-centerizer .socialWrapper .socialContainer .additional-info {
         margin-left: 0;
         margin-top: 20px; }

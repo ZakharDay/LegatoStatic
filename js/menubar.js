@@ -3,8 +3,8 @@ function open() {
   $('.close').show()
   $('.main-options').css('display','block')
   $('.contact').show()
-  // $('.fade').show()
-  // $('body').css('overflow', 'hidden')
+  $('.fade').show()
+  $('body').css('overflow', 'hidden')
 };
 
 function close() {
@@ -12,8 +12,8 @@ function close() {
   $('.close').hide()
   $('.main-options').css('display','none')
   $('.contact').hide()
-  // $('.fade').hide()
-  // $('body').css('overflow', 'scroll')
+  $('.fade').hide()
+  $('body').css('overflow', 'scroll')
 };
 
 $(function() {

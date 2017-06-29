@@ -7,11 +7,13 @@ $(function() {
       $('#faded').css('opacity','0')
       $('.first-page-wrapper').addClass('transparent')
       $('.menubar').removeClass('menu-main')
+      $('.fade').removeClass('transparent')
       $('#video').get(0).pause()
     } else {
       $('#faded').css('opacity','1')
       $('.first-page-wrapper').removeClass('transparent')
       $('.menubar').addClass('menu-main')
+      $('.fade').addClass('transparent')
       $('#video').get(0).play()
     }
   })

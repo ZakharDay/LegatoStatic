@@ -32,11 +32,11 @@
     font-family: 'Basis Bold'; }
   .menubar .main-options {
     display: flex;
-    justify-content: space-between;
-    width: 255px;
     height: 100%;
     align-items: center;
     padding-left: 45px; }
+    .menubar .main-options a {
+      padding-right: 30px; }
   .menubar .contact {
     position: absolute;
     right: 40px;
@@ -82,6 +82,18 @@
     transform: rotate(45deg); }
   .close:after {
     transform: rotate(-45deg); }
+
+.fade {
+  width: 100vw;
+  height: 100vh;
+  top: 70px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100;
+  position: fixed;
+  display: none;
+  overflow: hidden; }
+  .fade.transparent {
+    background-color: rgba(255, 255, 255, 0); }
 
 .mobile-nav {
   position: absolute;
