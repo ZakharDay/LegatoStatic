@@ -1,0 +1,30 @@
+.icon {
+  padding-left: 16px;
+
+  &::before {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-family: FontAwesome;
+    font-size: 12px;
+  }
+
+  &.instagram::before {
+    content: '\f16d';
+  }
+
+  &.facebook::before {
+    content: '\f082';
+  }
+
+  &.share::before {
+    content: '\f064';
+  }
+
+  &.email::before {
+    content: '\f003';
+  }
+}

@@ -1,0 +1,40 @@
+body.initial {
+  .MenuBar {
+    color: white;
+
+    &:hover {
+      background: none;
+    }
+
+    .logo {
+      background-image: url(../img/logo_white.svg);
+    }
+  }
+}
+
+body:not(.initial) {
+  .SplashScreen {
+    opacity: .25;
+    transform: scale(0.8);
+
+    .Tagline, .SocialBar {
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body.initial, body:not(.initial) {
+    .MenuBar {
+      color: black;
+
+      &:hover {
+        background: rgba(255, 255, 255, .8);
+      }
+
+      .logo {
+        background-image: url(../img/logo_black.svg);
+      }
+    }
+  }
+}

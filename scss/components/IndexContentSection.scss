@@ -1,8 +1,4 @@
-* {
-  // overflow-x: hidden;
-}
-
-.entries {
+.IndexContentSection {
   // padding-top: 1056px;
   display: block;
   height: 7403px;
@@ -215,7 +211,7 @@
 
 @media only screen and (max-width: 1140px) {
 
-.entries {
+.IndexContentSection {
   height: 5175px;
 
   .entry {
@@ -367,11 +363,7 @@
 
 @media only screen and (max-width: 768px) {
 
-  .transparent {
-    opacity: .25;
-  }
-
-  .entries {
+  .IndexContentSection {
     height: 9373px;
 
     .entry {
@@ -525,7 +517,7 @@
 
 @media only screen and (max-width: 660px) {
 
-  .entries {
+  .IndexContentSection {
     height: 6004px;
 
     .entry {

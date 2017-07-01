@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  background-size: cover;
+  transition: all ease-in-out .3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.compact {
+  display: none !important;
+}
+
+@media only screen and (max-width: 660px) {
+  .full {
+    display: none !important;
+  }
+
+  .compact {
+    display: block !important;
+  }
+}

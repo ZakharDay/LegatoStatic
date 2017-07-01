@@ -21,43 +21,6 @@
     <meta property="og:description"   content="Создаем уникальные строительные проекты на стыке спорта и архитектуры">
     <meta property="og:image"         content="http://legatomoscow.ru/img/share.png">
 
-
-    <script type="text/javascript">
-      $(function() {
-        var counter = 0
-        function move() {
-          if (counter >= 8) {
-            counter = 0
-          }
-          $('.phrase').removeClass('step0')
-          $('.phrase').removeClass('step1')
-          $('.phrase').removeClass('step2')
-          $('.phrase').removeClass('step3')
-          $('.phrase').removeClass('step4')
-          $('.phrase').removeClass('step5')
-          $('.phrase').removeClass('step6')
-          $('.phrase').removeClass('step7')
-          $('.phrase').removeClass('step8')
-          $('.phrase').removeClass('step9')
-          $('.phrase').addClass('step' + counter)
-          counter = counter + 1
-        }
-        function animateWithTimeout() {
-          move()
-          setTimeout(move, 4000)
-          setTimeout(move, 8000)
-          setTimeout(move, 12000)
-          setTimeout(move, 16000)
-          setTimeout(move, 20000)
-          setTimeout(move, 24000)
-          setTimeout(move, 28000)
-          setTimeout(move, 32000)
-          setTimeout(animateWithTimeout, 38000)
-        }
-        animateWithTimeout()
-      })
-    </script>
-
     <!-- <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -66,11 +29,8 @@
       ga('create', 'UA-66427703-6', 'auto');
       ga('send', 'pageview');
     </script> -->
-
-
-
   </head>
-  <body>
+  <body class="people">
 
     <div class="menubar">
       <div class="background-wrapper">

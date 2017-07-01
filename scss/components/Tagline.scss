@@ -1,22 +1,4 @@
-@import 'vars';
-
-.transparent {
-  .phrases-centerizer {
-    opacity: 0;
-  }
-}
-
-.phrase.step0 { transform: translateY(0); transition: all 3s ease-in-out !important; }
-.phrase.step1 { transform: translateY(-100%); }
-.phrase.step2 { transform: translateY(-200%); }
-.phrase.step3 { transform: translateY(-300%); }
-.phrase.step4 { transform: translateY(-400%); }
-.phrase.step5 { transform: translateY(-500%); }
-.phrase.step6 { transform: translateY(-600%); }
-.phrase.step7 { transform: translateY(-700%); }
-.phrase.step8 { transform: translateY(0); transition: all 3s ease-in-out !important; }
-
-.phrases-centerizer {
+.Tagline {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,39 +7,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 
-  .phrases-wrapper {
+  .wrapper {
     position: relative;
     width: $largeContainerWidth;
     height: $largeContainerHeight;
     margin-top: -80px;
     overflow: hidden;
-    z-index: 1;
+    // z-index: 99;
 
-    .phrases-container {
-      // position: absolute;
-      // display: flex;
-      // flex-direction: column;
-
-      .phrase {
+    .container {
+      .line {
         position: relative;
-        // z-index: 1;
         display: flex;
-        // transform: translateZ(0);
-        // animation: slideshow 36s infinite ease-in-out;
-        // animation-delay: 3s;
         transition: all .3s ease-in-out;
-
         height: $largeContainerHeight;
         line-height: 100px;
         font-family: 'Basis Off White';
         font-size: 85px;
-        color: white;
         white-space: nowrap;
 
-        .logo-phrase {
+        &.step0 { transform: translateY(0); transition: all 3s ease-in-out !important; }
+        &.step1 { transform: translateY(-100%); }
+        &.step2 { transform: translateY(-200%); }
+        &.step3 { transform: translateY(-300%); }
+        &.step4 { transform: translateY(-400%); }
+        &.step5 { transform: translateY(-500%); }
+        &.step6 { transform: translateY(-600%); }
+        &.step7 { transform: translateY(-700%); }
+        &.step8 { transform: translateY(0); transition: all 3s ease-in-out !important; }
+
+        .logo {
           position: relative;
-          // display: none;
           top: 5px;
           width: 263px;
           height: 106px;
@@ -70,16 +52,26 @@
   }
 }
 
+@media (max-width: 1140px) {
+  .Tagline {
+    .wrapper {
+      left: 53px;
+      width: 797px;
+      margin-top: -190px;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
-  .phrases-centerizer {
-    .phrases-wrapper {
+  .Tagline {
+    .wrapper {
       width: 660px;
 
-      .phrases-container {
-        .phrase {
+      .container {
+        .line {
           font-size: 65px;
 
-          .logo-phrase {
+          .logo {
             top: 14px;
             width: 210px;
             height: 84px;
@@ -88,99 +80,68 @@
         }
       }
     }
-
-    .socialWrapper {
-
-      .socialContainer {
-        width: 552px;
-      }
-    }
   }
 }
 
 @media screen and (max-width: 660px) {
-  .phrases-centerizer {
-    justify-content: flex-start;
-
-    .phrases-wrapper {
-      width: 450px;
+  .Tagline {
+    .wrapper {
       left: 34px;
+      width: 450px;
       margin-top: -190px;
 
-      .phrases-container {
-
-        .phrase {
-          color: white;
+      .container {
+        .line {
           font-size: 25px;
 
-          .logo-phrase {
+          .logo {
+            top: 40px;
             width: 71px;
             height: 28px;
             margin-left: 10px;
-            top: 40px;
           }
         }
       }
     }
-
-    .socialWrapper {
-      .socialContainer {
-        width: 450px;
-      }
-    }
   }
-
 }
 
 @media screen and (max-width: 480px) {
-  .phrases-centerizer {
-    justify-content: flex-start;
-
-    .phrases-wrapper {
-      width: 280px;
+  .Tagline {
+    .wrapper {
       left: 34px;
+      width: 280px;
       margin-top: -70px;
 
-      .phrases-container {
-
-        .phrase {
-          color: white;
+      .container {
+        .line {
           font-size: 25px;
 
-          .logo-phrase {
+          .logo {
+            top: 40px;
             width: 71px;
             height: 28px;
             margin-left: 10px;
-            top: 40px;
           }
         }
       }
     }
-
-    .socialWrapper {
-      .socialContainer {
-        width: 280px;
-      }
-    }
   }
-
 }
 
-
 @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .phrases-centerizer {
-    .phrases-wrapper {
+  .Tagline {
+    .wrapper {
       width: $smallContainerWidth;
 
-      .phrases-container {
-        .phrase {
+      .container {
+        .line {
           font-size: 65px;
 
-          .logo-phrase {
+          .logo {
             top: 14px;
             width: 210px;
             height: 84px;
-            // margin-left: 20px;
           }
         }
       }
@@ -189,18 +150,14 @@
 }
 
 @media (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .phrases-centerizer {
-    .phrases-wrapper {
-      // width: $phoneContainerWidth;
-      // height: $phoneContainerHeight;
-
-      .phrases-container {
-        .phrase {
-          // height: $phoneContainerHeight;
+  .Tagline {
+    .wrapper {
+      .container {
+        .line {
           font-size: 26px;
           line-height: 60px;
 
-          .logo-phrase {
+          .logo {
             top: 12px;
             width: 97px;
             height: 39px;
@@ -213,26 +170,24 @@
 }
 
 @media (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .phrases-centerizer {
-
-    .phrases-wrapper {
+  .Tagline {
+    .wrapper {
       width: $phoneContainerWidth;
       height: $phoneContainerHeight;
 
-      .phrases-container {
+      .container {
         left: 34px;
 
-        .phrase {
+        .line {
           height: $phoneContainerHeight;
           font-size: 26px;
           line-height: 60px;
 
-          .logo-phrase {
+          .logo {
             top: 12px;
             width: 97px;
             height: 39px;
             margin-left: 10px;
-            // top: 20px;
           }
         }
       }

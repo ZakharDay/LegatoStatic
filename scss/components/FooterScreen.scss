@@ -1,0 +1,104 @@
+.FooterScreen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+
+  .Tagline, .SocialBar {
+    color: black;
+  }
+
+  .Tagline {
+    .wrapper {
+      height: 200px;
+
+      .container .line {
+        height: 200px;
+      }
+    }
+  }
+
+  .SocialBar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: 'Proxima Nova Light';
+
+    a {
+      font-size: inherit;
+      text-decoration: none;
+      color: black;
+
+      &:visited {
+        color: black;
+      }
+
+      &:before {
+        font-size: inherit;
+        left: -2px;
+      }
+    }
+
+    .social-likes_single-w {
+      .social-likes {
+        background: rgba(255, 255, 255, .8);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .FooterScreen {
+    .SocialBar {
+      left: 0;
+      justify-content: flex-start;
+      width: 730px;
+      margin-bottom: 10px;
+
+      & > div {
+        margin-right: 20px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .FooterScreen {
+    .Tagline {
+      .wrapper {
+        left: auto;
+        height: $largeContainerHeight;
+        margin-top: -280px;
+
+        .container {
+          .line {
+            height: $largeContainerHeight;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+
+    .SocialBar {
+      left: 0;
+      display: block;
+      width: 280px;
+      margin-bottom: 10px;
+      padding: 0;
+      font-size: 12px;
+
+      & > div {
+        margin-right: 20px;
+        margin-bottom: 30px;
+
+        a {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.SplashScreen {
+  position: relative;
+
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .SocialBar {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    z-index: 99;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .SplashScreen {
+    video {
+      height: 90vh;
+    }
+
+    .Tagline {
+      justify-content: flex-start;
+
+      .SocialBar {
+        .container {
+          .social-likes_single-w {
+            position: static;
+          }
+        }
+      }
+    }
+  }
+}
