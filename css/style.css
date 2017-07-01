@@ -676,7 +676,7 @@ a {
     display: block;
     font-family: 'Basis Off White', Helvetica, Arial, sans-serif;
     font-size: 15px;
-    color: inherit; }
+    color: black; }
     .MenuBar a:hover {
       text-decoration: underline; }
     .MenuBar a:visited {
@@ -910,9 +910,15 @@ body.initial .MenuBar {
   color: white; }
   body.initial .MenuBar:hover {
     background: none; }
+  body.initial .MenuBar a {
+    color: white; }
   body.initial .MenuBar .logo {
     background-image: url(../img/logo_white.svg); }
 
+body:not(.initial) .MenuBar {
+  color: black; }
+  body:not(.initial) .MenuBar a {
+    color: black; }
 body:not(.initial) .SplashScreen {
   opacity: .25;
   transform: scale(0.8); }
@@ -924,11 +930,10 @@ body:not(.initial) .SplashScreen {
     color: black; }
     body.initial .MenuBar:hover, body:not(.initial) .MenuBar:hover {
       background: rgba(255, 255, 255, 0.8); }
+    body.initial .MenuBar a, body:not(.initial) .MenuBar a {
+      color: black; }
     body.initial .MenuBar .logo, body:not(.initial) .MenuBar .logo {
       background-image: url(../img/logo_black.svg); } }
-* {
-  transition: all 0.3s ease-in-out; }
-
 .intro {
   display: flex; }
 

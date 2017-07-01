@@ -40,7 +40,7 @@
     display: block;
     @include font-thin;
     font-size: 15px;
-    color: inherit;
+    color: black;
 
     &:hover {
       text-decoration: underline;

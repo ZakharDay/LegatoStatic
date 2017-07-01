@@ -6,6 +6,10 @@ body.initial {
       background: none;
     }
 
+    a {
+      color: white;
+    }
+
     .logo {
       background-image: url(../img/logo_white.svg);
     }
@@ -13,6 +17,14 @@ body.initial {
 }
 
 body:not(.initial) {
+  .MenuBar {
+    color: black;
+
+    a {
+      color: black;
+    }
+  }
+
   .SplashScreen {
     opacity: .25;
     transform: scale(0.8);
@@ -30,6 +42,10 @@ body:not(.initial) {
 
       &:hover {
         background: rgba(255, 255, 255, .8);
+      }
+
+      a {
+        color: black;
       }
 
       .logo {
