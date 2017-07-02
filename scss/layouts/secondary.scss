@@ -1,3 +1,15 @@
+body.secondary {
+  .FooterScreen {
+    margin-top: 50px;
+  }
+}
+
+
+
+
+
+
+
 .intro {
   display: flex;
   // align-items: center;
@@ -5,9 +17,9 @@
 
 .content-wrapper {
   // position: relative;
-  height: 100%;
-  width: 1266px;
-  margin-top: 190px;
+  // height: 100%;
+  // width: 1266px;
+  // margin-top: 190px;
 
   .title {
     font-family: 'Basis Off White';
@@ -251,7 +263,7 @@
 
 @media only screen and (max-width: 1280px) {
   .content-wrapper {
-    width: 1170px;
+    // width: 1170px;
 
     .intro-text {
       padding-left: 78px;
@@ -285,7 +297,7 @@
 @media only screen and (max-width: 1200px) {
 
   .content-wrapper {
-    width: 994px;
+    // width: 994px;
 
     .intro-text {
       padding-left: 55px;
@@ -360,7 +372,7 @@
 @media only screen and (max-width: 990px) {
 
   .content-wrapper {
-    width: 714px;
+    // width: 714px;
 
     .intro-text {
       padding-left: 78px;
@@ -462,7 +474,7 @@
 @media only screen and (max-width: 660px) {
 
   .content-wrapper {
-    width: 295px;
+    // width: 295px;
 
     margin-top: 135px;
 

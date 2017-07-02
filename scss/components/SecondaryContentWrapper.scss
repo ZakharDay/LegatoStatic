@@ -1,0 +1,30 @@
+.SecondaryContentWrapper {
+  // position: relative;
+  height: 100%;
+  width: 1266px;
+  margin-top: 190px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .SecondaryContentWrapper {
+    width: 1170px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .SecondaryContentWrapper {
+    width: 994px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .SecondaryContentWrapper {
+    width: 714px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .SecondaryContentWrapper {
+    width: 295px;
+  }
+}
