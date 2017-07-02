@@ -69,7 +69,8 @@ table {
 * {
   box-sizing: border-box;
   background-size: cover;
-  transition: all ease-in-out .3s; }
+  transition: all ease-in-out .3s;
+  user-select: none; }
 
 a {
   text-decoration: none; }
@@ -664,14 +665,6 @@ a {
   color: black; }
   .MenuBar:hover {
     background: rgba(255, 255, 255, 0.8); }
-  .MenuBar.opened .mainmenu {
-    display: block !important; }
-  .MenuBar.opened .menuButton::before {
-    transform: rotate(-45deg) translateY(4px) translateX(-5px); }
-  .MenuBar.opened .menuButton::after {
-    transform: rotate(45deg) translateY(-5px) translateX(-5px); }
-  .MenuBar.opened .menuButton div {
-    width: 0; }
   .MenuBar a {
     display: block;
     font-family: 'Basis Off White', Helvetica, Arial, sans-serif;
@@ -728,8 +721,15 @@ a {
         display: block;
         margin-top: 20px; }
       .MenuBar.opened .mainmenu {
+        display: block !important;
         margin-top: 20px;
-        line-height: 1.6; } }
+        line-height: 1.6; }
+      .MenuBar.opened .menuButton::before {
+        transform: rotate(-45deg) translateY(4px) translateX(-5px); }
+      .MenuBar.opened .menuButton::after {
+        transform: rotate(45deg) translateY(-5px) translateX(-5px); }
+      .MenuBar.opened .menuButton div {
+        width: 0; } }
 .SocialBar {
   display: flex;
   flex-wrap: wrap;

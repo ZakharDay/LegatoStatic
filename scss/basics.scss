@@ -2,6 +2,7 @@
   box-sizing: border-box;
   background-size: cover;
   transition: all ease-in-out .3s;
+  user-select: none;
 }
 
 a {

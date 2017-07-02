@@ -16,26 +16,6 @@
     background: rgba(255, 255, 255, .8);
   }
 
-  &.opened {
-    .mainmenu {
-      display: block !important;
-    }
-
-    .menuButton {
-      &::before {
-        transform: rotate(-45deg) translateY(4px) translateX(-5px);
-      }
-
-      &::after {
-        transform: rotate(45deg) translateY(-5px) translateX(-5px);
-      }
-
-      div {
-        width: 0;
-      }
-    }
-  }
-
   a {
     display: block;
     @include font-thin;
@@ -108,7 +88,6 @@
   .MenuBar {
     margin-top: 0;
     padding: 10px 20px;
-
     background: rgba(255, 255, 255, .8);
     color: black;
 
@@ -123,8 +102,23 @@
       }
 
       .mainmenu {
+        display: block !important;
         margin-top: 20px;
         line-height: 1.6;
+      }
+
+      .menuButton {
+        &::before {
+          transform: rotate(-45deg) translateY(4px) translateX(-5px);
+        }
+
+        &::after {
+          transform: rotate(45deg) translateY(-5px) translateX(-5px);
+        }
+
+        div {
+          width: 0;
+        }
       }
     }
   }
