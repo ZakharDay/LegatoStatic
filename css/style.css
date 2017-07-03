@@ -69,6 +69,7 @@ table {
 * {
   box-sizing: border-box;
   background-size: cover;
+  background-position: center;
   transition: all ease-in-out .3s;
   user-select: none; }
 
@@ -197,24 +198,20 @@ a {
         display: block;
         margin-bottom: 10px; } }
 .IndexContentSection {
-  display: block;
-  height: 7403px;
-  position: relative; }
+  font-size: 15px;
+  line-height: 21px;
+  color: black; }
   .IndexContentSection div {
-    position: absolute;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 21px;
-    color: black; }
-    .IndexContentSection div:hover {
-      z-index: 20; }
-      .IndexContentSection div:hover figure, .IndexContentSection div:hover p {
-        opacity: 1; }
+    flex-shrink: 0;
+    flex-grow: 0; }
+  .IndexContentSection figcaption:hover {
+    z-index: 20; }
+    .IndexContentSection figcaption:hover figure, .IndexContentSection figcaption:hover p {
+      opacity: 1; }
   .IndexContentSection figure {
-    opacity: .25;
-    background-size: cover;
     background-color: black;
-    filter: grayscale(100%); }
+    filter: grayscale(100%);
+    opacity: .25; }
   .IndexContentSection p {
     margin-top: 15px;
     font-family: 'Proxima Nova Light';
@@ -228,112 +225,128 @@ a {
       text-decoration: none; }
     .IndexContentSection a:visited {
       color: black; }
-  .IndexContentSection .type_1 {
+  .IndexContentSection section {
     display: flex;
-    justify-content: space-between;
-    height: 1050px;
     padding: 0 30px; }
-    .IndexContentSection .type_1 div {
-      position: static; }
-      .IndexContentSection .type_1 div:nth-child(1) {
-        width: 546px;
-        align-self: flex-end; }
-        .IndexContentSection .type_1 div:nth-child(1) figure {
-          height: 387px;
-          background-image: url(../img/main/pic-2.png); }
-      .IndexContentSection .type_1 div:nth-child(2) {
-        align-self: flex-start;
-        width: 430px; }
-        .IndexContentSection .type_1 div:nth-child(2) figure {
-          height: 721px;
-          background-image: url(../img/main/pic-1.png); }
+  .IndexContentSection .type_1 {
+    justify-content: space-between;
+    height: 1050px; }
+    .IndexContentSection .type_1 div:nth-child(1) {
+      align-self: flex-end;
+      width: 546px; }
+      .IndexContentSection .type_1 div:nth-child(1) figure {
+        height: 387px;
+        background-image: url(../img/main/pic-2.png); }
+    .IndexContentSection .type_1 div:nth-child(2) {
+      align-self: flex-start;
+      width: 430px; }
+      .IndexContentSection .type_1 div:nth-child(2) figure {
+        height: 721px;
+        background-image: url(../img/main/pic-1.png); }
   .IndexContentSection .type_2 {
-    display: flex;
     justify-content: center;
     height: 1500px;
     margin-top: 200px; }
-    .IndexContentSection .type_2 div {
-      position: static; }
-      .IndexContentSection .type_2 div:nth-child(1) {
-        width: 300px;
-        margin: 330px -60px 0 0; }
-        .IndexContentSection .type_2 div:nth-child(1) figure {
-          height: 504px;
-          background-image: url(../img/main/pic-4.png); }
-      .IndexContentSection .type_2 div:nth-child(2) {
-        width: 549px; }
-        .IndexContentSection .type_2 div:nth-child(2) figure {
-          height: 389px;
-          background-image: url(../img/main/pic-3.png); }
-      .IndexContentSection .type_2 div:nth-child(3) {
+    .IndexContentSection .type_2 div:nth-child(1) {
+      width: 300px;
+      margin: 330px -60px 0 0; }
+      .IndexContentSection .type_2 div:nth-child(1) figure {
+        height: 504px;
+        background-image: url(../img/main/pic-4.png); }
+    .IndexContentSection .type_2 div:nth-child(2) {
+      width: 549px; }
+      .IndexContentSection .type_2 div:nth-child(2) figure {
+        height: 389px;
+        background-image: url(../img/main/pic-3.png); }
+    .IndexContentSection .type_2 div:nth-child(3) {
+      align-self: flex-end;
+      width: 348px;
+      margin-left: -60px; }
+      .IndexContentSection .type_2 div:nth-child(3) figure {
+        height: 668px;
+        background-image: url(../img/main/pic-5.png); }
+  .IndexContentSection .type_3 {
+    justify-content: space-between;
+    height: 1400px; }
+    .IndexContentSection .type_3 > div:nth-child(1) {
+      width: 522px; }
+      .IndexContentSection .type_3 > div:nth-child(1) figure {
+        height: 370px;
+        background-image: url(../img/main/pic-6.png); }
+    .IndexContentSection .type_3 > div:nth-child(2) {
+      display: flex;
+      align-self: flex-end;
+      height: 930px;
+      margin-right: 120px; }
+      .IndexContentSection .type_3 > div:nth-child(2) div:nth-child(1) {
         align-self: flex-end;
-        width: 348px;
+        width: 490px;
+        margin-left: -90px; }
+        .IndexContentSection .type_3 > div:nth-child(2) div:nth-child(1) figure {
+          height: 348px;
+          background-image: url(../img/main/pic-8.png); }
+      .IndexContentSection .type_3 > div:nth-child(2) div:nth-child(2) {
+        align-self: flex-start;
+        width: 430px;
         margin-left: -60px; }
-        .IndexContentSection .type_2 div:nth-child(3) figure {
-          height: 668px;
-          background-image: url(../img/main/pic-5.png); }
-  .IndexContentSection .type_3 div:nth-child(1) {
-    top: 2744px; }
-    .IndexContentSection .type_3 div:nth-child(1) figure {
-      width: 522px;
-      height: 370px;
-      background-image: url(../img/main/pic-6.png); }
-  .IndexContentSection .type_3 div:nth-child(2) {
-    top: 3197px;
-    right: 150px; }
-    .IndexContentSection .type_3 div:nth-child(2) figure {
-      width: 431px;
-      height: 694px;
-      background-image: url(../img/main/pic-7.png); }
-  .IndexContentSection .type_3 div:nth-child(3) {
-    top: 3730px;
-    right: 521px; }
-    .IndexContentSection .type_3 div:nth-child(3) figure {
-      width: 491px;
-      height: 348px;
-      background-image: url(../img/main/pic-8.png); }
-  .IndexContentSection .type_4 div:nth-child(1) {
-    top: 4357px;
-    right: 76px; }
-    .IndexContentSection .type_4 div:nth-child(1) figure {
-      width: 469px;
-      height: 333px;
-      background-image: url(../img/main/pic-9.png); }
-  .IndexContentSection .type_4 div:nth-child(2) {
-    top: 4722px;
-    left: 54px; }
-    .IndexContentSection .type_4 div:nth-child(2) figure {
-      width: 301px;
-      height: 507px;
-      background-image: url(../img/main/pic-10.png); }
-  .IndexContentSection .type_4 div:nth-child(3) {
-    top: 5182px;
-    left: 303px; }
-    .IndexContentSection .type_4 div:nth-child(3) figure {
-      width: 339px;
-      height: 568px;
-      background-image: url(../img/main/pic-11.png); }
-  .IndexContentSection .type_5 div:nth-child(1) {
-    top: 5880px;
-    right: 30px; }
-    .IndexContentSection .type_5 div:nth-child(1) figure {
-      width: 594px;
-      height: 483px;
-      background-image: url(../img/main/pic-12.png); }
-  .IndexContentSection .type_5 div:nth-child(2) {
-    top: 6614px;
-    left: 153px; }
-    .IndexContentSection .type_5 div:nth-child(2) figure {
-      width: 729px;
-      height: 600px;
-      background-image: url(../img/main/pic-13.png); }
+        .IndexContentSection .type_3 > div:nth-child(2) div:nth-child(2) figure {
+          height: 694px;
+          background-image: url(../img/main/pic-7.png); }
+  .IndexContentSection .type_4 {
+    justify-content: space-between;
+    height: 1440px;
+    margin-top: 200px;
+    padding: 0 60px; }
+    .IndexContentSection .type_4 > div:nth-child(1) {
+      display: flex;
+      align-self: flex-end;
+      height: 1080px; }
+      .IndexContentSection .type_4 > div:nth-child(1) div:nth-child(1) {
+        align-self: flex-start;
+        width: 301px; }
+        .IndexContentSection .type_4 > div:nth-child(1) div:nth-child(1) figure {
+          height: 507px;
+          background-image: url(../img/main/pic-10.png); }
+      .IndexContentSection .type_4 > div:nth-child(1) div:nth-child(2) {
+        align-self: flex-end;
+        width: 339px;
+        margin-left: -60px; }
+        .IndexContentSection .type_4 > div:nth-child(1) div:nth-child(2) figure {
+          height: 568px;
+          background-image: url(../img/main/pic-11.png); }
+    .IndexContentSection .type_4 > div:nth-child(2) {
+      width: 469px; }
+      .IndexContentSection .type_4 > div:nth-child(2) figure {
+        height: 333px;
+        background-image: url(../img/main/pic-9.png); }
+  .IndexContentSection .type_5 {
+    justify-content: flex-end;
+    height: 1400px;
+    margin-top: 100px; }
+    .IndexContentSection .type_5 div:nth-child(1) {
+      align-self: flex-end;
+      width: 730px;
+      margin-right: -60px; }
+      .IndexContentSection .type_5 div:nth-child(1) figure {
+        height: 600px;
+        background-image: url(../img/main/pic-13.png); }
+    .IndexContentSection .type_5 div:nth-child(2) {
+      width: 594px; }
+      .IndexContentSection .type_5 div:nth-child(2) figure {
+        height: 483px;
+        background-image: url(../img/main/pic-12.png); }
 
+@media only screen and (max-width: 1366px) {
+  .IndexContentSection .type_3 > div:nth-child(2) {
+    margin-left: calc(100vw - 30px - 30px - 830px - 930px);
+    margin-right: 0; } }
+@media only screen and (max-width: 1320px) {
+  .IndexContentSection .type_5 div:nth-child(1) {
+    margin-right: calc(100vw - 30px - 30px - 730px - 594px); } }
 @media only screen and (max-width: 1140px) {
   .IndexContentSection {
-    height: 5175px; }
-    .IndexContentSection div {
-      font-size: 13px;
-      line-height: 17px; }
+    font-size: 13px;
+    line-height: 17px; }
     .IndexContentSection .type_1 {
       height: 670px; }
       .IndexContentSection .type_1 div:nth-child(1) {
@@ -360,64 +373,78 @@ a {
         margin-left: 20vw; }
         .IndexContentSection .type_2 div:nth-child(3) figure {
           height: 390px; }
-    .IndexContentSection .type_3 div:nth-child(1) {
-      top: 1948px; }
-      .IndexContentSection .type_3 div:nth-child(1) figure {
-        width: 348px;
-        height: 245px; }
-    .IndexContentSection .type_3 div:nth-child(2) {
-      top: 2346px;
-      right: 50px; }
-      .IndexContentSection .type_3 div:nth-child(2) figure {
-        width: 288px;
-        height: 462px; }
-    .IndexContentSection .type_3 div:nth-child(3) {
-      top: 2700px;
-      right: 299px; }
-      .IndexContentSection .type_3 div:nth-child(3) figure {
-        width: 238px;
-        height: 231px; }
-    .IndexContentSection .type_4 div:nth-child(1) {
-      top: 3145px;
-      right: 25px; }
-      .IndexContentSection .type_4 div:nth-child(1) figure {
-        width: 313px;
-        height: 222px; }
-    .IndexContentSection .type_4 div:nth-child(2) {
-      top: 3417px;
-      left: 18px; }
-      .IndexContentSection .type_4 div:nth-child(2) figure {
-        width: 201px;
-        height: 338px; }
-    .IndexContentSection .type_4 div:nth-child(3) {
-      top: 3724px;
-      left: 184px; }
-      .IndexContentSection .type_4 div:nth-child(3) figure {
-        width: 226px;
-        height: 378px; }
-    .IndexContentSection .type_5 div:nth-child(1) {
-      top: 4200px;
-      right: 10px; }
-      .IndexContentSection .type_5 div:nth-child(1) figure {
-        width: 396px;
-        height: 267px; }
-    .IndexContentSection .type_5 div:nth-child(2) {
-      top: 4763px;
-      left: 51px; }
-      .IndexContentSection .type_5 div:nth-child(2) figure {
+    .IndexContentSection .type_3 {
+      height: 1000px; }
+      .IndexContentSection .type_3 div:nth-child(1) {
+        width: 348px; }
+        .IndexContentSection .type_3 div:nth-child(1) figure {
+          height: 245px; }
+      .IndexContentSection .type_3 div:nth-child(2) {
+        height: 650px; }
+        .IndexContentSection .type_3 div:nth-child(2) div:nth-child(1) {
+          width: 238px; }
+          .IndexContentSection .type_3 div:nth-child(2) div:nth-child(1) figure {
+            height: 231px; }
+        .IndexContentSection .type_3 div:nth-child(2) div:nth-child(2) {
+          width: 288px;
+          margin-left: -30px; }
+          .IndexContentSection .type_3 div:nth-child(2) div:nth-child(2) figure {
+            height: 462px; }
+    .IndexContentSection .type_4 {
+      height: 1000px;
+      padding: 0 30px; }
+      .IndexContentSection .type_4 div:nth-child(1) {
+        height: 750px; }
+        .IndexContentSection .type_4 div:nth-child(1) div:nth-child(1) {
+          width: 201px; }
+          .IndexContentSection .type_4 div:nth-child(1) div:nth-child(1) figure {
+            height: 338px; }
+        .IndexContentSection .type_4 div:nth-child(1) div:nth-child(2) {
+          width: 226px;
+          margin-left: -30px; }
+          .IndexContentSection .type_4 div:nth-child(1) div:nth-child(2) figure {
+            height: 378px; }
+      .IndexContentSection .type_4 div:nth-child(2) {
+        width: 313px; }
+        .IndexContentSection .type_4 div:nth-child(2) figure {
+          height: 222px; }
+    .IndexContentSection .type_5 {
+      justify-content: space-between;
+      height: 900px;
+      padding: 0 30px 0 60px; }
+      .IndexContentSection .type_5 div:nth-child(1) {
         width: 468px;
-        height: 344px; } }
+        margin-right: auto; }
+        .IndexContentSection .type_5 div:nth-child(1) figure {
+          height: 344px; }
+      .IndexContentSection .type_5 div:nth-child(2) {
+        width: 396px; }
+        .IndexContentSection .type_5 div:nth-child(2) figure {
+          height: 267px; } }
 @media only screen and (max-width: 1024px) {
-  .IndexContentSection div figure, .IndexContentSection div p {
-    opacity: 1; } }
-@media only screen and (max-width: 768px) {
+  .IndexContentSection figcaption figure, .IndexContentSection figcaption p {
+    opacity: 1; }
+  .IndexContentSection .type_2 div:nth-child(1) {
+    margin-right: 40px; }
+  .IndexContentSection .type_2 div:nth-child(2) {
+    margin-right: -220px; }
+  .IndexContentSection .type_3 div:nth-child(2) div:nth-child(2) {
+    margin-left: 30px; }
+  .IndexContentSection .type_4 div:nth-child(1) div:nth-child(2) {
+    margin-left: 30px; }
+  .IndexContentSection .type_5 div:nth-child(1) {
+    margin-right: calc(100vw - 60px - 30px - 468px - 396px); } }
+@media only screen and (max-width: 830px) {
   .IndexContentSection {
-    height: 9373px; }
-    .IndexContentSection div {
-      font-size: 15px;
-      line-height: 21px; }
+    font-size: 15px;
+    line-height: 21px; }
+    .IndexContentSection section {
+      height: auto !important;
+      flex-direction: column; }
+      .IndexContentSection section div {
+        height: auto !important;
+        flex-direction: column; }
     .IndexContentSection .type_1 {
-      height: auto;
       flex-direction: column; }
       .IndexContentSection .type_1 div:nth-child(1) {
         align-self: flex-start;
@@ -433,77 +460,90 @@ a {
         .IndexContentSection .type_1 div:nth-child(2) figure {
           height: 721px; }
     .IndexContentSection .type_2 div:nth-child(1) {
-      top: 1648px;
-      right: 56px; }
+      order: 2;
+      width: 300px;
+      margin-left: 30px; }
       .IndexContentSection .type_2 div:nth-child(1) figure {
-        width: 549px;
-        height: 389px; }
-    .IndexContentSection .type_2 div:nth-child(2) {
-      top: 2273px;
-      left: 56px; }
-      .IndexContentSection .type_2 div:nth-child(2) figure {
-        width: 300px;
         height: 504px; }
+    .IndexContentSection .type_2 div:nth-child(2) {
+      align-self: flex-end;
+      order: 1;
+      width: 549px;
+      margin: 0; }
+      .IndexContentSection .type_2 div:nth-child(2) figure {
+        height: 389px; }
     .IndexContentSection .type_2 div:nth-child(3) {
-      top: 3022px;
-      right: 60px; }
+      order: 3;
+      width: 348px;
+      margin-top: 100px; }
       .IndexContentSection .type_2 div:nth-child(3) figure {
-        width: 348px;
         height: 668px; }
-    .IndexContentSection .type_3 div:nth-child(1) {
-      top: 3852px; }
-      .IndexContentSection .type_3 div:nth-child(1) figure {
-        width: 522px;
-        height: 370px; }
-    .IndexContentSection .type_3 div:nth-child(2) {
-      top: 4469px;
-      right: 56px; }
-      .IndexContentSection .type_3 div:nth-child(2) figure {
-        width: 431px;
-        height: 694px; }
-    .IndexContentSection .type_3 div:nth-child(3) {
-      top: 5408px;
-      left: 56px; }
-      .IndexContentSection .type_3 div:nth-child(3) figure {
-        width: 491px;
-        height: 348px; }
+    .IndexContentSection .type_3 {
+      margin-top: 100px; }
+      .IndexContentSection .type_3 div:nth-child(1) {
+        width: 522px; }
+        .IndexContentSection .type_3 div:nth-child(1) figure {
+          height: 370px; }
+      .IndexContentSection .type_3 div:nth-child(2) {
+        width: 100%;
+        margin-left: auto; }
+        .IndexContentSection .type_3 div:nth-child(2) div:nth-child(1) {
+          align-self: flex-start;
+          order: 2;
+          width: 491px;
+          margin-top: 150px;
+          margin-left: 30px; }
+          .IndexContentSection .type_3 div:nth-child(2) div:nth-child(1) figure {
+            height: 348px; }
+        .IndexContentSection .type_3 div:nth-child(2) div:nth-child(2) {
+          align-self: flex-end;
+          order: 1;
+          width: 431px;
+          margin-top: 150px; }
+          .IndexContentSection .type_3 div:nth-child(2) div:nth-child(2) figure {
+            height: 694px; }
     .IndexContentSection .type_4 div:nth-child(1) {
-      top: 6001px;
-      right: 25px; }
-      .IndexContentSection .type_4 div:nth-child(1) figure {
-        width: 469px;
-        height: 333px; }
+      justify-content: space-between;
+      order: 2;
+      width: 100%; }
+      .IndexContentSection .type_4 div:nth-child(1) div {
+        margin-top: 150px; }
+        .IndexContentSection .type_4 div:nth-child(1) div:nth-child(1) {
+          order: 1;
+          width: 301px; }
+          .IndexContentSection .type_4 div:nth-child(1) div:nth-child(1) figure {
+            height: 507px; }
+        .IndexContentSection .type_4 div:nth-child(1) div:nth-child(2) {
+          order: 2;
+          width: 339px; }
+          .IndexContentSection .type_4 div:nth-child(1) div:nth-child(2) figure {
+            height: 568px; }
     .IndexContentSection .type_4 div:nth-child(2) {
-      top: 6579px;
-      left: 18px; }
+      align-self: flex-end;
+      order: 1;
+      width: 469px; }
       .IndexContentSection .type_4 div:nth-child(2) figure {
-        width: 301px;
-        height: 507px; }
-    .IndexContentSection .type_4 div:nth-child(3) {
-      top: 7323px;
-      right: 18px;
-      left: auto; }
-      .IndexContentSection .type_4 div:nth-child(3) figure {
-        width: 339px;
-        height: 568px; }
-    .IndexContentSection .type_5 div:nth-child(1) {
-      top: 8136px;
-      right: 10px; }
-      .IndexContentSection .type_5 div:nth-child(1) figure {
+        height: 333px; }
+    .IndexContentSection .type_5 {
+      padding: 0 30px; }
+      .IndexContentSection .type_5 div:nth-child(1) {
+        align-self: flex-start;
+        order: 2;
         width: 594px;
-        height: 483px; }
-    .IndexContentSection .type_5 div:nth-child(2) {
-      top: 8781px;
-      left: 51px; }
-      .IndexContentSection .type_5 div:nth-child(2) figure {
-        width: 655px;
-        height: 465px; } }
+        margin: 150px 0 0 0; }
+        .IndexContentSection .type_5 div:nth-child(1) figure {
+          height: 483px; }
+      .IndexContentSection .type_5 div:nth-child(2) {
+        align-self: flex-end;
+        order: 1;
+        width: 640px;
+        margin: 150px 0 0 0; }
+        .IndexContentSection .type_5 div:nth-child(2) figure {
+          height: 455px; } }
 @media only screen and (max-width: 660px) {
   .IndexContentSection {
-    height: 6004px; }
-    .IndexContentSection div {
-      font-size: 13px;
-      line-height: 17px; }
+    font-size: 13px;
+    line-height: 17px; }
     .IndexContentSection .type_1 div:nth-child(1) {
       width: 263px; }
       .IndexContentSection .type_1 div:nth-child(1) figure {
@@ -513,73 +553,48 @@ a {
       .IndexContentSection .type_1 div:nth-child(2) figure {
         height: 436px; }
     .IndexContentSection .type_2 div:nth-child(1) {
-      top: 984px;
-      right: 37px;
-      left: auto; }
+      width: 260px; }
       .IndexContentSection .type_2 div:nth-child(1) figure {
-        width: 263px;
-        height: 186px; }
-    .IndexContentSection .type_2 div:nth-child(2) {
-      top: 1330px;
-      right: 25px;
-      left: auto; }
-      .IndexContentSection .type_2 div:nth-child(2) figure {
-        width: 260px;
         height: 436px; }
+    .IndexContentSection .type_2 div:nth-child(2) {
+      width: 263px; }
+      .IndexContentSection .type_2 div:nth-child(2) figure {
+        height: 186px; }
     .IndexContentSection .type_2 div:nth-child(3) {
-      top: 1928px;
-      right: 40px; }
+      width: 260px; }
       .IndexContentSection .type_2 div:nth-child(3) figure {
-        width: 260px;
         height: 436px; }
     .IndexContentSection .type_3 div:nth-child(1) {
-      top: 2529px; }
+      width: 263px; }
       .IndexContentSection .type_3 div:nth-child(1) figure {
-        width: 263px;
         height: 186px; }
-    .IndexContentSection .type_3 div:nth-child(2) {
-      top: 2898px;
-      right: 36px; }
-      .IndexContentSection .type_3 div:nth-child(2) figure {
-        width: 260px;
+    .IndexContentSection .type_3 div:nth-child(2) div:nth-child(1) {
+      width: 263px; }
+      .IndexContentSection .type_3 div:nth-child(2) div:nth-child(1) figure {
+        height: 186px; }
+    .IndexContentSection .type_3 div:nth-child(2) div:nth-child(2) {
+      width: 260px; }
+      .IndexContentSection .type_3 div:nth-child(2) div:nth-child(2) figure {
         height: 436px; }
-    .IndexContentSection .type_3 div:nth-child(3) {
-      top: 3501px;
-      right: 19px;
-      left: auto; }
-      .IndexContentSection .type_3 div:nth-child(3) figure {
-        width: 263px;
-        height: 186px; }
-    .IndexContentSection .type_4 div:nth-child(1) {
-      top: 3847px;
-      right: 17px; }
-      .IndexContentSection .type_4 div:nth-child(1) figure {
-        width: 263px;
-        height: 186px; }
+    .IndexContentSection .type_4 div:nth-child(1) div:nth-child(1) {
+      width: 260px; }
+      .IndexContentSection .type_4 div:nth-child(1) div:nth-child(1) figure {
+        height: 436px; }
+    .IndexContentSection .type_4 div:nth-child(1) div:nth-child(2) {
+      width: 260px; }
+      .IndexContentSection .type_4 div:nth-child(1) div:nth-child(2) figure {
+        height: 436px; }
     .IndexContentSection .type_4 div:nth-child(2) {
-      top: 4193px;
-      left: 12px; }
+      width: 263px; }
       .IndexContentSection .type_4 div:nth-child(2) figure {
-        width: 260px;
-        height: 436px; }
-    .IndexContentSection .type_4 div:nth-child(3) {
-      top: 4796px;
-      right: 12px;
-      left: auto; }
-      .IndexContentSection .type_4 div:nth-child(3) figure {
-        width: 260px;
-        height: 436px; }
+        height: 186px; }
     .IndexContentSection .type_5 div:nth-child(1) {
-      top: 5399px;
-      right: 17px; }
+      width: 263px; }
       .IndexContentSection .type_5 div:nth-child(1) figure {
-        width: 263px;
         height: 186px; }
     .IndexContentSection .type_5 div:nth-child(2) {
-      top: 5754px;
-      left: 34px; }
+      width: 263px; }
       .IndexContentSection .type_5 div:nth-child(2) figure {
-        width: 263px;
         height: 186px; } }
 .MenuBar {
   position: fixed;
@@ -875,6 +890,9 @@ body:not(.initial) .SplashScreen {
   body:not(.initial) .SplashScreen .Tagline, body:not(.initial) .SplashScreen .SocialBar {
     opacity: 0; }
 
+@media only screen and (max-width: 1140px) {
+  body:not(.initial) .SplashScreen {
+    transform: scale(0.7); } }
 @media only screen and (max-width: 1024px) {
   body.initial .MenuBar, body:not(.initial) .MenuBar {
     color: black; }
@@ -883,7 +901,16 @@ body:not(.initial) .SplashScreen {
     body.initial .MenuBar a, body:not(.initial) .MenuBar a {
       color: black; }
     body.initial .MenuBar .logo, body:not(.initial) .MenuBar .logo {
-      background-image: url(../img/logo_black.svg); } }
+      background-image: url(../img/logo_black.svg); }
+
+  body:not(.initial) .SplashScreen {
+    transform: scale(0.6); } }
+@media only screen and (max-width: 830px) {
+  body:not(.initial) .SplashScreen {
+    transform: scale(0.45); } }
+@media only screen and (max-width: 660px) {
+  body:not(.initial) .SplashScreen {
+    transform: scale(0.25); } }
 body.secondary .FooterScreen {
   margin-top: 50px; }
 

@@ -41,6 +41,14 @@ body:not(.initial) {
   }
 }
 
+@media only screen and (max-width: 1140px) {
+  body:not(.initial) {
+    .SplashScreen {
+      transform: scale(0.7);
+    }
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   body.initial, body:not(.initial) {
     .MenuBar {
@@ -57,6 +65,28 @@ body:not(.initial) {
       .logo {
         background-image: url(../img/logo_black.svg);
       }
+    }
+  }
+
+  body:not(.initial) {
+    .SplashScreen {
+      transform: scale(0.6);
+    }
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  body:not(.initial) {
+    .SplashScreen {
+      transform: scale(0.45);
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  body:not(.initial) {
+    .SplashScreen {
+      transform: scale(0.25);
     }
   }
 }
