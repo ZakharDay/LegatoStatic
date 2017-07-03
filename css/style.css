@@ -204,10 +204,16 @@ a {
   .IndexContentSection div {
     flex-shrink: 0;
     flex-grow: 0; }
-  .IndexContentSection figcaption:hover {
-    z-index: 20; }
-    .IndexContentSection figcaption:hover figure, .IndexContentSection figcaption:hover p {
-      opacity: 1; }
+  .IndexContentSection figcaption {
+    transition: all .6s ease-in-out; }
+    .IndexContentSection figcaption:hover {
+      z-index: 20; }
+      .IndexContentSection figcaption:hover figure, .IndexContentSection figcaption:hover p {
+        opacity: 1; }
+    .IndexContentSection figcaption.visible {
+      transform: scale(1.1); }
+      .IndexContentSection figcaption.visible figure, .IndexContentSection figcaption.visible p {
+        opacity: 1; }
   .IndexContentSection figure {
     background-color: black;
     filter: grayscale(100%);

@@ -9,8 +9,18 @@
   }
 
   figcaption {
+    transition: all .6s ease-in-out;
+    
     &:hover {
       z-index: 20;
+
+      figure, p {
+        opacity: 1;
+      }
+    }
+
+    &.visible {
+      transform: scale(1.1);
 
       figure, p {
         opacity: 1;
