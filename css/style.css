@@ -1191,6 +1191,8 @@ body.secondary .FooterScreen {
     padding-left: 78px; } }
 @media only screen and (max-width: 660px) {
   body.secondary .FooterScreen .SocialBar {
+    padding-left: 18px; }
+  body.secondary.people .FooterScreen .SocialBar {
     padding-left: 18px; } }
 
 /*# sourceMappingURL=style.css.map */
