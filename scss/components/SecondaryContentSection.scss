@@ -9,7 +9,7 @@
     width: 514px;
 
     &:first-of-type {
-      margin-top: 150px;
+      margin-top: 50px;
     }
 
     &:last-of-type {
@@ -60,7 +60,9 @@
       display: block;
       width: 290px;
 
-      &:first-of-type,
+      &:first-of-type {
+        margin-top: 20px;
+      }
       &:last-of-type {
         margin-top: 0;
       }
