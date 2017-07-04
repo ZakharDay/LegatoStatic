@@ -1,15 +1,98 @@
 .SecondaryPeopleSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-left: 172px;
+  margin-top: 100px;
+
+  &:after {
+    content: "";
+    width: 425px;
+  }
+
   div {
     figure {
+      height: 254px;
+      width: 203px;
 
+      background-size: cover;
     }
 
     h5 {
-
+      @include font-regular;
+      font-size: 15px;
+      line-height: 21px;
+      padding-top: 10px;
     }
 
     p {
-      
+      @include font-light;
+      font-size: 15px;
+      line-height: 21px;
+      padding-top: 3px;
     }
   }
+}
+
+@media only screen and (max-width: 1280px) {
+  .SecondaryPeopleSection {
+    margin-left: 72px;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .SecondaryPeopleSection {
+    margin-left: 55px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .SecondaryPeopleSection {
+    margin-left: 78px;
+
+    div {
+      figure {
+        height: 189px;
+        width: 151px;
+      }
+
+      h5 {
+        font-size: 13px;
+        line-height: 13px;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 19px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 660px) {
+  .SecondaryPeopleSection {
+    margin-left: 18px;
+
+    div {
+      figure {
+        width: 114px;
+        height: 143px;
+      }
+
+      h5 {
+        font-size: 10px;
+        line-height: 10px;
+        padding-top: 5px;
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 13px;
+      }
+    }
+  }
+
 }

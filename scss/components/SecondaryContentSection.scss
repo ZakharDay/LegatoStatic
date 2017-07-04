@@ -1,11 +1,69 @@
 .SecondaryContentSection {
-  & > div {
-    &:first-child {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
+  margin-left: 172px;
+
+  & > div {
+    width: 514px;
+
+    &:first-of-type {
+      margin-top: 150px;
     }
 
-    &:last-child {
-      
+    &:last-of-type {
+      margin-top: 371px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .SecondaryContentSection {
+    margin-left: 78px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .SecondaryContentSection {
+    margin-left: 55px;
+
+    & > div {
+      width: 450px;
+    }
+    }
+  }
+
+@media only screen and (max-width: 990px) {
+  .SecondaryContentSection {
+    margin: 0 102px;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 564px;
+
+      &:last-of-type {
+        margin-top: 100px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 660px) {
+  .SecondaryContentSection {
+    margin-left: 18px;
+
+    & > div {
+      display: block;
+      width: 290px;
+
+      &:first-of-type,
+      &:last-of-type {
+        margin-top: 0;
+      }
     }
   }
 }

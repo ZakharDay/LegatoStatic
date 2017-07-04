@@ -1,7 +1,16 @@
+
+@mixin font-bold {
+  font-family: 'Basis Bold', Helvetica, Arial, sans-serif;
+}
+
+@mixin font-regular {
+  font-family: 'Basis Regular', Helvetica, Arial, sans-serif;
+}
+
 @mixin font-thin {
   font-family: 'Basis Off White', Helvetica, Arial, sans-serif;
 }
 
-@mixin font-bold {
-  font-family: 'Basis Bold', Helvetica, Arial, sans-serif;
+@mixin font-light {
+  font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif;
 }

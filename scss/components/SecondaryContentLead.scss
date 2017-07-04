@@ -1,9 +1,90 @@
 .SecondaryContentLead {
-  img {
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  object-fit: cover;
 
+  img {
+    width: 1266px;
+    height: 725px;
+
+
+    object-fit: cover;
   }
 
   video {
+    width: 1091px;
+    height: 710px;
 
+    margin-left: 172px;
+
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .SecondaryContentLead {
+    img {
+      width: 1170px;
+      height: 710px;
+    }
+
+    video {
+      width: 1044px;
+      height: 710px;
+
+      margin-left: 72px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .SecondaryContentLead {
+    img {
+      width: 930px;
+      height: 695px;
+    }
+
+    video {
+      width: 835px;
+      height: 613px;
+
+      margin-left: 55px;
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .SecondaryContentLead {
+    img {
+      width: 714px;
+      height: 493px;
+    }
+
+    video {
+      width: 624px;
+      height: 424px;
+
+      margin-left: 78px;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .SecondaryContentLead {
+    margin-top: 40px;
+
+    img {
+      width: 291px;
+      height: 201px;
+    }
+
+    video {
+      width: 290px;
+      height: 201px;
+
+      margin-left: 18px;
+    }
   }
 }
