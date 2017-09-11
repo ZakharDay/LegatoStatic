@@ -1,6 +1,5 @@
 $(function() {
   $(window).on('scroll', function() {
-    console.log('gogogo')
     var scrollTop = $(this).scrollTop()
 
     if (scrollTop > 0) {

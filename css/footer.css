@@ -6,21 +6,26 @@
     position: relative; }
     .footer .phrases-centerizer .phrases-wrapper {
       position: relative;
-      width: 800px;
-      height: 200px;
+      width: 820px;
+      height: 220px;
       margin-top: -80px;
       overflow: hidden;
       z-index: 1; }
       .footer .phrases-centerizer .phrases-wrapper .phrases-container .phrase-static {
         position: relative;
-        display: flex;
         line-height: 100px;
-        font-family: 'Basis Off White';
-        font-size: 85px;
+        font-family: 'Basis Medium';
+        font-size: 70px;
         white-space: nowrap;
         color: black; }
         .footer .phrases-centerizer .phrases-wrapper .phrases-container .phrase-static .logo-phrase {
-          background-image: url(../img/logo_black.svg); }
+          position: relative;
+          top: 8px;
+          width: 240px;
+          height: 96px;
+          margin-left: 10px;
+          background-image: url(../img/logo_black.svg);
+          background-size: cover; }
   .footer .logo-full {
     width: 132px;
     height: 53px;

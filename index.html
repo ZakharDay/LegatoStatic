@@ -27,7 +27,7 @@
       $(function() {
         var counter = 0
         function move() {
-          if (counter >= 8) {
+          if (counter >= 6) {
             counter = 0
           }
           $('.phrase').removeClass('step0')
@@ -38,22 +38,18 @@
           $('.phrase').removeClass('step5')
           $('.phrase').removeClass('step6')
           $('.phrase').removeClass('step7')
-          $('.phrase').removeClass('step8')
-          $('.phrase').removeClass('step9')
           $('.phrase').addClass('step' + counter)
           counter = counter + 1
         }
         function animateWithTimeout() {
           move()
-          setTimeout(move, 4000)
-          setTimeout(move, 8000)
+          setTimeout(move, 3000)
+          setTimeout(move, 6000)
+          setTimeout(move, 9000)
           setTimeout(move, 12000)
-          setTimeout(move, 16000)
-          setTimeout(move, 20000)
-          setTimeout(move, 24000)
-          setTimeout(move, 28000)
-          setTimeout(move, 32000)
-          setTimeout(animateWithTimeout, 38000)
+          setTimeout(move, 15000)
+          setTimeout(move, 18000)
+          setTimeout(animateWithTimeout, 24000)
         }
         animateWithTimeout()
       })
@@ -75,16 +71,14 @@
           <div class="phrases-wrapper">
             <div class="phrases-container">
               <div class="phrase">
-                We are <div class="logo-phrase"></div>
+                Мы <div class="logo-phrase"></div>
               </div>
 
-              <div class="phrase">We are professionals</div>
-              <div class="phrase">We build things</div>
-              <div class="phrase">We build future</div>
-              <div class="phrase">Follow us</div>
-              <div class="phrase">Stay tuned</div>
-              <div class="phrase">June 2017</div>
-              <div class="phrase">Coming soon</div>
+              <div class="phrase">Мы создаём</div>
+              <div class="phrase">Спортивную архитектуру</div>
+              <div class="phrase">Мы развиваем</div>
+              <div class="phrase">Визуальную культуру</div>
+              <div class="phrase">С 2007 года</div>
             </div>
           </div>
 
@@ -92,9 +86,9 @@
             <div class="socialContainer">
               <a class="instagram" href="http://instagram.com/legatomoscow" target="_blank">Instagram</a>
               <a class="facebook" href="https://www.facebook.com/legatomoscow" target="_blank">Facebook</a>
-              <a class="email" href="mailto:legatomoscow@gmail.com">Contact</a>
+              <a class="email" href="mailto:legatomoscow@gmail.com">Email</a>
 
-              <div class="social-likes social-likes_single" data-counters="no" data-single-title="Share" data-url="http://legatomoscow.ru">
+              <div class="social-likes social-likes_single" data-counters="no" data-single-title="Поделиться" data-url="http://legatomoscow.ru">
                 <div class="facebookShare" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
                 <div class="vkShare" title="Поделиться ссылкой во Вконтакте">Vkontakte</div>
                 <div class="twitterShare" title="Поделиться ссылкой в Твиттере">Twitter</div>
@@ -230,7 +224,12 @@
           <div class="phrases-wrapper">
             <div class="phrases-container">
               <div class="phrase-static">
-                Be professional <br>in everything
+                Спорт
+                <span class="orange">+</span>
+                Архитектура
+                <span class="orange">=</span>
+                <br>
+                <div class="logo-phrase"></div>
               </div>
             </div>
           </div>
@@ -240,18 +239,18 @@
               <div class="links">
                 <a class="instagram" href="http://instagram.com/legatomoscow" target="_blank">Instagram</a>
                 <a class="facebook" href="https://www.facebook.com/legatomoscow" target="_blank">Facebook</a>
-                <a class="email" href="mailto:legatomoscow@gmail.com">Contact</a>
+                <a class="email" href="mailto:legatomoscow@gmail.com">Email</a>
               </div>
 
               <div class="additional-info">
-                <p>hi@legatomoscow.com</p>
-                <p>+7 (999) 123-45-67</p>
+                <p>legatomoscow@gmail.com</p>
+                <p>+7 (977) 261-81-01</p>
                 <a href="assets/presentation.pdf" id="pres">Посмотреть презентацию</a>
                 <a href="assets/presentation.pdf" id="pres">Скачать презентацию</a>
               </div>
 
               <div class="footer-dummy" style="width: 61px; height: 6px;">
-                <div class="social-likes social-likes_single" data-counters="no" data-single-title="Share" data-url="http://legatomoscow.ru">
+                <div class="social-likes social-likes_single" data-counters="no" data-single-title="Поделиться" data-url="http://legatomoscow.ru">
                   <div class="facebookShare" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
                   <div class="vkShare" title="Поделиться ссылкой во Вконтакте">Vkontakte</div>
                   <div class="twitterShare" title="Поделиться ссылкой в Твиттере">Twitter</div>
