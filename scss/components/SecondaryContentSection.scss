@@ -1,11 +1,42 @@
 .SecondaryContentSection {
-  & > div {
-    &:first-child {
+  display: flex;
+  justify-content: space-between;
 
-    }
+  & > div {
+    width: calc(100% / 2 - 40px);
+
+    &:first-child {}
 
     &:last-child {
-      
+      margin-top: 370px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 990px) {
+  .SecondaryContentSection {
+    & > div {
+      width: calc(100% / 2 - 20px);
+
+      &:first-child {}
+
+      &:last-child {
+        margin-top: 370px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .SecondaryContentSection {
+    display: block;
+
+    & > div {
+      width: 100%;
     }
   }
 }

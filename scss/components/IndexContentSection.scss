@@ -10,20 +10,13 @@
 
   figcaption {
     transition: all .6s ease-in-out;
-    
+
     &:hover {
       z-index: 20;
 
       figure, p {
         opacity: 1;
-      }
-    }
-
-    &.visible {
-      transform: scale(1.1);
-
-      figure, p {
-        opacity: 1;
+        filter: none;
       }
     }
   }
@@ -71,7 +64,7 @@
 
         figure {
           height: 387px;
-          background-image: url(../img/main/pic-2.png);
+          background-image: url(../img/main/pic-2.jpg);
         }
       }
 
@@ -81,7 +74,7 @@
 
         figure {
           height: 721px;
-          background-image: url(../img/main/pic-1.png);
+          background-image: url(../img/main/pic-1.jpg);
         }
       }
     }
@@ -108,7 +101,7 @@
 
         figure {
           height: 389px;
-          background-image: url(../img/main/pic-3.png);
+          background-image: url(../img/main/pic-3.jpg);
         }
       }
 
@@ -809,6 +802,116 @@
 
           figure {
             height: 186px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  .IndexContentSection {
+    .type_1 {
+      div {
+        &:nth-child(1) {
+          figure {
+            background-image: url(../img/main/pic-2@2x.jpg);
+          }
+        }
+
+        &:nth-child(2) {
+          figure {
+            background-image: url(../img/main/pic-1@2x.jpg);
+          }
+        }
+      }
+    }
+
+    .type_2 {
+      div {
+        &:nth-child(1) {
+          figure {
+            background-image: url(../img/main/pic-4.png);
+          }
+        }
+
+        &:nth-child(2) {
+          figure {
+            background-image: url(../img/main/pic-3.jpg);
+          }
+        }
+
+        &:nth-child(3) {
+          figure {
+            background-image: url(../img/main/pic-5.png);
+          }
+        }
+      }
+    }
+
+    .type_3 {
+      & > div {
+        &:nth-child(1) {
+          figure {
+            background-image: url(../img/main/pic-6.png);
+          }
+        }
+
+        &:nth-child(2) {
+          div {
+            &:nth-child(1) {
+              figure {
+                background-image: url(../img/main/pic-8.png);
+              }
+            }
+
+            &:nth-child(2) {
+              figure {
+                background-image: url(../img/main/pic-7.png);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .type_4 {
+      & > div {
+        &:nth-child(1) {
+          div {
+            &:nth-child(1) {
+              figure {
+                background-image: url(../img/main/pic-10.png);
+              }
+            }
+
+            &:nth-child(2) {
+              figure {
+                background-image: url(../img/main/pic-11.png);
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          figure {
+            background-image: url(../img/main/pic-9.png);
+          }
+        }
+      }
+    }
+
+    .type_5 {
+      div {
+        &:nth-child(1) {
+          figure {
+            background-image: url(../img/main/pic-13.png);
+          }
+        }
+
+        &:nth-child(2) {
+          figure {
+            background-image: url(../img/main/pic-12.png);
           }
         }
       }

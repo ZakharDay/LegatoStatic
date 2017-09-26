@@ -1,30 +1,24 @@
 .SecondaryContentWrapper {
-  // position: relative;
-  height: 100%;
-  width: 1266px;
-  margin-top: 190px;
+  margin: 95px 80px 0;
+  padding-top: 95px;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1370px) {}
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1024px) {
   .SecondaryContentWrapper {
-    width: 1170px;
+    margin: 95px 40px 0;
+    padding-top: 95px;
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .SecondaryContentWrapper {
-    width: 994px;
-  }
-}
-
-@media only screen and (max-width: 990px) {
-  .SecondaryContentWrapper {
-    width: 714px;
-  }
-}
+@media only screen and (max-width: 990px) {}
 
 @media only screen and (max-width: 660px) {
   .SecondaryContentWrapper {
-    width: 295px;
+    margin: 95px 20px 0;
+    padding-top: 95px;
   }
 }

@@ -1,15 +1,44 @@
 .SecondaryPeopleSection {
-  div {
-    figure {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 40px;
 
+  div {
+    width: calc((100% - (40px * 4)) / 5);
+    margin-top: 40px;
+    margin-right: 40px;
+
+    figure {
+      // width: 203px;
+      // height: 254px;
+
+      img {
+        width: 100%;
+      }
     }
 
     h5 {
-
+      font-family: 'Basis Regular';
+      font-size: 15px;
+      line-height: 21px;
+      padding-top: 10px;
     }
 
     p {
-      
+      font-family: 'Proxima Nova Light';
+      font-size: 15px;
+      line-height: 21px;
+      padding-top: 3px;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .SecondaryPeopleSection {
+    div {
+      width: calc(100% - 100px);
     }
   }
 }

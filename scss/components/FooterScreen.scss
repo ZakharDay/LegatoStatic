@@ -10,10 +10,22 @@
 
   .Tagline {
     .wrapper {
-      height: 200px;
+      height: 220px;
 
       .container .line {
-        height: 200px;
+        display: block;
+        height: 220px;
+
+        .logo-phrase {
+          position: relative;
+          // display: none;
+          top: 8px;
+          width: 240px;
+          height: 96px;
+          margin-left: 10px;
+          background-image: url(../img/logo_black.svg);
+          background-size: cover;
+        }
       }
     }
   }

@@ -25,7 +25,7 @@
         height: $largeContainerHeight;
         line-height: 100px;
         font-family: 'Basis Off White';
-        font-size: 85px;
+        font-size: 70px;
         white-space: nowrap;
 
         &.step0 { transform: translateY(0); transition: all 3s ease-in-out !important; }
@@ -40,9 +40,9 @@
 
         .logo {
           position: relative;
-          top: 5px;
-          width: 263px;
-          height: 106px;
+          top: 8px;
+          width: 240px;
+          height: 96px;
           margin-left: 30px;
           background-image: url(../img/logo_white.svg);
           background-size: cover;
