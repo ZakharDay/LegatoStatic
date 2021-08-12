@@ -23,7 +23,7 @@
         var counter = 0
 
         function move() {
-          if (counter >= 8) {
+          if (counter >= 5) {
             counter = 0
           }
 
@@ -35,8 +35,6 @@
           $('.phrase').removeClass('step5')
           $('.phrase').removeClass('step6')
           $('.phrase').removeClass('step7')
-          $('.phrase').removeClass('step8')
-          $('.phrase').removeClass('step9')
           $('.phrase').addClass('step' + counter)
 
           counter = counter + 1
@@ -71,8 +69,7 @@
   </head>
   <body>
     <div class="header-logo">
-      <div class="logo-full"></div>
-      <p>SPORTS <br> ARCHITECTURE</p>
+      <img class="logo-full" src="img/logo_header.png" alt="logo">
     </div>
 
     <div class="phrases-centerizer">
@@ -82,21 +79,18 @@
             We are <div class="logo-phrase"></div>
           </div>
 
-          <div class="phrase">We are professionals</div>
           <div class="phrase">We build things</div>
           <div class="phrase">We build future</div>
           <div class="phrase">Follow us</div>
           <div class="phrase">Stay tuned</div>
-          <div class="phrase">June 2017</div>
-          <div class="phrase">Coming soon</div>
         </div>
       </div>
 
       <div class="socialWrapper">
         <div class="socialContainer">
-          <a class="instagram" href="http://instagram.com/legatomoscow" target="_blank">Instagram</a>
+          <a class="instagram" href="http://instagram.com/legato_architects" target="_blank">Instagram</a>
           <a class="facebook" href="https://www.facebook.com/legatomoscow" target="_blank">Facebook</a>
-          <a class="email" href="mailto:legatomoscow@gmail.com">Contact</a>
+          <a class="email" href="mailto:hello@legatomoscow.ru">Contact</a>
 
           <div class="social-likes social-likes_single" data-counters="no" data-single-title="Share" data-url="http://legatomoscow.ru">
             <div class="facebookShare" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
@@ -113,7 +107,7 @@
 
     <section>
       <video autoplay playsinline muted loop poster="img/video.jpg">
-        <source src="videos/video.m4v"  type="video/mp4">
+        <source src="videos/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </section>

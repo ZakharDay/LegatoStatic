@@ -34,27 +34,16 @@ video {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 230px;
-  height: 53px;
-  margin-left: 50px;
-  margin-top: 38px;
+  margin-left: 48px;
+  margin-top: 32px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
   .header-logo .logo-full {
     display: block;
     position: relative;
-    width: 132px;
-    height: 53px;
-    background-image: url(../img/logo_white.svg); }
-  .header-logo p {
-    display: block;
-    position: relative;
-    margin-top: -3px;
-    font-size: 12px;
-    line-height: 14px;
-    color: white;
-    font-family: 'Basis Medium'; }
+    width: 200px;
+  }
 
 .fig {
   display: block;
@@ -197,8 +186,7 @@ video {
     margin-left: 15px;
     margin-top: 15px; }
     .header-logo .logo-full {
-      width: 115px;
-      height: 46px; }
+      width: 115px; }
     .header-logo p {
       font-size: 7px; }
 
