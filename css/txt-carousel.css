@@ -25,14 +25,6 @@
   transform: translateY(-500%); }
 
 .phrase.step6 {
-  -webkit-transform: translateY(-600%);
-  transform: translateY(-600%); }
-
-.phrase.step7 {
-  -webkit-transform: translateY(-700%);
-  transform: translateY(-700%); }
-
-.phrase.step8 {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   -webkit-transition: all 3s ease-in-out !important;
